@@ -1,0 +1,97 @@
+ELECTRONICS & MOBILE ACCESSORIES (one product per landscape page; full page = image). page|name|subtitle|code
+2|PowerGlow Sound Hub|5 in 1 Bamboo Table Top with Bluetooth Speaker & Glowing USB Hub|C 223
+3|Zenstand Max II|Folding & Rotating Metal Mobile Stand with Bamboo Base|E 427
+4|ZenCharge Time|Bamboo Table Top with Clock & Fast 15W Wireless Charger|C 229
+5|Eco Beats|Bamboo Bluetooth Speaker|C 227
+6|ChronoDesk Eco|5 in 1 Bamboo Table Top with Fast 15W Wireless Charger|C 228
+7|WorkBeat Eco|6 in 1 Bamboo Table Top with Bluetooth Speaker & Perpetual Wooden Calendar|C 226
+8|PowerGlow Charge Beat|5 in 1 Bamboo Table Top with Bluetooth Speaker & Fast 15W Wireless Charger|C 224
+9|PowerGlow Glow Desk|5 in 1 Bamboo Table Top with Backlit 15W Fast Wireless Charger|C 225
+10|PowerGlow ZenHub|Mini Bamboo USB Hub with Backlight|C 221
+11|PowerGlow Desk Hub|5 in 1 Bamboo Table Top with Glowing USB Hub|C 222
+12|PowerGlow Dock Pad|Cork 3 Fold Mousepad with Backlit USB Hub, Bamboo Cable Organizer & Stationery Tray|C 220
+13|BamBox Charge|Travel Cable Box with 15W Wireless Charger, Universal Connectors, Ejector Pin in Magnetic Bamboo Case|C 219
+14|ZenCharge Core|Bamboo Wireless Charger with Phone Stand, Metal Pen Holder and Clock|C 209
+15|WoodHub|Bamboo USB Hub with Phone Stand|C 196
+16|Handy Tech|Gadget Organizer with Carry Strap|S 76
+17|HeatVault Mag 700|Vacuum Flask with Magnet Phone Stand (700ml, 304 SS, hot & cold 18 hrs)|H 393
+18|FoldStand|Folding & Rotating Metal Mobile Stand|E 426
+19|Zenstand Pure|Folding & Rotating Clear Mobile Stand with Bamboo Base|E 428
+20|Zenstand Mini|Folding & Rotating Metal Mobile Stand with Bamboo Base|E 420
+21|Zenstand Max|Folding & Rotating Metal Mobile Stand with Bamboo Base|E 421
+22|StandEase L|Angle & Height Adjustable Multipurpose Stand|E 413
+23|StandEase XL|Angle & Height Adjustable Multipurpose Stand (Large size for mobile & tablets)|E 410
+24|Angle & Height Adjustable Multipurpose Stand|Rotating metal stand for tablets & mobiles|E 409
+25|TiltX Pad Large Size|Adjustable Metal Mobile Stand with Writing Pad|E 390
+26|TiltX Serve Large Size|Adjustable Metal Mobile Stand with Coasters|E 391
+27|TiltX Large Size|Adjustable Metal Mobile Stand|E 389
+28|Mini Phone Stand|With Double Pen Holder|E 370
+29|Phone Stand|With Spectacle Holder|E 371
+30|Phone Stand|With Writing Pad & Spectacle Holder|E 372
+31|Mini Folding Mobile|And Tablet Stand with Mirror|E 362
+32|Metal Mobile Stand|With Top Adjustable Neck|E 341
+33|Metal Mobile Stand|With 4 Coasters|E 324
+34|Mini Folding Mobile and Tablet Stand|Adjustable to any desired angle, pocket-size & foldable|E 325
+35|Flexo Mini 2|Folding Metal Mobile Stand for Smartphones and Tabs|E 331A
+36|Metal Multi Mobile Stand|With Writing Pad Holder|E 321
+37|Metal Multi Mobile Stand|With Pen Stand & Writing Pad Holder (200 writing sheets)|E 322
+38|Metal Multi Mobile Stand|With Pen Stand|E 323
+39|Flexo|Folding Adjustable Mobile Stand for Smartphones and Tabs|E 319
+40|Flexo II|Folding Adjustable Mobile Stand for Smartphones and Tabs|E 319A
+41|Metal Multi Mobile Stand|With Visiting Card Holder & Double Pen Holder|E 313
+42|Heavy Duty Mobile Stand|With Angle Adjustment|E 314
+43|Foldy Flat Mobile Stand|With 5 Angle Adjustment, available in 5 bright colours|E 238
+44|Metal Multi Mobile Stand|Premium mobile holder for desks|E 251
+45|Metal Multi Universal Mobile Phone Stand|With Card Holder|E 301
+46|Folding Mobile Stand|With Detachable Screen Cleaner|E 227
+47|Sliding Privacy Guard|Webcam Cover (White / Black)|E 237
+48|Pop Up Mobile Stand|Double Pop Out grip|E 211
+49|Dilbert Style Mobile Stand|For Table & Car, available in 6 colours|E 164
+50|Mr. Notty|Flexible Mobile Holder|E 128
+51|Multi Mobile Band|Multipurpose Removable Pocket, available in 5 colours|E 133
+52|Heart Shape Mobile Stand|With Earphone Splitter|E 97
+53|Silicon Vacuum Mobile Stand|With Earphone Holder|E 98
+54|Dual USB Wall & Car Charger|For use at home and on the move|E 117
+55|TapFrame Horizontal|Customised High Gloss Photo Frame in MDF with NFC Tag (4x6 inch)|D 44
+56|TapFrame Vertical|Customised High Gloss Photo Frame in MDF with NFC Tag (4x6 inch)|D 45
+57|SnapCharge Duo|Car Charger with Double Retractable Wires & Voltage Display|C 215
+58|GlowNest|Bamboo Table Top with 15W Wireless Charger, LED Lamp, Metal Pen Holder & Phone Stand|C 205
+59|ZenCharge|Bamboo Wireless Charger with Phone Stand and Triple Pen Stand|C 206
+60|BranchrPad|Bamboo USB Hub with Writing Pad and Phone Stand|C 208
+61|GlowNest Pro|Bamboo Table Top with Cup Warmer, LED Lamp, Metal Pen Holder, Phone Stand, Phone Charger & Perpetual Calendar|C 210
+62|TidyCord Pure|Retractable Fast Charging Cable with Data Function in Wheat Straw Material|C 202
+63|TidyCord Zen|Retractable Fast Charging Cable with Data Function in Wheat Straw Material with Bamboo Plate|C 203
+64|ZenCharge Slim|Bamboo Wireless Charger with Phone Stand and Double Pen Stand|C 204
+65|BamBrew|Bamboo Large Pen Stand with Cup Warmer|C 200
+66|WoodCharge|Bamboo Fast Charging Cable with Universal Ports|C 195
+67|Zephyr|Rechargeable Fan with 3 Level Speed Adjustment (1200 mAh, Made in India)|C 197
+68|Rectangle Charging Cable|With Light Up Logo, Fast Charging|C 190
+69|Power Glow USB Hub|With 4 USB Outputs, glowing logo|C 184
+70|Power Strip|With USB Ports & 2 Mode Lamp, 2 sockets with 2 USB ports|C 186
+71|3.4A Dual USB Home Charger|With LED Night Lamp|C 123
+72|Fast Car Charger with 4 USB Ports|18W QC3.0 + 2.4A 12W|C 154
+73|Power Glow Lamp|With USB Hub, Tumbler & Logo Highlight, 3 USB ports with Mobile Stand|C 160
+74|Power Board|Multi Point Extension Board with USB Ports and Phone Stand|C 167
+75|Power Glow All in 1 Charging Cable|With Light Up Logo, USB A and C Input|C 182
+76|USB Hub|With 4 USB Outputs|C 183
+77|All in 1 Charging Cable|With Travel Case and Keychain|C 82
+78|USB Hub|With Detachable Cable (iOS, Micro, Type C)|C 101
+79|Power Glow USB Hub|With Tumbler & Logo Highlight, 3 USB ports with Mobile Stand|C 106
+80|Power Pad|Mouse Pad with USB Hub (USB cable included)|C 79
+81|Car Charger|With Keychain and Charging Cable (Dual side iOS & Android)|C 81
+82|2 Side Cable for Android and iPhone|With Light|C 49
+83|Glow in the Dark Dual Car Charger|Available in Red, White & Blue|C 50
+84|Magnetic 3 in 1 Charging Cable|With Keychain|C 74
+85|Lanyard Charging Cable|With Lightning & Micro USB (with USB Type C port C 76 / without C 77)|C 76
+86|Round Charging Cable|With Light Up Logo, Fast Charging|C 78A
+87|Multi-Color Voice Controlled LED Light Charging Cable|Light flashes based on music, 1 mtr|C 103
+88|Foldable Laptop Cooling Pad|Twin fans, USB powered (Small B 17 / Large B 18)|B 17
+89|Folding Table USB Fan|Works with laptops, PCs, power banks|C 37
+90|Boxed Multi Connector Data and Charging Cable|For Android, Windows and iPhone|C 38
+91|3 in 1 Pocket Mobile Fan|With USB Type C Cable Adapter, 5 colours|
+92|2 Side Cable for Android and iPhone|Braided, available in Pink, Silver & Blue|C 47
+93|TimeWave Nano|Capsule Style Clock with Bluetooth Speaker|A 151
+94|TimeWave Plus|Square Display Clock with Bluetooth Speaker & RGB Lights|A 153
+95|TimeWave Ultra|Large Display Clock with Bluetooth Speaker, Mobile Stand & RGB Lights|A 155
+96|Digital Clock|With 10W Wireless Charger|A 140
+(p1 cover)

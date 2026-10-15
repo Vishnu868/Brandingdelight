@@ -1,0 +1,1112 @@
+[
+ {
+  "code": "P002",
+  "page": 4,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 1519,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-p002"
+ },
+ {
+  "code": "P001",
+  "page": 4,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 1489,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-p001"
+ },
+ {
+  "code": "P004",
+  "page": 5,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 2129,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-p004"
+ },
+ {
+  "code": "P003",
+  "page": 5,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 1529,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-p003"
+ },
+ {
+  "code": "P005",
+  "page": 6,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-p005"
+ },
+ {
+  "code": "P006",
+  "page": 6,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-p006"
+ },
+ {
+  "code": "P007",
+  "page": 7,
+  "series": "Tamra",
+  "type": "Plain Copper Bottle",
+  "mrp": 1199,
+  "capacity": "500ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-p007"
+ },
+ {
+  "code": "H001",
+  "page": 9,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1199,
+  "capacity": "950ml",
+  "finish": "Full Hammered",
+  "image": "tamta-h001"
+ },
+ {
+  "code": "H002",
+  "page": 9,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1199,
+  "capacity": "950ml",
+  "finish": "Half Hammered",
+  "image": "tamta-h002"
+ },
+ {
+  "code": "H003",
+  "page": 10,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1199,
+  "capacity": "950ml",
+  "finish": "Half Hammered",
+  "image": "tamta-h003"
+ },
+ {
+  "code": "H004",
+  "page": 10,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Half Hammered",
+  "image": "tamta-h004"
+ },
+ {
+  "code": "H005",
+  "page": 11,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1819,
+  "capacity": "950ml",
+  "finish": "Full Hammered",
+  "image": "tamta-h005"
+ },
+ {
+  "code": "H006",
+  "page": 11,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Half Diamond Cut",
+  "image": "tamta-h006"
+ },
+ {
+  "code": "H007",
+  "page": 12,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2169,
+  "capacity": "1100ml",
+  "finish": "Half-Hammered",
+  "image": "tamta-h007"
+ },
+ {
+  "code": "H008",
+  "page": 12,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 1889,
+  "capacity": "950ml",
+  "finish": "Full-Hammered",
+  "image": "tamta-h008"
+ },
+ {
+  "code": "H009",
+  "page": 13,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2519,
+  "capacity": "950ml",
+  "finish": null,
+  "image": "tamta-h009"
+ },
+ {
+  "code": "H010",
+  "page": 13,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2169,
+  "capacity": "950ml",
+  "finish": null,
+  "image": "tamta-h010"
+ },
+ {
+  "code": "H011",
+  "page": 14,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2049,
+  "capacity": "950ml",
+  "finish": null,
+  "image": "tamta-h011"
+ },
+ {
+  "code": "H012",
+  "page": 14,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2369,
+  "capacity": "950ml",
+  "finish": null,
+  "image": "tamta-h012"
+ },
+ {
+  "code": "H013",
+  "page": 15,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2089,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-h013"
+ },
+ {
+  "code": "H014",
+  "page": 15,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 599,
+  "capacity": "8000ml",
+  "finish": "Half Diamond Cut",
+  "image": "tamta-h014"
+ },
+ {
+  "code": "H015",
+  "page": 16,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 599,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-h015"
+ },
+ {
+  "code": "H016",
+  "page": 16,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 599,
+  "capacity": "950ml",
+  "finish": "Half Diamond Cut",
+  "image": "tamta-h016"
+ },
+ {
+  "code": "H017",
+  "page": 17,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2999,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-h017"
+ },
+ {
+  "code": "H018",
+  "page": 17,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 2369,
+  "capacity": "950ml",
+  "finish": "Half Diamond Cut",
+  "image": "tamta-h018"
+ },
+ {
+  "code": "H020",
+  "page": 18,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 7329,
+  "capacity": "950ml",
+  "finish": "Half Diamond Cut",
+  "image": "tamta-h020"
+ },
+ {
+  "code": "H019",
+  "page": 18,
+  "series": "Tatva",
+  "type": "Hand-Crafted Hammered Copper Bottle",
+  "mrp": 7329,
+  "capacity": "8000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-h019"
+ },
+ {
+  "code": "A002",
+  "page": 20,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 1679,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a002"
+ },
+ {
+  "code": "A001",
+  "page": 20,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 2329,
+  "capacity": "1100ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-a001"
+ },
+ {
+  "code": "A003",
+  "page": 21,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 1829,
+  "capacity": "1000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-a003"
+ },
+ {
+  "code": "A004",
+  "page": 21,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 2329,
+  "capacity": "1000ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a004"
+ },
+ {
+  "code": "A005",
+  "page": 22,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 1699,
+  "capacity": "900ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-a005"
+ },
+ {
+  "code": "A006",
+  "page": 22,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 1849,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a006"
+ },
+ {
+  "code": "A007",
+  "page": 23,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 2329,
+  "capacity": "1200ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a007"
+ },
+ {
+  "code": "A008",
+  "page": 23,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 1439,
+  "capacity": "500ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a008"
+ },
+ {
+  "code": "A009",
+  "page": 24,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 2389,
+  "capacity": "1200ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a009"
+ },
+ {
+  "code": "A010",
+  "page": 24,
+  "series": "Tavya",
+  "type": "Antique Heritage Print Copper Bottle",
+  "mrp": 2049,
+  "capacity": "500ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-a010"
+ },
+ {
+  "code": "V001",
+  "page": 26,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1829,
+  "capacity": "950ml",
+  "finish": "Gloss-Finish",
+  "image": "tamta-v001"
+ },
+ {
+  "code": "V002",
+  "page": 26,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1829,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-v002"
+ },
+ {
+  "code": "V003",
+  "page": 27,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 2169,
+  "capacity": "1200ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-v003"
+ },
+ {
+  "code": "V004",
+  "page": 27,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 2169,
+  "capacity": "1100ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-v004"
+ },
+ {
+  "code": "V005",
+  "page": 28,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1829,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-v005"
+ },
+ {
+  "code": "V006",
+  "page": 28,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1829,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-v006"
+ },
+ {
+  "code": "V007",
+  "page": 29,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1929,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-v007"
+ },
+ {
+  "code": "V008",
+  "page": 29,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1719,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-v008"
+ },
+ {
+  "code": "V009",
+  "page": 30,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 2289,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-v009"
+ },
+ {
+  "code": "V010",
+  "page": 30,
+  "series": "Tura",
+  "type": "Earth Vein Copper Bottle",
+  "mrp": 1549,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-v010"
+ },
+ {
+  "code": "E001",
+  "page": 32,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 1799,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e001"
+ },
+ {
+  "code": "E002",
+  "page": 32,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 2759,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-e002"
+ },
+ {
+  "code": "E003",
+  "page": 33,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 2399,
+  "capacity": "1000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e003"
+ },
+ {
+  "code": "E004",
+  "page": 33,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 1679,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-e004"
+ },
+ {
+  "code": "E005",
+  "page": 34,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 1679,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e005"
+ },
+ {
+  "code": "E006",
+  "page": 34,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 2329,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-e006"
+ },
+ {
+  "code": "E007",
+  "page": 35,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e007"
+ },
+ {
+  "code": "E008",
+  "page": 35,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-e008"
+ },
+ {
+  "code": "E009",
+  "page": 36,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 7559,
+  "capacity": "8000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e009"
+ },
+ {
+  "code": "E010",
+  "page": 36,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 7559,
+  "capacity": null,
+  "finish": null,
+  "image": "tamta-e010"
+ },
+ {
+  "code": "E011",
+  "page": 37,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 7559,
+  "capacity": "8000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e011"
+ },
+ {
+  "code": "E012",
+  "page": 37,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 7559,
+  "capacity": "8000ml",
+  "finish": null,
+  "image": "tamta-e012"
+ },
+ {
+  "code": "E013",
+  "page": 38,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 2169,
+  "capacity": "1200ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e013"
+ },
+ {
+  "code": "E014",
+  "page": 38,
+  "series": "Etching",
+  "type": "Heritage Etched Copper Bottle",
+  "mrp": 7559,
+  "capacity": "8000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-e014"
+ },
+ {
+  "code": "T001",
+  "page": 40,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1869,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t001"
+ },
+ {
+  "code": "T002",
+  "page": 40,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2089,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-t002"
+ },
+ {
+  "code": "T003",
+  "page": 41,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1719,
+  "capacity": "950ml",
+  "finish": "Half-Hammered",
+  "image": "tamta-t003"
+ },
+ {
+  "code": "T004",
+  "page": 41,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1719,
+  "capacity": "950ml",
+  "finish": "Half Hammered",
+  "image": "tamta-t004"
+ },
+ {
+  "code": "T005",
+  "page": 42,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1849,
+  "capacity": "950ml",
+  "finish": "Silk-Finish",
+  "image": "tamta-t005"
+ },
+ {
+  "code": "T006",
+  "page": 42,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2289,
+  "capacity": "1100ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-t006"
+ },
+ {
+  "code": "T007",
+  "page": 43,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2559,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t007"
+ },
+ {
+  "code": "T008",
+  "page": 43,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2399,
+  "capacity": "1200ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-t008"
+ },
+ {
+  "code": "T009",
+  "page": 44,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1699,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t009"
+ },
+ {
+  "code": "T010",
+  "page": 44,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1739,
+  "capacity": "950ml",
+  "finish": "Meena Bottle",
+  "image": "tamta-t010"
+ },
+ {
+  "code": "T011",
+  "page": 45,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1849,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t011"
+ },
+ {
+  "code": "T012",
+  "page": 45,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2289,
+  "capacity": "850ml",
+  "finish": "Meena Bottle",
+  "image": "tamta-t012"
+ },
+ {
+  "code": "T013",
+  "page": 46,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2289,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t013"
+ },
+ {
+  "code": "T014",
+  "page": 46,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2329,
+  "capacity": "1200ml",
+  "finish": "Meena Bottle",
+  "image": "tamta-t014"
+ },
+ {
+  "code": "T015",
+  "page": 47,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2289,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t015"
+ },
+ {
+  "code": "T016",
+  "page": 47,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": "Meena Bottle",
+  "image": "tamta-t016"
+ },
+ {
+  "code": "T017",
+  "page": 48,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 619,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t017"
+ },
+ {
+  "code": "T018",
+  "page": 48,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2169,
+  "capacity": "950ml",
+  "finish": "Meena Bottle",
+  "image": "tamta-t018"
+ },
+ {
+  "code": "T019",
+  "page": 49,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1739,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t019"
+ },
+ {
+  "code": "T020",
+  "page": 49,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 7569,
+  "capacity": "8000ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t020"
+ },
+ {
+  "code": "T021",
+  "page": 50,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 5909,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-t021"
+ },
+ {
+  "code": "T022",
+  "page": 50,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 5909,
+  "capacity": "950ml",
+  "finish": "Meena Bottle",
+  "image": "tamta-t022"
+ },
+ {
+  "code": "T023",
+  "page": 51,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 1579,
+  "capacity": "950ml",
+  "finish": null,
+  "image": "tamta-t023"
+ },
+ {
+  "code": "T024",
+  "page": 51,
+  "series": "Tivra",
+  "type": "Silk Finish Copper Bottle",
+  "mrp": 2029,
+  "capacity": "950ml",
+  "finish": null,
+  "image": "tamta-t024"
+ },
+ {
+  "code": "S001",
+  "page": 54,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 1459,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-s001"
+ },
+ {
+  "code": "S002",
+  "page": 54,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 1089,
+  "capacity": "250ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-s002"
+ },
+ {
+  "code": "S003",
+  "page": 55,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 1849,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-s003"
+ },
+ {
+  "code": "S004",
+  "page": 55,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 1849,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-s004"
+ },
+ {
+  "code": "S005",
+  "page": 56,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2369,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-s005"
+ },
+ {
+  "code": "S006",
+  "page": 56,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2289,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-s006"
+ },
+ {
+  "code": "S007",
+  "page": 57,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 1679,
+  "capacity": "300ml",
+  "finish": "Antique-Finish",
+  "image": "tamta-s007"
+ },
+ {
+  "code": "S008",
+  "page": 57,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2169,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-s008"
+ },
+ {
+  "code": "S009",
+  "page": 58,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2559,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-s009"
+ },
+ {
+  "code": "S010",
+  "page": 58,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2559,
+  "capacity": "250ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-s010"
+ },
+ {
+  "code": "S011",
+  "page": 59,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2519,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-s011"
+ },
+ {
+  "code": "S012",
+  "page": 59,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2599,
+  "capacity": "250ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-s012"
+ },
+ {
+  "code": "S013",
+  "page": 60,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2369,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-s013"
+ },
+ {
+  "code": "S014",
+  "page": 60,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2369,
+  "capacity": "250ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-s014"
+ },
+ {
+  "code": "S015",
+  "page": 61,
+  "series": "Surai",
+  "type": "Handcrafted Matka Copper Surai",
+  "mrp": 2369,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-s015"
+ },
+ {
+  "code": "C001",
+  "page": 63,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3159,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-c001"
+ },
+ {
+  "code": "C002",
+  "page": 63,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 2759,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-c002"
+ },
+ {
+  "code": "C003",
+  "page": 64,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3159,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-c003"
+ },
+ {
+  "code": "C004",
+  "page": 64,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3159,
+  "capacity": "950ml",
+  "finish": "Half Diamond Cut",
+  "image": "tamta-c004"
+ },
+ {
+  "code": "C005",
+  "page": 65,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 2759,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-c005"
+ },
+ {
+  "code": "C006",
+  "page": 65,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3389,
+  "capacity": "950ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-c006"
+ },
+ {
+  "code": "C010",
+  "page": 67,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3389,
+  "capacity": null,
+  "finish": "Glossy-Finish",
+  "image": "tamta-c010"
+ },
+ {
+  "code": "C009",
+  "page": 67,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3389,
+  "capacity": null,
+  "finish": "Half Hammered",
+  "image": "tamta-c009"
+ },
+ {
+  "code": "C012",
+  "page": 69,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3449,
+  "capacity": "300ml",
+  "finish": "Half Hammered",
+  "image": "tamta-c012"
+ },
+ {
+  "code": "C013",
+  "page": 69,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3349,
+  "capacity": "250ml",
+  "finish": "Glossy-Finish",
+  "image": "tamta-c013"
+ },
+ {
+  "code": "C014",
+  "page": 70,
+  "series": "Tanmaya Set",
+  "type": "Copper Combo Gift Set",
+  "mrp": 3349,
+  "capacity": "950ml",
+  "finish": "Matte-Finish",
+  "image": "tamta-c014"
+ }
+]

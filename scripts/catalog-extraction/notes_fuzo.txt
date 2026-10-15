@@ -1,0 +1,97 @@
+FUZO (full-page image per product, page = image). page|name|subtitle
+2|Halo|Karaoke Party Speaker with Ambient Light
+3|Aura|Aroma Diffuser
+4|Serv|Heat Controlled Food Mat
+5|Vivid|Décor Lamp
+6|Trinity|3 in 1 Portable Wireless Charging Station
+7|Casa|Clock with Alarm, Night Light, Charging Hub
+8|Flux|Induction Speaker with Bluetooth & Mobile Stand
+9|Rover|Portable Electric Kettle & Cook Pot
+10|Whisper|Bladeless Fan
+11|Brewster|Borosilicate Mug: Frother | Stirrer | Beater
+12|Thump|Portable Wireless Speaker
+13|Kollar|Neck Pillow with Massager
+14|Nexus|BT Speaker with Clock, Alarm, Calendar, Timer & Ambient Lights
+15|Auburn|6 in 1: Multi-Functional Bamboo Desk Utility
+16|Zenith|6 in 1: Multi-Functional Lamp with Charging Station
+17|Elevate|3 in 1: Desk Utility
+18|Elevate Pro|6 in 1: Desk Utility
+19|Zest|Portable Blender Juicer
+20|Illuminati|Gravity Flip Lamp
+21|Zapp|Travel Adapter with Retractable Cable, GaN Technology
+22|Nyx|Night Light | Clock | Stands
+23|Dock|Multi-Utility Charging Station with Clock & Stands
+24|Gale|5 in 1: Desk Fan, Clock, Alarm, Charging Station, Mobile Stand
+25|Trail|Portable Electric Travel Mug
+26|Grid|Light Up Word Clock
+27|Vector|Briefcase Bag
+28|Transit|Premium Laptop Backpack
+29|Nook|Desk Lamp | Stationery & Mobile Stand | Night Light
+30|MU6|Portable Wireless Speaker
+31|Gleam|Desk Lamp with Clock & Remote
+32|Drift|Foldable Fan with Ring Light
+33|Ray|Desk Lamp | Digital Clock | Pen Stand | Mobile Stand
+34|Groot|4 in 1: Self-Watering Planter, Charging Hub, Stationery Stand, Mobile Stand
+35|Stash|Tech/Toiletry Pouch
+36|Cape|Premium Waterproof Laptop Backpack
+37|EcoBundle|Bamboo Desk Set with Mouse, Mouse Pad, Calendar & Utility Stands
+38|Polaris|Magnetic String Light with Clock
+39|Strand|Magnetic String Light
+40|Aegis|Premium Laptop Backpack
+41|Nimble|8000 mAh Power Bank Notebook with 15W Wireless Charger
+42|Armour|Chest Bag
+43|Allure 2.0|Magnetic Lamp with Charger, Clock & Stand
+44|CableVerse|Multi-Functional Cable Essentials with Mobile Stand
+45|Spool|Multi-Functional Charging Essentials with Cable
+46|Arch|5 in 1: Wireless Charger, Ambient Light, Large Display Clock, Alarm, Charging Hub
+47|Beam|Desk Lamp | Pen Stand | Mobile Stand
+48|Toto|Rechargeable Luggage Scale
+49|Nudge|Borosilicate Glass Bottle with Hydration Reminder
+50|Bubble|Borosilicate Glass Bottle with Silicone Sleeve
+51|Gaze|Camouflaged Borosilicate Glass Bottle
+52|Thanos|Double Wall SS Stanley Mug
+53|EcoFrost|Frosted Glass Bottle with Bamboo Cap & Base
+54|Ripple|Portable Juicer / Blender
+55|Grease|Portable Tool Set with Light & Magnet
+56|Casper 2.0|Dual Mode Transparent Wireless Mouse
+57|Slick|Mouse Pad with Erasable Writing Pad & Pen
+58|Slumber 2.0|5 in 1: Speaker, White Noise, Ambient Light, Mobile Stand, Stationery Stand
+59|Crate|7 in 1: Desktop Gadget
+60|ATB (Across The Board)|7 in 1: Desktop Gadget
+61|FlipSip|Glass Mug with Dual Sipper Lid & Mobile Stand
+62|Staple|Laptop Backpack
+63|Featherlite|Ultra Light Anti-Theft Laptop Backpack
+64|Commuter 3.0|ABS Duffel Trolley with Laptop Compartment
+65|TravelEase|Universal Travel Adapter with Type C & USB Ports
+66|Flintstone|4 in 1: Washable & Reusable Notebook Gift Set
+67|Brik|Concrete Desk Organizer
+68|Constance|Intelligent Constant Temperature Mug
+69|Quad|4 in 1 Gadget
+70|DC (Desk Collective)|6 in 1: Technology On Your Desk
+71|OCD (Organize Cables & Devices)|Gadget Organizer
+72|UV Cleanz|UV Sterilization Bag
+73|Wave|Glass Bottle with Sleeve
+74|PYD (Power Your Desk)|6 in 1: Pen Holder, Wireless Charger, USB & Type C Hub, USB Light, USB Fan, Mobile Stand
+75|Explorer|3 in 1: Laptop Backpack, Duffel Bag, Sling Bag
+76|Pockate|Credit Card Holder with RFID Block
+77|Infused|Glass Infuser Bottle
+78|Power Play|Spinner with Charging Cable
+79|e-ID|Lanyard with Charging Cable
+80|Tap N Sway|Capsule Shaped Desktop Light
+81|Globe Trotter|3 in 1: Travel Kit
+82|The MNC (Multi-National Converter)|Universal Travel Adapter
+83|Caneta|Metal Pen with Bamboo Grip
+84|Penna|Metal Pen with Bamboo Top
+85|Calamus|Metal Ballpoint Pen
+86|The Associate|Premium Leatherette Zipped Organizer
+87|The Attendant|Leatherette Notebook with Magnetic Flap
+88|The Custodian|Eco-Friendly Felt & Cork Notebook
+89|The Assignee|Woven Textured Leatherette Notebook
+90|The Surrogate|Woven Textured Leatherette Notebook with Magnetic Flap
+91|The Stooge|Italian Soft PU Notebook
+92|The Aide|Eco-Friendly Cork Notebook
+93|The Pupil|Italian Soft PU Notebook
+94|The Delegate|Leatherette Organizer Notebook
+95|The Abettor|Eco-Friendly Notebook
+96|The Assistant|Eco-Friendly Notebook
+(p1 cover, p97 back cover)
