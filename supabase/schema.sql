@@ -105,6 +105,14 @@ create trigger orders_touch before update on public.orders for each row execute 
 drop trigger if exists profiles_touch on public.profiles;
 create trigger profiles_touch before update on public.profiles for each row execute function public.touch_updated_at();
 
+-- ───────────────────────────── stock: atomic decrement when an order is paid (never below zero)
+create or replace function public.decrement_stock(p_id text, p_qty integer) returns void
+language sql security definer set search_path = public as $$
+  update public.products set stock = greatest(stock - p_qty, 0) where id = p_id;
+$$;
+revoke all on function public.decrement_stock(text, integer) from public, anon, authenticated;
+grant execute on function public.decrement_stock(text, integer) to service_role;
+
 -- ───────────────────────────── RLS: deny-all for anon/authenticated (service role bypasses RLS)
 alter table public.products   enable row level security;
 alter table public.categories enable row level security;

@@ -105,6 +105,7 @@ export function toCard(p: Product): ProductCard {
     priceOnRequest: p.priceOnRequest && !variantMin,
     image: p.images[0] ?? "/placeholder.svg",
     hasVariants: p.variants.length > 0,
+    inStock: p.stock > 0,
   };
 }
 
@@ -134,22 +135,25 @@ const CATEGORY_ORDER = [
 
 export const CATEGORY_IMAGES: Record<string, string> = {
   "Festive Hampers & Gift Boxes": "/thumbs/unwrap/unwrap-p13-2.webp",
-  "Gourmet & Chocolates": "/thumbs/smoor/smoor-p4.webp",
-  "Dry Fruits & Nuts": "/thumbs/dryfruits/dry-p14.webp",
-  "Home & Kitchen Appliances": "/thumbs/lifelong/llhfdg01.webp",
+  "Gourmet & Chocolates": "/thumbs/smoor/smoor-p16.webp",
+  "Dry Fruits & Nuts": "/thumbs/dryfruits/dry-p1.webp",
+  "Home & Kitchen Appliances": "/thumbs/lifelong-banners/llb-p3.webp",
   "Cookware & Kitchen Tools": "/thumbs/lifelong/llcic002.webp",
   "Drinkware & Bottles": "/thumbs/bottles/bottle-p2.webp",
-  "Copper Collection": "/thumbs/tamta/tamta-c002.webp",
+  "Copper Collection": "/thumbs/tamta-banners/tamb-p19.webp",
   "Mobile & Tech Accessories": "/thumbs/lifelong/llpbvm52.webp",
   "Audio & Smart Gadgets": "/thumbs/fuzo/fuzo-p2.webp",
-  "Desk & Office": "/thumbs/eo/eo-p17a.webp",
+  "Desk & Office": "/thumbs/eo/eo-p1a.webp",
   "Travel & Luggage": "/thumbs/hrx/hrx-p13.webp",
-  "Health & Wellness": "/thumbs/lifelong/llm99.webp",
-  "Fitness & Sports": "/thumbs/lifelong/lltm185.webp",
-  "Personal Care & Grooming": "/thumbs/lifelong/llpcm304.webp",
-  "Home Improvement & Safes": "/thumbs/lifelong/llhs20.webp",
+  "Health & Wellness": "/thumbs/lifelong-banners/llb-p34.webp",
+  "Fitness & Sports": "/thumbs/lifelong-banners/llb-p42.webp",
+  "Personal Care & Grooming": "/thumbs/lifelong-banners/llb-p40.webp",
+  "Home Improvement & Safes": "/thumbs/lifelong-banners/llb-p29.webp",
   "Stationery & Notebooks": "/thumbs/fuzo/fuzo-p86.webp",
 };
+
+/** Focal point for landscape artwork when cropped into tiles (Lifelong banners keep the photo on the right). */
+export const imagePosition = (src: string) => (src.includes("lifelong-banners") ? "80% 50%" : src.includes("/hrx/") ? "70% 50%" : "50% 50%");
 
 export async function getCategories(): Promise<Category[]> {
   const products = await getAllProducts();

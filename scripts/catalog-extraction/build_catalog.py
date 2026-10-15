@@ -34,13 +34,9 @@ def add(name, brand, category, sub, images, price=None, sku=None, short="", high
         if prices and price is None:
             price = min(prices)
     if desc is None:
-        bits = [f"{name} by {brand}." if brand not in name else f"{name}."]
-        if short:
-            bits.append(short.rstrip(".") + ".")
-        if highlights:
-            bits.append("Key features: " + ", ".join(h.rstrip(".") for h in highlights[:6]) + ".")
-        bits.append("Available for personal gifting and for bulk corporate orders with custom branding from BrandingDelight.")
-        desc = " ".join(bits)
+        # Plain, factual copy from the catalogue; highlights/specs are rendered separately on the page.
+        d = (short or name).strip().rstrip(".")
+        desc = (d[:1].upper() + d[1:] + ".") if d else ""
     products.append({
         "id": slug, "slug": slug, "name": name, "brand": brand, "category": category, "subcategory": sub,
         "price": price, "mrp": price, "sku": sku, "shortDescription": short, "description": desc,
@@ -282,7 +278,7 @@ for pg in range(4, 30):
     add(f"LOYKA {name}", "LOYKA", "Gourmet & Chocolates" if sub == "Almond Brittles" else "Festive Hampers & Gift Boxes", sub,
         [f"/catalog/loyka/loyka-p{pg}.webp"], price=mrp, short=(", ".join(items[:4]) if items else name),
         highlights=items[:10], catalog="LOYKA Diwali Catalog 2026", tags=["diwali", "gourmet", "festive"],
-        desc=f"LOYKA {name} - a premium Diwali gift. " + ("Includes: " + "; ".join(items) + "." if items else "") + " Perfect for festive and corporate gifting.")
+        desc=f"The LOYKA {name} is a premium Diwali gift, packed with handcrafted almond brittles and festive treats. Ideal for family, friends and corporate gifting.")
 
 # ---------------------------------------------------------------- SMOOR
 sm = pages_text("SMOOR Diwali 2026 (1).pdf")
@@ -377,7 +373,7 @@ for code, pg, idx, price in UH:
         {"COP": "Corporate Hampers", "LUX": "Luxury Hampers", "BOX": "Gourmet Gift Boxes"}[code[:3]],
         [f"/catalog/unwrap/unwrap-p{pg}-{idx}.webp"], price=price, sku=code, short="Includes " + ", ".join(items[:5]),
         highlights=items, catalog="Unwrap Happiness Sept 2026", tags=["hamper", "corporate gifting", "gourmet"],
-        desc=f"{kind} {code} by Unwrap Happiness. Includes: " + "; ".join(items) + ". Fully customisable with corporate messaging, custom design and branded ribbons. Images are for reference.")
+        desc=f"A curated {kind.lower()} by Unwrap Happiness, beautifully packed for festive and corporate gifting. Every hamper can be customised with your messaging, custom design and branded ribbons. Images are for reference; contents may vary slightly with availability.")
 add("Unwrap Happiness Corporate Hamper COP012 (Tray Set)", "Unwrap Happiness", "Festive Hampers & Gift Boxes", "Corporate Hampers",
     ["/catalog/unwrap/unwrap-p12-2.webp"], sku="COP 012",
     variants=[{"id": "tray1", "label": "Tray 1", "price": 3030}, {"id": "tray2", "label": "Tray 2", "price": 3260}, {"id": "tray3", "label": "Tray 3", "price": 3485}],

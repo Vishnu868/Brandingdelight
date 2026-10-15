@@ -236,7 +236,6 @@ function DrawerCategory({ c }: { c: Category }) {
       <div className="flex items-center">
         <Link href={`/category/${c.slug}`} className="flex flex-1 items-center gap-3 px-5 py-3.5 text-[15px]">
           {c.name}
-          <span className="text-xs text-muted">{c.count}</span>
         </Link>
         <button className="px-5 py-3.5 text-muted" onClick={() => setOpen(!open)} aria-label={`Show ${c.name} subcategories`}>
           <ChevronRight size={18} className={`transition ${open ? "rotate-90" : ""}`} />
@@ -247,7 +246,7 @@ function DrawerCategory({ c }: { c: Category }) {
           {c.subcategories.map((s) => (
             <li key={s.slug}>
               <Link href={`/category/${c.slug}?sub=${s.slug}`} className="block px-8 py-2.5 text-sm text-ink-soft">
-                {s.name} <span className="text-xs text-muted">({s.count})</span>
+                {s.name}
               </Link>
             </li>
           ))}

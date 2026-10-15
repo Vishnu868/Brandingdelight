@@ -29,6 +29,9 @@ export function ProductCard({ p, priority = false }: { p: Card; priority?: boole
           fetchPriority={priority ? "high" : "auto"}
           className={`size-full transition duration-500 group-hover:scale-[1.04] ${cover ? "object-cover" : "object-contain p-1.5"}`}
         />
+        {!p.inStock && !p.priceOnRequest && (
+          <span className="absolute left-2 top-2 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-danger">Sold out</span>
+        )}
         {p.priceOnRequest && (
           <span className="absolute left-2 top-2 rounded-full bg-ink/85 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
             Bulk / Quote
@@ -59,7 +62,7 @@ export function ProductCard({ p, priority = false }: { p: Card; priority?: boole
           ) : (
             <p className="text-[13px] font-semibold text-maroon">Price on request</p>
           )}
-          {p.price != null && !p.priceOnRequest && !p.hasVariants && (
+          {p.price != null && !p.priceOnRequest && !p.hasVariants && p.inStock && (
             <button
               aria-label="Add to cart"
               onClick={() => {

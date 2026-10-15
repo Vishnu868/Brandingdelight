@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { BadgeCheck, Building2, CreditCard, Gift, Palette, Truck } from "lucide-react";
 import { HeroCarousel, type Slide } from "@/components/HeroCarousel";
+import { BrandShowcase, toBrandTiles } from "@/components/BrandTiles";
 import { Rail } from "@/components/Rail";
-import { getBrands, getCards, getCategories } from "@/lib/catalog";
+import { getBrands, getCards, getCategories, imagePosition } from "@/lib/catalog";
 import { whatsappLink } from "@/lib/format";
 import type { ProductCard } from "@/lib/types";
 
@@ -106,7 +107,7 @@ export default async function Home() {
             <Link key={c.slug} href={`/category/${c.slug}`} className="group text-center">
               <span className="mx-auto block aspect-square w-full max-w-[110px] overflow-hidden rounded-full border-2 border-white bg-white shadow-[var(--shadow-card)] transition group-hover:border-gold">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.image} alt="" loading="lazy" className="size-full object-cover transition duration-500 group-hover:scale-110" />
+                <img src={c.image} alt="" loading="lazy" style={{ objectPosition: imagePosition(c.image) }} className="size-full object-cover transition duration-500 group-hover:scale-110" />
               </span>
               <span className="mt-2 line-clamp-2 block text-[11.5px] font-medium leading-tight text-ink-soft sm:text-[13px]">{c.name}</span>
             </Link>
@@ -188,18 +189,7 @@ export default async function Home() {
       <Rail eyebrow="Travel" title="Luggage & travel gear" href="/category/travel-luggage" items={pick(cards, (c) => c.category === "Travel & Luggage")} />
       <Rail eyebrow="Stay fit" title="Wellness & fitness" href="/category/health-wellness" items={spread((c) => c.category === "Health & Wellness" || c.category === "Fitness & Sports")} />
 
-      {/* brands */}
-      <section className="container-x mt-14 sm:mt-20">
-        <p className="eyebrow text-center">Our brands</p>
-        <h2 className="h-display mt-1 text-center text-[26px] font-semibold sm:text-[32px]">Genuine products from brands you trust</h2>
-        <div className="mt-6 flex flex-wrap justify-center gap-2.5">
-          {brands.map((b) => (
-            <Link key={b.slug} href={`/brand/${b.slug}`} className="rounded-full border border-line bg-white px-5 py-2.5 text-sm font-semibold transition hover:border-maroon hover:text-maroon">
-              {b.name} <span className="ml-1 text-xs font-normal text-muted">{b.count}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <BrandShowcase tiles={toBrandTiles(brands, (n) => cards.find((c) => c.brand === n)?.image).slice(0, 10)} />
     </>
   );
 }

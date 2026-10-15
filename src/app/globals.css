@@ -123,3 +123,7 @@ body {
 @utility safe-bottom {
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+@utility section-label {
+  @apply text-[11.5px] font-semibold uppercase tracking-[0.2em] text-muted;
+}

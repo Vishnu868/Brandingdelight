@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Eye, EyeOff, Pencil, PlusCircle, Search, Star, Trash2 } from "lucide-react";
+import { Copy, Eye, EyeOff, Pencil, PlusCircle, Search, Star, Trash2 } from "lucide-react";
 import { formatINR, thumb } from "@/lib/format";
 import { useAdminData, useAdminMutation } from "@/lib/use-admin";
 import { useToast } from "@/lib/store";
@@ -78,8 +78,11 @@ export default function AdminProducts() {
                 {p.brand} · {p.category} › {p.subcategory}
                 {p.sku && ` · ${p.sku}`}
               </p>
-              <p className="text-sm font-bold">
+              <p className="flex flex-wrap items-center gap-x-3 text-sm font-bold">
                 {p.price != null ? formatINR(p.price) : p.variants.length ? `${p.variants.length} options` : <span className="font-medium text-maroon">On request</span>}
+                <span className={`text-xs font-semibold ${p.stock <= 0 ? "text-danger" : p.stock <= 5 ? "text-amber-700" : "text-muted"}`}>
+                  {p.stock <= 0 ? "Out of stock" : `Stock: ${p.stock}`}
+                </span>
               </p>
             </div>
             <div className="flex shrink-0 items-center gap-0.5">
@@ -89,6 +92,9 @@ export default function AdminProducts() {
               <IconBtn title={p.active === false ? "Show on store" : "Hide from store"} onClick={() => patch(p, { active: p.active === false })}>
                 {p.active === false ? <EyeOff size={17} /> : <Eye size={17} />}
               </IconBtn>
+              <Link href={`/admin/products/new?from=${encodeURIComponent(p.id)}`} className="rounded-full p-2 hover:bg-sand" title="Duplicate as new product">
+                <Copy size={17} />
+              </Link>
               <Link href={`/admin/products/${encodeURIComponent(p.id)}`} className="rounded-full p-2 hover:bg-sand" title="Edit">
                 <Pencil size={17} />
               </Link>

@@ -31,6 +31,9 @@ export async function POST(req: Request) {
     if (!(qty >= 1 && qty <= 999)) return bad("Invalid quantity");
     const found = await priceFor(String(it.productId), it.variantId ? String(it.variantId) : undefined);
     if (!found) return bad("An item in your cart is no longer available for online purchase. Please remove it and try again.", 409);
+    const wanted = qty + lines.filter((l) => l.productId === found.product.id).reduce((n, l) => n + l.qty, 0);
+    if (found.product.stock < wanted)
+      return bad(found.product.stock > 0 ? `Only ${found.product.stock} of "${found.product.name}" left in stock.` : `"${found.product.name}" is out of stock.`, 409);
     lines.push({ productId: found.product.id, name: found.product.name, variantLabel: found.label, price: found.price, qty, image: found.product.images[0] ?? "" });
   }
   const subtotal = lines.reduce((n, l) => n + l.price * l.qty, 0);

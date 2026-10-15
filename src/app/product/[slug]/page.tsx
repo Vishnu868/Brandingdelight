@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CheckCircle2, Palette } from "lucide-react";
+import { Palette } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { BuyBox } from "@/components/BuyBox";
 import { Gallery } from "@/components/Gallery";
@@ -32,6 +32,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const all = await getAllProducts();
   const related = all.filter((x) => x.subcategory === p.subcategory && x.id !== p.id).slice(0, 10);
   const fromBrand = all.filter((x) => x.brand === p.brand && x.subcategory !== p.subcategory).slice(0, 10);
+  const norm = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  // Only show a separate description block when it adds something beyond the summary under the title.
+  const showDescription = Boolean(p.description) && !norm(p.description).startsWith((norm(p.shortDescription) || "~"));
+  const inside = /hamper|box|tin|tray|set|tote|chest|collection/i.test(p.name) && p.highlights.length > 2;
   const price = p.price ?? (p.variants.length ? Math.min(...p.variants.map((v) => v.price)) : null);
 
   const jsonLd = {
@@ -57,61 +61,66 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <Link href={`/brand/${slugify(p.brand)}`} className="eyebrow hover:underline">
             {p.brand}
           </Link>
-          <h1 className="h-display mt-2 text-[26px] font-semibold leading-tight sm:text-[34px]">{p.name}</h1>
-          <p className="mt-2 text-xs text-muted">
-            {p.sku && <>SKU: {p.sku} · </>}
+          <h1 className="h-display mt-2 text-[27px] font-semibold leading-[1.15] tracking-tight sm:text-[36px]">{p.name}</h1>
+          <p className="mt-2 text-[12.5px] tracking-wide text-muted">
             {p.subcategory}
+            {p.sku && <> · Code {p.sku}</>}
           </p>
-          {p.shortDescription && p.shortDescription !== p.name && <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">{p.shortDescription}</p>}
+          {p.shortDescription && norm(p.shortDescription) !== norm(p.name) && (
+            <p className="mt-4 line-clamp-4 text-[15.5px] leading-[1.7] text-ink-soft">{p.shortDescription}</p>
+          )}
           <div className="mt-6">
             <BuyBox p={p} />
           </div>
         </div>
       </div>
 
-      <div className="mt-12 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
-        <section className="card p-5 sm:p-8">
-          <h2 className="h-display text-2xl font-semibold">Product details</h2>
-          <p className="mt-3 whitespace-pre-line text-[15px] leading-relaxed text-ink-soft">{p.description}</p>
+      <div className="mt-12 grid gap-10 border-t border-line pt-10 lg:mt-16 lg:grid-cols-[1fr_400px] lg:gap-16">
+        <div className="space-y-10">
+          {showDescription && (
+            <section>
+              <h2 className="section-label">About this product</h2>
+              <p className="mt-4 max-w-[62ch] whitespace-pre-line text-[16px] leading-[1.8] text-ink-soft">{p.description}</p>
+            </section>
+          )}
           {p.highlights.length > 0 && (
-            <>
-              <h3 className="mt-6 text-sm font-semibold uppercase tracking-wider text-muted">{/hamper|box|tin|tray|set/i.test(p.name) ? "What's inside" : "Highlights"}</h3>
-              <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            <section>
+              <h2 className="section-label">{inside ? "What's inside" : "Key features"}</h2>
+              <ul className="mt-4 grid gap-x-10 sm:grid-cols-2">
                 {p.highlights.map((h) => (
-                  <li key={h} className="flex gap-2 text-[14px]">
-                    <CheckCircle2 size={17} className="mt-0.5 shrink-0 text-success" /> {h}
+                  <li key={h} className="flex items-start gap-3 border-b border-line/70 py-3 text-[15px] leading-snug text-ink">
+                    <span className="mt-[7px] size-1.5 shrink-0 rotate-45 bg-gold" aria-hidden />
+                    {h}
                   </li>
                 ))}
               </ul>
-            </>
-          )}
-        </section>
-        <div className="space-y-6">
-          {p.specs.length > 0 && (
-            <section className="card p-5 sm:p-6">
-              <h2 className="h-display text-xl font-semibold">Specifications</h2>
-              <dl className="mt-3 divide-y divide-line text-sm">
-                {[["Brand", p.brand], ["Category", p.subcategory], ...p.specs.map((s) => [s.label, s.value])].map(([k, v]) => (
-                  <div key={k} className="grid grid-cols-[40%_1fr] gap-3 py-2.5">
-                    <dt className="text-muted">{k}</dt>
-                    <dd className="font-medium">{v}</dd>
-                  </div>
-                ))}
-              </dl>
             </section>
           )}
-          <section className="card !bg-gold-soft p-5 sm:p-6">
-            <h2 className="flex items-center gap-2 text-base font-semibold">
-              <Palette size={18} className="text-gold" /> Custom branding available
+          {!showDescription && !p.highlights.length && <p className="text-[16px] leading-[1.8] text-ink-soft">{p.description || p.shortDescription}</p>}
+        </div>
+
+        <aside className="space-y-6">
+          <section>
+            <h2 className="section-label">Specifications</h2>
+            <dl className="mt-4 overflow-hidden rounded-2xl border border-line bg-white">
+              {[["Brand", p.brand], ...p.specs.map((s) => [s.label, s.value])].map(([k, v], i) => (
+                <div key={k + i} className={`grid grid-cols-[42%_1fr] gap-4 px-5 py-3.5 text-[14px] ${i % 2 ? "bg-cream/60" : ""}`}>
+                  <dt className="text-muted">{k}</dt>
+                  <dd className="font-medium text-ink">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+          <section className="rounded-2xl border-l-4 border-gold bg-white px-5 py-5">
+            <h2 className="flex items-center gap-2 text-[15px] font-semibold">
+              <Palette size={17} className="text-gold" /> Add your company logo
             </h2>
-            <p className="mt-2 text-sm text-ink-soft">
-              Add your company logo by laser engraving, screen printing, UV / DTF printing or custom sleeves. Ideal for employee gifts, client hampers and events.
-            </p>
+            <p className="mt-1.5 text-[14px] leading-relaxed text-muted">Laser engraving, screen, UV or DTF printing and custom sleeves for employee and client gifting.</p>
             <Link href="/corporate-gifting" className="mt-3 inline-block text-sm font-semibold text-maroon">
               Request a bulk quote →
             </Link>
           </section>
-        </div>
+        </aside>
       </div>
 
       <Rail eyebrow="You may also like" title="Similar products" href={`/category/${slugify(p.category)}?sub=${slugify(p.subcategory)}`} items={related.map(toCard)} />

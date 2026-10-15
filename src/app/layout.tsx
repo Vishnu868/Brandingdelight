@@ -32,10 +32,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const categories = await getCategories();
   return (
     <html lang="en-IN" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-dvh">
+      <body className="min-h-dvh pb-16 lg:pb-0">
         <AuthProvider>
           <Header categories={categories} />
-          <main className="min-h-[60vh] pb-20 lg:pb-0">{children}</main>
+          <main className="min-h-[60vh]">{children}</main>
           <Footer categories={categories} />
           <MobileTabBar />
           <Toaster />
