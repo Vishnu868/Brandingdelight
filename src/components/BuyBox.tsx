@@ -1,10 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Check, Heart, MessageCircle, Minus, Plus, ShieldCheck, ShoppingBag, Truck, Zap } from "lucide-react";
+import { Heart, MessageCircle, Minus, Plus, ShieldCheck, ShoppingBag, Truck, Zap } from "lucide-react";
 import { formatINR, FREE_SHIPPING_THRESHOLD, whatsappLink } from "@/lib/format";
 import { useCart, useToast, useWishlist } from "@/lib/store";
-import { PaymentBadges } from "./PaymentBadges";
 import { useMounted } from "./Header";
 import type { Product } from "@/lib/types";
 
@@ -22,7 +21,9 @@ export function BuyBox({ p }: { p: Product }) {
 
   const variant = p.variants.find((v) => v.id === variantId);
   const price = variant?.price ?? p.price;
-  const buyable = price != null && !(p.priceOnRequest && !variant);
+  const priced = price != null && !(p.priceOnRequest && !variant);
+  const soldOut = priced && p.stock <= 0;
+  const buyable = priced && !soldOut;
 
   const addToCart = () => {
     if (!buyable) return;
@@ -37,7 +38,7 @@ export function BuyBox({ p }: { p: Product }) {
   return (
     <div>
       <div className="flex items-end gap-3">
-        {buyable ? (
+        {buyable || soldOut ? (
           <>
             <p className="text-[30px] font-bold leading-none">{formatINR(price!)}</p>
             <p className="pb-1 text-xs text-muted">MRP · inclusive of all taxes</p>
@@ -46,7 +47,9 @@ export function BuyBox({ p }: { p: Product }) {
           <p className="text-2xl font-semibold text-maroon">Price on request</p>
         )}
       </div>
-      {!buyable && <p className="mt-1 text-sm text-muted">Bulk / corporate product — share your quantity and branding needs for the best price.</p>}
+      {soldOut && <p className="mt-3 inline-block rounded-full bg-red-50 px-3 py-1 text-sm font-semibold text-danger">Out of stock</p>}
+      {buyable && p.stock <= 5 && <p className="mt-3 text-sm font-semibold text-danger">Only {p.stock} left in stock</p>}
+      {!priced && <p className="mt-1 text-sm text-muted">Bulk / corporate product — share your quantity and branding needs for the best price.</p>}
 
       {p.variants.length > 0 && (
         <div className="mt-6">
@@ -110,7 +113,7 @@ export function BuyBox({ p }: { p: Product }) {
           </>
         ) : (
           <a href={whatsappLink(quoteMsg)} target="_blank" rel="noreferrer" className="btn-primary flex-1 !py-3.5">
-            <MessageCircle size={18} /> Get a quote on WhatsApp
+            <MessageCircle size={18} /> {soldOut ? "Ask about restock on WhatsApp" : "Get a quote on WhatsApp"}
           </a>
         )}
         <button
@@ -150,13 +153,7 @@ export function BuyBox({ p }: { p: Product }) {
           <li className="flex gap-2">
             <ShieldCheck size={17} className="shrink-0 text-gold" /> 100% genuine product with brand warranty
           </li>
-          <li className="flex gap-2">
-            <Check size={17} className="shrink-0 text-gold" /> Secure checkout — UPI, Visa, Mastercard, RuPay, American Express, net banking
-          </li>
         </ul>
-        <div className="mt-4">
-          <PaymentBadges />
-        </div>
       </div>
 
       {/* sticky mobile action bar */}
@@ -194,7 +191,7 @@ export function BuyBox({ p }: { p: Product }) {
           </>
         ) : (
           <a href={whatsappLink(quoteMsg)} target="_blank" rel="noreferrer" className="btn-primary flex-1">
-            <MessageCircle size={18} /> Get a quote
+            <MessageCircle size={18} /> {soldOut ? "Ask about restock" : "Get a quote"}
           </a>
         )}
       </div>

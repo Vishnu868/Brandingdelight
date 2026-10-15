@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Listing } from "@/components/Listing";
 import { ListingSkeleton } from "@/components/ListingSkeleton";
-import { getCards, getCategories } from "@/lib/catalog";
+import { getCards, getCategories, imagePosition } from "@/lib/catalog";
 
 export const revalidate = 600;
 
@@ -34,7 +34,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           <div className="no-scrollbar -mx-4 mt-5 flex gap-2 overflow-x-auto px-4 md:max-w-[70%] md:flex-wrap">
             {cat.subcategories.map((s) => (
               <Link key={s.slug} href={`/category/${cat.slug}?sub=${s.slug}`} className="chip shrink-0" scroll={false}>
-                {s.name} <span className="text-muted">{s.count}</span>
+                {s.name}
               </Link>
             ))}
           </div>
@@ -43,6 +43,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
         <img
           src={cat.image}
           alt=""
+          style={{ objectPosition: imagePosition(cat.image) }}
           className="absolute right-6 top-1/2 hidden aspect-square h-[85%] -translate-y-1/2 rounded-full border-4 border-white object-cover shadow-[var(--shadow-pop)] md:block"
         />
       </div>

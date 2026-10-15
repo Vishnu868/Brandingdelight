@@ -1,5 +1,7 @@
 import "server-only";
 import crypto from "node:crypto";
+import { revalidateTag } from "next/cache";
+import { PRODUCTS_TAG } from "./catalog";
 import { supabaseAdmin } from "./supabase/server";
 import type { Order } from "./types";
 
@@ -37,7 +39,15 @@ export async function getOrder(id: string) {
   const db = supabaseAdmin();
   if (!db) return null;
   const { data } = await db.from("orders").select("*").eq("id", id).maybeSingle();
-  return data ? rowToOrder(data) : null;
+  if (!data) return null;
+  const order = rowToOrder(data);
+  // Reduce stock once per order (only runs on the pending→paid transition above).
+  for (const l of order.items) {
+    const { error } = await db.rpc("decrement_stock", { p_id: l.productId, p_qty: l.qty });
+    if (error) console.error("[orders] stock update failed", l.productId, error.message);
+  }
+  revalidateTag(PRODUCTS_TAG);
+  return order;
 }
 
 export async function markPaid(razorpayOrderId: string, paymentId: string, method?: string, network?: string) {
@@ -50,5 +60,13 @@ export async function markPaid(razorpayOrderId: string, paymentId: string, metho
     .in("status", ["pending", "failed"])
     .select("*")
     .maybeSingle();
-  return data ? rowToOrder(data) : null;
+  if (!data) return null;
+  const order = rowToOrder(data);
+  // Reduce stock once per order (only runs on the pending→paid transition above).
+  for (const l of order.items) {
+    const { error } = await db.rpc("decrement_stock", { p_id: l.productId, p_qty: l.qty });
+    if (error) console.error("[orders] stock update failed", l.productId, error.message);
+  }
+  revalidateTag(PRODUCTS_TAG);
+  return order;
 }

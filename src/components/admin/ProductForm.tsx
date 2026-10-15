@@ -12,13 +12,15 @@ const BLANK: Product = {
   highlights: [], specs: [], variants: [], images: [], tags: [], catalog: "", stock: 100, priceOnRequest: false, featured: false, active: true,
 };
 
-export function ProductForm({ initial }: { initial?: Product }) {
+/** `initial` edits an existing product; `copyOf` pre-fills a NEW product from an existing one. */
+export function ProductForm({ initial, copyOf }: { initial?: Product; copyOf?: Product }) {
   const router = useRouter();
   const mutate = useAdminMutation();
   const toast = useToast((s) => s.push);
   const { data } = useAdminData<{ products: Product[] }>("/api/admin/products");
-  const [p, setP] = useState<Product>(initial ?? BLANK);
-  const [highlights, setHighlights] = useState((initial?.highlights ?? []).join("\n"));
+  const seed = initial ?? (copyOf ? { ...copyOf, id: "", slug: "", sku: null, name: `${copyOf.name} (copy)` } : BLANK);
+  const [p, setP] = useState<Product>(seed);
+  const [highlights, setHighlights] = useState(seed.highlights.join("\n"));
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(0);
   const [urlInput, setUrlInput] = useState("");

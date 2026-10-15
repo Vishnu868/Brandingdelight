@@ -30,7 +30,7 @@ export type Product = {
 export type ProductCard = Pick<
   Product,
   "id" | "slug" | "name" | "brand" | "category" | "subcategory" | "price" | "mrp" | "priceOnRequest"
-> & { image: string; hasVariants: boolean };
+> & { image: string; hasVariants: boolean; inStock: boolean };
 
 export type Category = {
   name: string;
