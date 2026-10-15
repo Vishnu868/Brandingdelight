@@ -72,9 +72,7 @@ function LoginInner() {
     return (
       <div className="card mx-auto max-w-md p-8 text-center">
         <h1 className="h-display text-2xl font-semibold">Sign-in not configured yet</h1>
-        <p className="mt-2 text-sm text-muted">
-          Add your Firebase keys to <code>.env.local</code> (see SETUP.md) to enable phone OTP, Google and email login. Guests can still shop and check out.
-        </p>
+
       </div>
     );
 

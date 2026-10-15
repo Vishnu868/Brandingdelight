@@ -116,7 +116,7 @@ export default function CheckoutPage() {
         order_id: data.razorpayOrderId,
         name: SITE.name,
         description: `Order ${data.orderId}`,
-        image: `${location.origin}/favicon.svg`,
+        image: `${location.origin}/icon-512.png`,
         prefill: { name: addr.fullName, email: addr.email, contact: `+91${addr.phone}`, method },
         notes: { bd_order_id: data.orderId },
         theme: { color: "#7b1e2b" },
