@@ -1,0 +1,32 @@
+page|name|subtitle|mrp
+2|Tech Pouch (Black)|Water Resistant Organiser, 6 compartments, made in India|1599
+3|Tech Pouch (Olive Green)|Water Resistant Organiser, 6 compartments, made in India|1599
+4|Mini Tech Pouch (Black)|Pocket-Sized Carry Case with clip|1299
+5|Mini Tech Pouch (Olive Green)|Pocket-Sized Carry Case with clip|1299
+6|Mini Tech Pouch (Brown)|Pocket-Sized Carry Case with clip|1299
+7|Clockwise|Multifunctional Digital Clock with wireless charging stand, dual alarm, pen holder, USB-C|1799
+8|Time Board|Pomodoro Timer with Mini Whiteboard, 4 timers, magnetic, kickstand|1299
+9|ZOD|Ergonomic Laptop Stand, 3 height levels, adaptable head|2999
+10|Decider (Black)|Multifunctional Digital Clock with decision dice, pen stand, calendar, temperature & humidity|1499
+11|Decider (White)|Multifunctional Digital Clock with decision dice, pen stand, calendar, temperature & humidity|1499
+12|Mag Wallet Neo|Magnetic Wallet with Phone Stand, vegan leather, holds 4-5 cards|1299
+13|Mag Wallet (PU Black)|Magnetic Wallet with Phone Stand, PU leather, holds 4-5 cards|1499
+14|Desk Station (Black)|Multifunctional Desk Organiser with self-watering plant pot, spectacles holder, phone holder; patented, made in India|999
+15|Desk Station (Terrazzo White)|Multifunctional Desk Organiser with self-watering plant pot, spectacles holder, phone holder; patented, made in India|999
+16|Desk Station Sustainable|Utility Meets Nature - eco desk organiser with self-watering pot, spectacles & phone holder|999
+17|Versa Charge|Desk Organiser with 15W Fast Wireless Charger, tissue dispenser, self-watering planter|2999
+18|Versa|All in 1 Desk Organiser with tissue dispenser and self-watering planter|1399
+19|Versa Sustainable|Nature-Made Utility all-in-1 desk organiser with tissue dispenser and planter|1399
+20|Terra (Black)|Self Watering Plant Pot with microgreen starter kit|399
+21|Terra (Terrazzo White)|Self Watering Plant Pot with microgreen starter kit|399
+22|Terra Sustainable|Eco-Smart Design self watering plant pot|399
+23|Task Master Lite|Light Up Planner & Desk Organiser with acrylic writing board, phone holder|2999
+24|Task Master Neo|Light Up Planner & Organiser with clear acrylic writing board|3499
+25|Task Master|Light Up Planner & Desk Organiser with self-watering planter|3999
+26|Flappy (Black)|Foldable Desk Organizer - phone, watch, spectacles, keychain, pen & card holder|1299
+27|Flappy (Terrazzo White)|Foldable Desk Organizer - phone, watch, spectacles, keychain, pen & card holder|1299
+28|Modular|4 in 1 Desk Organiser - device holder, pen stand, cable organiser, 2 coasters|899
+29|Priority Board|Magnetic Things To Do Planner with marker & micro fiber cloth|1999
+30|Sprout|Botanical Planter & Pen Stand with seeds & soil|599
+31|Groovemate|Multi-compartment Desk Organizer with phone stand, 50:30:20 storage|1199
+32|Terrarium|Self Watering Plant Pot (wall mount or table), seeds & soil included|1199

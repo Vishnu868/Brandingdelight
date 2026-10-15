@@ -1,0 +1,249 @@
+page|idx|code|name|price|warranty
+4|1|LLMG93AUT|Lifelong LLMG93AUT Mixer Grinder with 2 Jars, 500W, Stainless Steel Blade (Liquidizing and Grinding Jar)|3000|2 Year
+4|2|LLMG21|Lifelong LLMG21 Maxo 500W Juicer Mixer Grinder (3 Jars)|2999|2 Year
+4|3|LLMG605|Lifelong Venti Mixer Grinder 550W, 3 Jar|4799|2 Year
+4|4|LLMG606|Lifelong Venti Mixer Grinder 650W, 3 Jars (Black)|5000|2 Year
+4|5|LLMG607|Lifelong Venti Mixer Grinder 650W, 3 Jar|4899|2 Year
+5|1|LLMG101|Lifelong Mixer Grinder for Home with 750W Motor and 3 Jars|7499|2 Year
+5|2|LLNB22|Lifelong Nutri Blender with 2 Jars for Liquid and Smoothies|2499|1 Year
+5|3|LLJMG04|Lifelong LLJMG04 Spinny 450W Juicer Mixer Grinder, 2 Jars|6000|2 Year
+5|4|LLEPB01|Lifelong Portable Blender, 500mAh Large Battery, Side Monster Blade, Dishwasher-Safe 300ml Jar, USB-C Charging|2099|1 Year
+5|5|LLCIJ01|Lifelong Electric Citrus Juicer, Dual Cones, 700ml Capacity, Powerful 40W Low-Noise Motor|2199|1 Year
+6|1|LLHB05|Lifelong 300W Stainless Steel Hand Blender - Low Noise, Anti-Splash|1600|1 Year
+6|2|LLGS201|Lifelong LLGS201 Open Single Burner Glass Gas Stove (27 x 29 x 9 cm), Manual Ignition, Black|2100|1 Year
+6|3|LLGSD01|Lifelong Gas Stove 2 Burner, High Efficiency CI Burner, Glass Top, Manual Ignition, ISI Certified LPG Stove, White Strip|6499|1 Year
+6|4|LLGSD02|Lifelong Gas Stove 2 Burner, Premium Brass Burner, Glass Top, Manual Ignition, ISI Certified LPG Stove, White Strip|7499|2 Year
+6|5|LLGSD03|Lifelong Gas Stove 2 Burner, Premium Brass Burner, Glass Top, Manual Ignition, ISI Certified LPG Stove, Black|8499|2 Year
+7|1|LLGSD04|Lifelong Gas Stove 2 Burner, Premium Brass Burner, Glass Top, Manual Ignition, ISI Certified LPG Stove, White Strip|8999|2 Year
+7|2|LLGSD05|Lifelong Gas Stove 2 Burner, Premium Brass Burner, Glass Top, Auto Ignition, ISI Certified LPG Stove, White Strip|9999|2 Year
+7|3|LLGSD06|Lifelong Gas Stove 3 Burner, Premium Brass Burner, Glass Top, Manual Ignition, ISI Certified, Black (1 Jumbo, 1 Medium, 1 Small)|10999|2 Year
+7|4|LLGSD07|Lifelong Gas Stove 3 Burner, Premium Brass Burner, Glass Top, Manual Ignition, ISI Certified, White Strip (1 Jumbo, 1 Medium, 1 Small)|11499|2 Year
+7|5|LLGS803|Lifelong Gas Stove 3 Burner, High Efficiency CI Burner, Glass Top, Auto Ignition, ISI Certified LPG Stove, Black|8500|1 Year
+8|1|LLGS27|Lifelong Gas Stove 4 Burner, High Efficiency CI Burner, Glass Top, Manual Ignition, ISI Certified LPG Stove, Black|7495|1 Year
+8|2|LLGS930|Lifelong Gas Stove 3 Burner, High Efficiency CI Burner, Glass Top, Manual Ignition, ISI Certified LPG Stove, Black|6400|1 Year
+8|3|LLGSD200|Lifelong Gas Stove 2 Burner, Premium Brass Burner, SS Top, Manual Ignition, ISI Certified LPG Stove|3999|2 Year
+8|4|LLGSD300|Lifelong Gas Stove 3 Burner, Premium Brass Burner, SS Top, Manual Ignition, ISI Certified LPG Stove|6000|2 Year
+8|5|LLGSD399|Lifelong Gas Stove 3 Burner, Premium Brass Burner, SS Top, Manual Ignition, ISI Certified (1 Jumbo, 1 Medium, 1 Small)|6500|2 Year
+9|1|LLIC102|Lifelong LLIC102 1800W Induction Cooktop, 7 Preset Indian Menus, Auto Shut-Off, Push Button, Portable Electric Stove|4400|1 Year
+9|2|LLIC30|Lifelong LLIC30 2000W Induction Cooktop, 7 Preset Indian Menus, Auto Shut-Off, Push Button, Portable Electric Stove|4999|1 Year
+9|3|LLIC60|Lifelong LLIC60 2200W Induction Cooktop, 7 Preset Indian Menus, Auto Shut-Off, Touch Control Panel, Portable Electric Stove|4400|1 Year
+9|4|LLIRC001|Lifelong Infrared Cooktop 2000W, 4 Cooking Modes, Digital Display, Soft Touch|4999|1 Year
+9|5|LLIRC002|Lifelong Infrared Cooktop 2200W, 4 Cooking Modes, Digital Display, Soft Touch|5999|1 Year
+10|1|LLEK60|Lifelong LLEK60 1500 Watt 1.5L Electric Kettle with 360 Degree Rotation Base|1599|1 Year
+10|2|LLEKC09|Lifelong Electric Kettle 1.5 Litre, 1500W Stainless Steel, Double Wall & Cool Touch Body, 360° Swivel Base, Auto Shut-Off (Black)|1999|1 Year
+10|3|LLEK02|Lifelong LLEK02 1500 Watt 1.8 Litre Electric Kettle with 360 Degree Rotation Base|1199|1 Year
+10|4|LLMC01|Lifelong Multifunction Cooker/Kettle 1.5 Litres (Boiling Milk, Eggs, Soup and Maggi/Noodles), Silver|2199|1 Year
+10|5|LLEKP03|Lifelong Electric Kettle 0.8 Litre with 2 Cups, 600W Stainless Steel, Double Wall, 360° Swivel Base, Water Level Indicator (Black)|999|1 Year
+11|1|LLEKP02|Lifelong Electric Kettle 1.5 Litre, 350W, Stainless Steel Inner Body, Auto Turn-Off|2199|1 Year
+11|2|LLEKG01|Lifelong Glass Electric Kettle 1.8L, 1350W, One Key Operation, Cool Touch Handle, Borosilicate Glass, LED Light, Auto Shut-Off (Black)|2399|1 Year
+11|3|LLEPK09|Lifelong 2-in-1 Portable Electric Kettle & Bottle for Travel 400ml, Digital Display, 4 Temperature Settings, 300W|3499|1 Year
+11|4|LLEKBT01|Lifelong LLEKBT01 Electric Kettle 1.5 Litre with 750ml SS Bottle|2000|1 Year
+11|5|LLECM09|Lifelong Automatic Yogurt & Curd Maker Machine for Home, Auto Temperature Regulation|1699|1 Year
+12|1|LLEEB09|Lifelong Egg Boiler for 7 Eggs, 350W, 3 Boiling Modes, One Touch Operation, Egg Poacher, Auto & Overheat Protection|999|1 Year
+12|2|LLEB05|Lifelong Electric Egg Boiler 360W (Transparent & Silver Grey), Stainless Steel Body & Heating Plate, Boils 7 Eggs, 3 Boiling Modes|3500|1 Year
+12|3|LLEPM09|Lifelong Electric Popcorn Maker Machine for Home, Non-Stick Popper, Lid Doubles as Serving Bowl|4999|1 Year
+12|4|LLPT10|Lifelong Bread Toaster 2 Slice, Auto-Cut-Off, Self-Centering, Removable Crumb Tray, Pop-Up Toaster|2199|1 Year
+12|5|LLSM120G|Lifelong Sandwich Griller Classic Pro 750W, 4 Slice Non-Stick Fixed Plates (Black)|1300|1 Year
+13|1|LLMF06|Lifelong Battery Operated Milk Frother, One Button Operation, Stainless Steel Whisk, Electric Foam Maker|250|
+13|2|LLMF02|Lifelong Handheld Milk Frother for Coffee, Battery-Operated with Stand - Pink|1499|1 Year
+13|3|LLMF03|Lifelong Handheld Milk Frother for Coffee, Battery-Operated with Stand - Blue|1499|1 Year
+13|4|LLMF05|Lifelong Rechargeable Milk Frother and Beater with USB Type-C, Double Spring Whisk, 3 Speed Settings|999|1 Year
+13|5|LLHM10|Lifelong Electric Hand Mixer 250W, 5-Speed Control, 2 Beaters & 2 Dough Hooks, Quick Eject Button|3000|1 Year
+14|1|LLHF26|Lifelong 2.5L Air Fryer for Home, 800W, Fry, Bake & Roast with Timer Control, Oil Free, 360° Hot Air Circulation|7999|1 Year
+14|2|LLHFD400|Lifelong 4.2 Litre Digital Air Fryer, Touch Control, 7 Preset Menu, Detachable Handle, Non-Stick Basket, Rapid Air Technology|12000|1 Year
+14|3|LLHFD600|Lifelong PuroGlass Air Fryer, 4.2L Glass Basket, 8 Preset Modes, 1350W, 360° Turbo Heat, LED Touch Control (White)|13999|1 Year
+14|4|LLHFDG01|Lifelong BRIK 2-in-1 Air Fryer & Grill, 1350W, 8 Preset Menus, 4.2L See-Through Basket, Detachable Flip Design, Touch Panel|17999|1 Year
+14|5|LLHFO02|Lifelong Air Fryer Oven 10L, 12 Preset Modes, 1350W, Glass Lid, LED Touch Display, Nonstick with Oil Drip Tray|17999|1 Year
+15|1|LLOT10A|Lifelong LLOT10A 10 Litres Oven, Toaster & Griller with Auto Shut Off and 30 Minute Timer, OTG for Baking, Pizza & Toasting (Black)|4999|1 Year
+15|2|LLOT20|Lifelong 20 Litres Oven, Toaster & Griller with Auto Shut Off, OTG for Baking Cake, Pizza, Grilling and Toasting|6999|1 Year
+15|3|LLCMK901|Lifelong Drip Coffee Maker for 5 Cups, Water Level Indicator, 750ml Borosilicate Carafe, 600W, Detachable Filter (Black)|3000|1 Year
+15|4|LLCMK910|Lifelong Drip Coffee Maker for 1 Cup, 350W, Borosilicate Carafe, Detachable Coffee Filter (Black)|1999|1 Year
+15|5|LLCMM01|Lifelong Moka Coffee Maker|1399|1 Year
+16|1|LLKT001|Lifelong Push Chopper 1600ml with Whisker, Multi-Purpose Vegetable, Onion & Garlic Chopper|699|
+16|2|LLKT002|Lifelong 1000ml Pull Chopper, Manual Vegetable, Onion & Garlic Cutter with Pull Cord|499|
+16|3|LLKT003|Lifelong Push Chopper 1000ml, Multi-Purpose Vegetable, Onion & Garlic Chopper|579|
+16|4|LLKT004|Lifelong Push Chopper 650ml, Compact Vegetable, Onion & Garlic Chopper for Small Kitchens|499|
+16|5|LLWC04|Lifelong USB Rechargeable Wireless Electric Chopper 30W, 250ml|1500|1 Year
+17|1|LLWC05|Lifelong USB Rechargeable Wireless Electric Food Chopper, 100W Motor, Portable|3999|2 Year
+17|2|LLCIK002|Lifelong Cast Iron Kadhai 24cm with Wooden Spatula, 3.3L, 2.4kg, Pre-Seasoned, Toxin & Teflon Free|2199|1 Year
+17|3|LLCIK004|Lifelong Cast Iron Kadhai 24cm with Glass Lid & Wooden Spatula, 3.3L, Pre-Seasoned, Gas & Induction Compatible|2799|1 Year
+17|4|LLCIFP009|Lifelong Cast Iron Fry Pan 8 inch (20cm) with Wooden Spatula|1999|1 Year
+17|5|LLCIFP010|Lifelong Cast Iron Fry Pan 10 inch (26cm) with Wooden Spatula|2299|1 Year
+18|1|LLCIC001|Lifelong Cast Iron Dosa Tawa & Kadai with Wooden Spatula, 30cm Tawa & 24cm Kadhai, Pre-Seasoned, Gas & Induction Friendly (2 Count, Black)|4899|1 Year
+18|2|LLCIC002|Lifelong Cast Iron Cookware Combo Set, 4-Piece Pre-Seasoned - Tawa (30cm), Kadhai (24cm), Fry Pan (20cm) & Tadka Pan, Gas & Induction Compatible|5999|1 Year
+18|3|LLCIP011|Lifelong Cast Iron Paniyaram Pan 12 Pits, 25ml Pit Capacity, 2kg, Pre-Seasoned Appam/Paddu Maker|1999|1 Year
+18|4|LLCIP012|Lifelong Cast Iron Paniyaram Pan 7 Cavity, 25ml Pit Capacity, Pre-Seasoned Appam/Paddu Maker, 2kg|2299|1 Year
+18|5|LLCIP012GL|Lifelong Cast Iron Paniyaram Pan with Handle, Glass Lid & Wooden Spatula|2299|1 Year
+19|1|LLCIFP006|Lifelong Cast Iron Fry Pan 6 inch (15.2cm) with Wooden Spatula|999|1 Year
+19|2|LLCIRT007|Lifelong Cast Iron Roti Tawa 255mm with Wooden Spatula|2199|1 Year
+19|3|LLCIT005|Lifelong Cast Iron Tawa 26cm with Wooden Spatula|2099|1 Year
+19|4|LLCIT006GR|Lifelong Dosa Tawa 30cm 2 in 1 with Grill|2999|1 Year
+19|5|LLCIT006|Lifelong Cast Iron Tawa 30cm with Wooden Spatula|2499|1 Year
+20|1|LLCIT026DH|Lifelong Pre-Seasoned 26cm Dosa Pan, Cast Iron Tawa for Roti & Dosa with Spatula & Handle, Gas & Induction Friendly (Black)|2299|1 Year
+20|2|LLCIGP008|Lifelong Cast Iron Grill Pan 260mm with Wooden Spatula|2499|1 Year
+20|3|LLCTSLW03|Lifelong Non-Stick Silicone Cooking Utensils Set, 3 Pcs with Wooden Handle|999|1 Year
+20|4|LLTBR01|Lifelong Double Walled Vacuum Insulated Tumbler with Handle 1200ml - Rose Quartz|2499|1 Year
+20|5|LLTBR03|Lifelong Double Walled Vacuum Insulated Tumbler 1200ml - Black|2499|1 Year
+21|1|LLTBR04|Lifelong Double Walled Vacuum Insulated Tumbler 900ml - Glacier|1999|1 Year
+21|2|LLTBR05|Lifelong Double-Walled Vacuum Insulated Tumbler 900ml, Hot 8 Hrs & Cold 12 Hrs, Leakproof Lid, Comfort-Grip (Navy)|1999|1 Year
+21|3|LLTBR06|Lifelong Double-Walled Vacuum Insulated Coffee Mug 600ml, Hot 8 Hrs & Cold 12 Hrs, Comfort-Grip (Green)|1899|1 Year
+21|4|LLCGT07|Lifelong Premium Copper Drinking Water Tumbler with Lid, 480ml, 100% Leak Proof|499|
+21|5|LLCBJ08|Lifelong Premium Pure Copper Plain Bed Side Jar Pot Water Bottle 1L|1899|
+22|1|LLVF002|Lifelong Thermosteel Flask 700ml Stainless Steel Water Bottle, 24 Hours Hot & Cold, Double Wall Vacuum Insulated, Leakproof (Green)|1249|1 Year
+22|2|LLBT03|Lifelong Stainless Steel Water Bottle 900ml, Leak-Proof, Easy Grip, Rust Free, Secure Cap (Beige)|649|1 Year
+22|3|LLVF005|Lifelong Thermosteel Flask 900ml Stainless Steel Water Bottle, 24 Hours Hot & Cold, Wooden Cap Finish, Leakproof (Beige)|1999|1 Year
+22|4|LLVF004|Lifelong Thermosteel Flask 900ml Stainless Steel Water Bottle, 24 Hours Hot & Cold, Double Wall Vacuum Insulated, Leakproof|1549|1 Year
+22|5|LLVF008|Lifelong Thermosteel Flask 1000ml Stainless Steel, Soft Touch, 24 Hours Hot & Cold, Double Wall Vacuum Insulated, Leakproof|1299|1 Year
+23|1|LLCBH02|Lifelong Premium Mist Bottle, Hammer Lacquer Copper Water Bottle, 900ml|1399|1 Year
+23|2|LLCB01|Lifelong Premium Mist Bottle, Matt Lacquer Copper Water Bottle, 900ml|1999|
+23|3|LLCBU03|Lifelong Premium Mist Bottle, Matt Lacquer Unique Copper Water Bottle, 900ml|1599|
+23|4|LLBT02|Lifelong Stainless Steel Water Bottle 750ml, Leak-Proof, Easy Grip, Rust Free, Secure Cap for School, Travel, Gym & Work|549|
+23|5|LLVF003|Lifelong Thermosteel Flask 900ml Stainless Steel Water Bottle, 24 Hours Hot & Cold, Double Wall Vacuum Insulated, Leakproof|1499|1 Year
+24|1|LLBTGL02|Lifelong Motivational Water Bottle with Time Markers, Leakproof Lid & Easy-Carry Handle|699|1 Year
+24|2|LLBTGL03|Lifelong 1000ml Motivational Water Bottle with Time Markers, Leakproof Lid & Carry Strap|499|1 Year
+24|3|LLTIIMB01|Lifelong Double Insulated Stainless Steel Mug with Temperature Display 510ml, Hot & Cold (Black)|2400|3 Months
+24|4|LLKWS09 Grey|Lifelong Digital Kitchen Weighing Scale, LCD Display, Tare & Mode Function, 5kg Capacity (Grey)|699|
+24|5|LLKWS09 Silver|Lifelong Digital Kitchen Weighing Scale with LCD Display, 5kg, Stainless Steel Platform, Tare & Unit Conversion (Silver)|1099|
+25|1|LLELB01|Lifelong Electric Lunch Box & Food Warmer, Set of 4 (2pcs 300ml + 2pcs 175ml), Plug-and-Heat, Portable, Shock-Proof|2299|1 Year
+25|2|LLMOM01|Lifelong 2-Tier Steamer/Momo/Modak Maker, Induction Compatible with Glass Lid & Riveted Handles, 20cm Stainless Steel|1299|1 Year
+25|3|LLIDCKR03|Lifelong Idli Cooker 3 Plate (12 Idlis), Stainless Steel, Induction and Gas Stove Compatible|1099|
+25|4|LLIDCKR06|Lifelong Idli Cooker 6 Plate (24 Idlis), Stainless Steel, Induction and Gas Stove Compatible|1399|
+25|5|LLDI10|Lifelong LLDI10 1000 Watts Dry Iron with 180° Swivel Cord (Blue)|999|2 Year
+26|1|LLDI50|Lifelong LLDI50 1000 Watts Dry Iron, Non-Stick Coating (White)|1200|2 Year
+26|2|LLSI16|Lifelong Steam Iron for Clothes 1300W, Vertical Steaming, Non-Stick Soleplate, Adjustable Temperature & Steam Control|1899|1 Year
+26|3|LLGRMS901|Lifelong 1250 Watt Garment Steamer, Handheld with Rest Stand, Portable & Foldable Mini Steam Press, 90ml Tank|5499|1 Year
+26|4|LLSCUDF003|Lifelong 6" Rechargeable Desk Fan with Light, White + Light Blue, AC100-240V Adapter, Type-C Charging|1999|1 Year
+26|5|LLSCUDF004|Lifelong 4" Rechargeable Desk Fan with Light, White, Type-C Charging|1399|1 Year
+27|1|LLUSBCF02|Lifelong 125mm Rechargeable USB Fan with Clip & LED Light, Blue|1899|1 Year
+27|2|LLUSBCF03|Lifelong 4" USB Clip Fan with 2000mAh Battery, Mocha Brown, Type-C Charging|1149|1 Year
+27|3|LLUSBCF04|Lifelong 4" USB Clip Fan with 2000mAh Battery, Matcha Green, Type-C Charging|1149|1 Year
+27|4|LLFH922A|Lifelong Infinia Plus Room Heater for Home, 2000-Watt Blower Heater, Two Heat Settings, Adjustable Thermostat|1600|1 Year
+27|5|LLQH923|Lifelong LLQH923 Infinia 800W (ISI Certified) Quartz Room Heater with 2 Power Settings, Overheating Protection|2200|1 Year
+28|1|LLHH921|Lifelong Regalia Plus 1200 Watts Halogen Room Heater with 3 Power Settings, ISI Certified|3000|1 Year
+28|2|LLQH925|Lifelong Dyno 800 Watts Quartz Room Heater with 2 Power Settings, ISI Certified, 2 Rod, 1.5m Cord|2400|1 Year
+30|1|LLHS20|Lifelong Locker for Home & Office 56 Litres, Digital Safe with Electronic Keypad, 14.4kg, 30 x 35 x 50 cm (Black)|12000|1 Year
+30|2|LLHSL12|Lifelong LLHSL12 34 Litres Home Safe Electronic Locker with LED Light, 1.2 Cubic Feet, 10.5kg, 30 x 38 x 30 cm (Black)|9000|1 Year
+30|3|LLHSL08|Lifelong 22 Litres Home Safe Electronic Locker with LED Light, 0.8 Cubic Feet, 5.5kg, 25 x 35 x 25 cm (Black)|8500|1 Year
+30|4|LLHSL03|Lifelong 8.6 Litres Home Safe Electronic Locker with LED Light, 0.3 Cubic Feet, 2.3kg, 17 x 23 x 17 cm (Black)|8000|1 Year
+30|5|LLHSM01|Lifelong LLHSM01 8.6L Home Safe, Mechanical Locker with Mechanical Locking, 0.3 Cubic Feet (Black)|5999|6 Months
+31|1|LLHSBP20|Lifelong 56 Litre Digital Fingerprint Safe Locker, 50 Fingerprint Storage, LED Display & Alarm|19999|
+31|2|LLHSD20|Lifelong Digital Safe Locker for Home & Jewellery 52L, Strong Steel Construction, Drop Slot with Anti-Fishing Design, Depository Locker (Black)|19999|6 Months
+31|3|LLHSLBP08|Lifelong 22L Digital Fingerprint Safe Locker, 50 Fingerprint Storage, Motorized Locking, LED Display & Alarm, Override Key|11999|1 Year
+31|4|LLHSBP12|Lifelong 34L Digital Fingerprint Safe Locker, 50 Fingerprint Storage, Motorized Locking, LED Display & Alarm, Override Key|12999|1 Year
+31|5|LLHARS02|Lifelong Washing Machine Stand, Adjustable Metal Trolley with Wheels, 8 Anti-Vibration Rubber Pads, Holds up to 250kg|4499|1 Year
+32|1|LLCSMR001|Lifelong Heavy Duty Spin Mop with Bucket, 360° Flexible Flat Mop Head, Self-Cleaning System, Reusable Microfiber Pad|4999|6 Months
+32|2|LLHIESM01|Lifelong Electric Spin Mop & Scrubber, 90 min Run Time, Adjustable Handle, LED Display, Type-C Charging, 3-Speed Modes|5999|6 Months
+32|3|LLELR36|Lifelong 2-in-1 Rechargeable Double Head Lint Remover with Brush, 3 Speeds, for Woollen & All Fabrics|2999|1 Year
+32|4|LLELR09|Lifelong 2-in-1 Lint Remover for Clothes with Brush, Fabric Shaver for Woollens, Sofa Covers, Dust & Pet Hair|1899|1 Year
+32|5|LLELR18|Lifelong 2-in-1 Lint Remover for Clothes with Brush, Fabric Shaver, 2 Metre USB Cable|1999|1 Year
+33|1|LLEPF09|Lifelong 10.1 Inch Digital Photo Frame, 1280x800 IPS HD Touch Screen, Wi-Fi, 32GB, Video & Sound, Frameo App|19999|1 Year
+33|2|LLETK09|Lifelong 62 in 1 Magnetic Precision Screwdriver Set, Tool Kit for Home, Electronics & Laptops, Extendable Flexible Shaft|1499|1 Year
+35|1|LLM306|Lifelong LLM306 500W Electric Spa Foot Massager Machine with 8 Manual Rollers, Digital Panel, Bubble Bath & Water Heating (Brown)|5000|1 Year
+35|2|LLM477|Lifelong Automatic Foot Spa Massager with 6 Shiatsu Rollers, Adjustable Temperature Control, Bubble Spa, Customizable Modes|14999|1 Year
+35|3|LLM279|Lifelong LLM279 Corded Electric Foot Spa & Massager with Automatic Rollers, Digital Panel, Bubble Bath & Water Heating (Brown)|7999|1 Year
+35|4|LLM72|Lifelong Foot Massager Machine with Kneading Function, also Leg Calf Massager, Corded, Customizable Settings (Brown)|16300|1 Year
+35|5|LLM81|Lifelong Foot Massager Machine with Heat & Kneading Function, also Leg Calf Massager, Customizable Settings (Brown)|17300|1 Year
+36|1|LLGM189|Lifelong LLGM189 Gun Massager with 5 Massage Heads, 4700 RPM, 3 Modes & 99 Speed Settings, Rechargeable, Cold Compression|4999|1 Year
+36|2|LLGM109|Lifelong LLGM109 Percussion Massage Gun, 6 Speeds & 7 Massage Heads, Cordless, Quiet Operation (Black)|3499|1 Year
+36|3|LLGM117|Lifelong Gun Massager for Pain Relief, Full Body Massage Gun, Rechargeable with 6 Speed Settings|3499|1 Year
+36|4|LLGM09|Lifelong Massage Stick, Muscle Roller Massager for Pain Relief, Cramp Recovery & Deep Tissue Massage|5999|1 Year
+36|5|LLGM198|Lifelong Gun Massager with 5 Massage Heads, 4700 RPM, 3 Modes & 99 Speed Settings, Rechargeable (Teal)|1999|1 Year
+37|1|LLGM207|Lifelong Gun Massager for Pain Relief, 8 Massage Heads, 6 Speed Modes, Rechargeable, Quiet 20W Motor, Lightweight & Portable|1999|1 Year
+37|2|LLM603|Lifelong Rechargeable Electric Head & Scalp Kneading Massager, 4 Speed Modes, Handheld Portable (Black)|2999|1 Year
+37|3|LLM225|Lifelong LLM225 Rechargeable Head, Scalp & Full Body Massager, Electric Head Kneading, 4 Speed Modes (Brown)|6000|1 Year
+37|4|LLM09|Lifelong LLM09 Mini Head and Body Massager (Brown)|1350|1 Year
+37|5|LLM171|Lifelong Electric Handheld Pain Relief Full Body Massager for Neck, Back, Leg & Foot (Gray)|3200|1 Year
+38|1|LLM954|Lifelong Foldable Leg Massager 2 in 1, Foot Massager Machine & Ottoman Rest (Convertible Ottoman), Brown|41999|1 Year
+38|2|LLM99|Lifelong LLM99 Foot, Calf and Leg Massager, Corded Electric with Heat and Vibration, 80W, 4 Motors (Dark Brown)|38000|1 Year
+38|3|LLM234|Lifelong Crazyfit Vibration Plate Massager Machine for Full Body Workout at Home, Weight Loss & Blood Circulation|14000|1 Year
+38|4|LLM612A|Lifelong Electric Hot Water Bag for Pain Relief, Dual Insulation Heating Pad, Rechargeable, with Cover|1995|1 Year
+38|5|LLRH45|Lifelong 4.5L Ultrasonic Humidifier, Cool & Warm Mist, 3 Spray Modes, Aroma Diffuser, LED Night Light, USB Type-C|5999|1 Year
+39|1|LLWS18|Lifelong LLWS18 Digital Glass Weighing Scale, Electronic Bathroom Scale, Battery Included (Black)|1899|1 Year
+39|2|LLWS36|Lifelong Smart Weighing Scale with BMI & 18 Measurement Functions, Lifelong Smart Home App, Bluetooth|3299|1 Year
+39|3|LLWS45|Lifelong ActiveFlex Weighing Scale (Fight Lazy Series), Digital, Thick Tempered Glass with LCD Display|3000|1 Year
+39|4|LLWS54|Lifelong Bloom Body Weighing Scale (Indian Cultural Series - Rajasthan Rural), Thick Tempered Glass, LCD (Multicolor)|3000|1 Year
+39|5|LLWS81|Lifelong Nimbus Weighing Scale, Digital, 6mm Thick Tempered Glass with LCD|3000|1 Year
+41|1|LLPCW207|Lifelong Blackhead Remover with Attachments, Vacuum Acne Pore Cleaner Kit (White)|799|1 Year
+41|2|LLPCM304|Lifelong All-in-One Trimmer for Men, Full Body Groomer, 7 Combs, Type-C, 1.5 Hr Runtime, 9000 RPM|3999|1 Year
+41|3|LLPCM13|Lifelong Trimmer, 45 Minutes Runtime, 20 Length Settings, Cordless Rechargeable|1200|1 Year
+41|4|LLPCW30|Lifelong LLPCW30 Battery Powered Rechargeable Eyebrow, Underarms and Bikini Trimmer for Women|1500|1 Year
+41|5|LLPCM102|Lifelong LLPCM102 Rechargeable Hair Trimmer|1499|1 Year
+43|1|LLSBB49|Lifelong LLSBB49 Fit Pro Spin Fitness Bike with 6kg Flywheel, Adjustable Resistance, LCD Monitor & Heart Rate Sensor (Max 100kg), Free Home Installation|25999|1 Year
+43|2|LLSBB50|Lifelong LLSBB50 Fit Pro Spin Fitness Bike with 6kg Flywheel, Adjustable Resistance, LCD Monitor & Heart Rate Sensor, Free Home Installation|25999|1 Year
+43|3|LLSBB29|Lifelong Fit Pro Spin Fitness Bike with 8kg Flywheel, Adjustable Resistance & Heart Rate Sensor, Max Weight 120kg|30999|1 Year
+43|4|LLTM09|Lifelong FitPro LLTM09 (2.5 HP Peak) Motorized Treadmill for Home with 12 Preset Workouts, Max Speed 10km/hr (Free Installation Assistance)|41000|1 Year
+43|5|LLTM153|Lifelong LLTM153 Fit Pro 4.5 HP Peak Motorised Treadmill with Heart Rate Sensor and Manual Incline|72000|1 Year
+44|1|LLTM183|Lifelong Fit Pro Treadmill 3 HP Peak DC Brushless Motor, 2 Level Manual Incline Walking Machine, 8 km/hr, LED Display, 110kg (Black)|39999|1 Year
+44|2|LLTM185|Lifelong Walking Pad Treadmill, 4 HP Motor, Foldable Handle, LED Display & Remote, 2-Level Manual Incline, Under Desk (Black)|49999|1 Year
+44|3|LLTM195|Lifelong 4.5HP Walking Pad Treadmill, Max Speed 10 km/h, LED Display, Under Desk Foldable, 100kg Capacity|36999|1 Year
+44|4|LLKS01|Lifelong LLKS01 Foldable Kick Skating Cycle / Skate Scooter for Kids (Max 50kg), Blue/Yellow|3999|6 Months
+44|5|LLKS14|Lifelong Kids Scooter / Tricycle with Parental Control|4499|6 Months
+45|1|STRBC14|Lifelong 14T Cycle for Kids 2 to 5 Years, Unisex, Balance Wheels & Mudguard, 95% Pre-Assembled|9999|6 Months
+45|2|STRBC16|Lifelong 16T Cycle for Kids, Unisex, Balance Wheels & Mudguard, 95% Pre-Assembled|11999|6 Months
+45|3|STRBC20|Lifelong Strong 20T SS Single-Speed Bicycle for Kids, Durable Steel Frame, Aluminium Stem, Quiet Bush-less Chain|13999|6 Months
+45|4|STRBC26|Lifelong Strong 26T SS Single-Speed Bicycle for Men, Steel Frame, Double Disc Brakes, Adjustable Saddle, Reflectors|14999|6 Months
+45|5|STRBC29|Lifelong Strong 21 Speed 29T Bicycle with Dual Disc Brakes|23999|6 Months
+46|1|STRBC269|Lifelong Strong 26T MS Single-Speed Bicycle for Men, Steel Frame, Aluminium Stem, Double Disc Brakes, Reflectors|21999|6 Months
+46|2|STRBC279|Lifelong Strong 27.5T 21 Speed Bicycle|22999|6 Months
+46|3|LLCRS01|Lifelong Rucksack 80 Litres Travel Bag for Men, Hiking & Trekking Bag, Camping Bag|4899|6 Months
+46|4|LLBAPM01|Lifelong Bicycle Air Pump with Meter, Mini Foot-Activated Bike Pump with Pressure Gauge|499|1 Year
+46|5|LLPBP01|Lifelong Pickleball Paddle Set with 4 Balls & Carry Bag, Fiberglass Material|2999|
+47|1|LLYM91|Lifelong Yoga Mat for Women & Men, EVA Material 4mm, Anti Slip (Black)|599|6 Months
+47|2|LLYM92|Lifelong Yoga Mat for Women & Men, EVA Material 4mm, Anti Slip (Grey)|599|6 Months
+47|3|LLYM98|Lifelong Yoga Mat for Women & Men, EVA Material 8mm, Anti Slip (Grey)|1099|6 Months
+47|4|LLYM102|Lifelong Yoga Mat for Women & Men, EVA Material 10mm, Anti Slip (Sea Blue)|1199|6 Months
+47|5|LLYM111|Lifelong Dual Color Yoga Mat, TPE Material 6mm Anti Slip (Blue/Pink)|3499|6 Months
+48|1|LLYM112|Lifelong Dual Color Yoga Mat, TPE Material 6mm Anti Slip (Purple/Pink)|3499|6 Months
+48|2|LLYM222|Lifelong Dual Color Yoga Mat, EVA Material 6mm Anti Slip (Blue/Beige)|2499|6 Months
+48|3|LLYM223|Lifelong Dual Color Yoga Mat, EVA Material 6mm Anti Slip (Black/Orange)|2499|6 Months
+48|4|LLAS01|Lifelong Aerobics Stepper (Black and Red)|2100|6 Months
+48|5|LLAR01|Lifelong Abdominal and Core Exercise Roller Wheel|800|6 Months
+49|1|LLFR01|Lifelong Foam Roller for Exercise, Gym Deep Tissue Body Massage Roller for Back Pain, Neck & Knee|1499|6 Months
+49|2|LLFAHGC01|Lifelong Adjustable Hand Grip Strengthener with Counter for Men & Women|499|6 Months
+49|3|LLSR01|Lifelong Skipping Rope|300|6 Months
+49|4|LLSHB04|Lifelong Protein Shaker, Stylish Sipper Bottle, 700ml Gym Bottle|499|6 Months
+51|1|LLPBBWA20|Lifelong LLPBBWA20 20000mAh 22.5W Fast Charging Powerbank|3699|1 Year
+51|2|LLPBBWD10|Lifelong 10000mAh 22.5W Fast Charging Powerbank (Blue)|2999|6 Months
+51|3|LLPBVA10|Lifelong 10000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Pocket Size (Blue)|2999|6 Months
+51|4|LLPBVA11|Lifelong 10000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Pocket Size (Lavender)|2999|6 Months
+51|5|LLPBVA12|Lifelong 10000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Pocket Size (Mint)|2999|6 Months
+52|1|LLPBVA13|Lifelong 10000mAh 22.5W Fast Charging Power Bank, 3 Inputs (incl. Legacy iPhone Port) & 6 Outputs, Pocket Size (Beige)|2999|1 Year
+52|2|LLPBVA14|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Olive)|3999|6 Months
+52|3|LLPBVA15|Lifelong 10000mAh Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Black)|2999|6 Months
+52|4|LLPBVA20|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Lavender)|3999|6 Months
+52|5|LLPBVA21|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Sky Blue)|3999|6 Months
+53|1|LLPBVA22|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Olive)|3999|
+53|2|LLPBVA23|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Tan)|3999|
+53|3|LLPBVA24|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Black)|3999|
+53|4|LLPBVA25|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Grey)|3999|
+53|5|LLPBVA10B|Lifelong 10000mAh Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size (Sky Blue)|2999|
+54|1|LLPBVM10|Lifelong ChargeMate 10000mAh 22.5W Wireless MagSafe Slim Pocket Power Bank, Quick Charge 3.0 (White)|3999|6 Months
+54|2|LLPBVM11|Lifelong ChargeMate 10000mAh 22.5W Wireless MagSafe Slim Pocket Power Bank, Quick Charge 3.0 (Lavender)|3999|6 Months
+54|3|LLPBVM23|Lifelong 10000mAh 15W MagSafe Wireless Power Bank, 2 Cables (Lightning & Type-C), for iPhone, iWatch & Qi Devices, Display & Stand|4999|6 Months
+54|4|LLPBVM52|Lifelong Qi2.2 MagSafe 25W 10000mAh Power Bank, India's Fastest Wireless Powerbank + 45W Wired Charging, 100W Cable Included|5999|6 Months
+55|1|LLPBVM56|Lifelong 20000mAh (Double Capacity) 15W MagSafe Wireless Power Bank with Metal Stand, Display & Cable (Black)|4999|6 Months
+55|2|LLPBVM63|Lifelong 10000mAh 15W MagSafe Wireless Power Bank with Metal Phone Stand, Battery Display & Cable (Teal)|3499|6 Months
+55|3|LLPBBWE11|Lifelong 20000mAh 35W Fast Charging Small Pocket Power Bank, Built-in Type-C Cable & Port, Flight Friendly|4999|6 Months
+55|4|LLPBBWB20|Lifelong 20000mAh 22.5W Fast Charging Power Bank, 3 Inputs & 6 Outputs (3 Built-in Cables), Small Pocket Size|2999|6 Months
+55|5|LLPBVM22|Lifelong 10000mAh MagSafe Wireless Power Bank, 2 Cables (Lightning & Type-C), Display & Stand|4999|6 Months
+56|1|LLPBVM29|Lifelong 10000mAh 15W MagSafe Wireless Fast Charging Power Bank, USB Type-C, Small Pocket Size, Strong Magnet & Extra Ring|2999|6 Months
+56|2|DUP|LLPBVM23
+56|3|DUP|LLPBVM52
+56|4|DUP|LLPBVM56
+56|5|DUP|LLPBVM63
+57|1|LLCABWA10|Lifelong 65W GaN Super Fast Wall Charger, 3-Port Output (2 Type-C & 1 USB-A), for Laptops, Phones & Tablets (Grey)|3499|1 Year
+57|2|LLCABWA11|Lifelong 65W GaN Super Fast Wall Charger, 3-Port Output (2 Type-C & 1 USB-A), for Laptops, Phones & Tablets (Pink)|3499|1 Year
+57|3|LLTAWT10|Lifelong 10A Universal Travel Adapter All in One, 2500W Heavy Duty, 180+ Countries, 9-Hole International Socket (Sky Blue)|1499|1 Year
+57|4|LLTAWT11|Lifelong 10A Universal Travel Adapter All in One, 2500W Heavy Duty, 180+ Countries, 9-Hole International Socket (Navy)|1499|1 Year
+57|5|LLTAWT12|Lifelong 10A Universal Travel Adapter All in One, 2500W Heavy Duty, 180+ Countries, 9-Hole International Socket (Pink)|1499|1 Year
+58|1|LLTAWT20|Lifelong Universal Travel Adapter All in One, 2000W Heavy Duty with 20W Type-C & 2 USB-A, 180+ Countries|2999|1 Year
+58|2|LLSPCI10|Lifelong 10A WiFi Smart Power Plug, App Control, Timer, Voice Control, Works with Alexa & Google|1499|1 Year
+58|3|LLTAWT26|Lifelong Universal Travel Adapter Charger 25W, 2C+1A, Travel-Friendly, Compact & Lightweight|2999|1 Year
+58|4|LLTAWT40|Lifelong 2500W Universal Travel Adapter All in One, 3 Type-C 45W PD & 2 USB-A 18W QC 3.0, Dual Fuse Protection, 180+ Countries|4999|1 Year
+58|5|LLWCVI10|Lifelong iWatch Wireless Charger, USB-A, Magnetic, Compatible with Series 9/8/7/SE/6/5/4/3/2/1 (White)|999|1 Year
+59|1|LLETEX05|Lifelong India's First Extension Board with Retractable Type-C Cable, 2 AC Sockets (2500W), 2 USB-C + 2 USB-A (GaN 25W)|3499|1 Year
+59|2|LLEXST71|Lifelong Extension Board 7-in-1 with Switch, 4 AC Sockets + 3 USB Ports, Overload Protection, 2M Cord (Cube)|2499|1 Year
+59|3|LLEXST31|Lifelong Extension Board 7-in-1 with Switch, 4 AC Sockets + 3 USB Ports (QC 3.0 + 20W PD), 2M Cord (Cube Plus)|2999|1 Year
+60|1|LLPJEJ42|Lifelong ROAR Projector with 2 Mics, 20W Speakers, Karaoke & Room Cinema, 1080P & 4K Support, All Android OTT Apps, 150" Screen|24999|1 Year
+60|2|LLPJH23|Lifelong Built-in Live TV Smart Projector, 125+ Channels, Android, 1080P & 4K Support, All OTT Apps, WiFi/BT|19999|1 Year
+60|3|LLPJH20|Lifelong Lightbeam Smart LED Projector, Android 14, 1080P & 4K Support, 4000 Lumens, Auto Keystone, WiFi/BT, HDMI|14999|1 Year

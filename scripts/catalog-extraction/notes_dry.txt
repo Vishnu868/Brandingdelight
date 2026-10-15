@@ -1,0 +1,16 @@
+page|name|desc
+1|Nutsio Snack Jars - 7 Variety Collection|Cashews, California Almonds, Roasted & Salted Cashews, Roasted & Salted Almonds, Green Raisins, Paan Raisins, Salted Pistachios
+2|Premium Dry Fruits Gift Box 8x8 - Royal Weave (Red/Blue)|8x8 inch box; Cashews, Almonds, Raisins, Pistachios 50g each (200g)
+3|Premium Dry Fruits Gift Box 10x10 - Blush Linen|10x10 inch box; Cashews, Almonds, Raisins, Pistachios 100g each (400g)
+4|Premium Dry Fruits Gift Box 10x10 - Ivory Floral Ribbon|10x10 inch box; 100g x 4 (400g)
+5|Premium Dry Fruits Gift Box 8x8 - Golden Stripes|8x8 inch box; 50g x 4 (200g)
+7|Premium Dry Fruits Gift Box 10x10 - Pearl Brocade|10x10 inch box; 100g x 4 (400g)
+8|Nutsio Green Raisins|Protein rich, high fibre, mineral source, healthy fats
+9|Nutsio Premium Salted Pistachio|Rich in protein, energy rich
+10|Nutsio Premium Dried Figs|High fibre, rich in minerals, natural energy
+11|Nutsio Premium Whole Cashew|Protein rich, high fibre
+12|Nutsio Premium California Almonds|Protein rich, high fibre
+13|Nutsio Salted Almonds|Protein rich, high fibre
+14|Premium Dry Fruits Gift Box 10x10 - Hexagon Mosaic|10x10 inch box; 100g x 4 (400g)
+15|Nutsio Salted Cashews|Protein rich, high fibre
+(p6 duplicate of p2)
