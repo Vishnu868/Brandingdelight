@@ -119,7 +119,7 @@ export function ProductForm({ initial, copyOf }: { initial?: Product; copyOf?: P
         <Section title="Images">
           <div className="grid grid-cols-3 gap-3 sm:grid-cols-4">
             {p.images.map((src, i) => (
-              <div key={src + i} className="group relative aspect-square overflow-hidden rounded-xl border border-line bg-[#f6f1ea]">
+              <div key={src + i} className="group relative aspect-square overflow-hidden rounded-md border border-line bg-[#f6f1ea]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={thumb(src)} alt="" className="size-full object-contain" />
                 {i === 0 && <span className="absolute left-1.5 top-1.5 rounded bg-maroon px-1.5 py-0.5 text-[10px] font-bold text-white">MAIN</span>}
@@ -136,7 +136,7 @@ export function ProductForm({ initial, copyOf }: { initial?: Product; copyOf?: P
                 </div>
               </div>
             ))}
-            <button type="button" onClick={() => fileRef.current?.click()} className="grid aspect-square place-items-center rounded-xl border-2 border-dashed border-line text-muted hover:border-maroon hover:text-maroon">
+            <button type="button" onClick={() => fileRef.current?.click()} className="grid aspect-square place-items-center rounded-md border-2 border-dashed border-line text-muted hover:border-maroon hover:text-maroon">
               {uploading ? <Loader2 className="animate-spin" /> : (
                 <span className="text-center text-xs font-medium">
                   <ImagePlus className="mx-auto mb-1" /> Upload
@@ -210,7 +210,7 @@ export function ProductForm({ initial, copyOf }: { initial?: Product; copyOf?: P
             <input className="input" value={p.catalog} onChange={(e) => set("catalog", e.target.value)} />
           </F>
         </Section>
-        <div className="sticky bottom-4 flex gap-3 rounded-2xl bg-white/90 p-3 shadow-[var(--shadow-pop)] backdrop-blur">
+        <div className="sticky bottom-4 flex gap-3 rounded-lg bg-white/90 p-3 shadow-[var(--shadow-pop)] backdrop-blur">
           <button type="button" className="btn-outline" onClick={() => router.back()}>
             Cancel
           </button>

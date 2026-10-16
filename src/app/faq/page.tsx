@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = { title: "FAQs" };
 
 const FAQ = [
-  ["Which payment methods do you accept?", "UPI (GPay, PhonePe, Paytm, BHIM), credit and debit cards — Visa, Mastercard, RuPay and American Express (Amex) — net banking, wallets, EMI and Pay Later. All payments are processed securely by Razorpay."],
+  ["Which payment methods do you accept?", "UPI (GPay, PhonePe, Paytm, BHIM), credit and debit cards, net banking, wallets, EMI and Pay Later. All payments are processed securely by Razorpay."],
   ["Is it safe to pay with my card?", "Yes. You pay on Razorpay's PCI-DSS Level 1 certified checkout with 3-D Secure / OTP authentication. We never see or store your card number."],
   ["How long does delivery take?", "Most orders ship within 1–3 business days. Delivery typically takes 1–3 days within Hyderabad and 3–7 days elsewhere in India. Chocolates are shipped in cool packaging."],
   ["Is shipping free?", "Shipping is free on orders above ₹999. A flat ₹79 applies below that."],

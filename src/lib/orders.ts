@@ -39,15 +39,7 @@ export async function getOrder(id: string) {
   const db = supabaseAdmin();
   if (!db) return null;
   const { data } = await db.from("orders").select("*").eq("id", id).maybeSingle();
-  if (!data) return null;
-  const order = rowToOrder(data);
-  // Reduce stock once per order (only runs on the pending→paid transition above).
-  for (const l of order.items) {
-    const { error } = await db.rpc("decrement_stock", { p_id: l.productId, p_qty: l.qty });
-    if (error) console.error("[orders] stock update failed", l.productId, error.message);
-  }
-  revalidateTag(PRODUCTS_TAG);
-  return order;
+  return data ? rowToOrder(data) : null;
 }
 
 export async function markPaid(razorpayOrderId: string, paymentId: string, method?: string, network?: string) {

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Palette } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { BuyBox } from "@/components/BuyBox";
+import { ExpandableText } from "@/components/ExpandableText";
 import { Gallery } from "@/components/Gallery";
 import { Rail } from "@/components/Rail";
 import { getAllProducts, getProduct, toCard } from "@/lib/catalog";
@@ -67,7 +68,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             {p.sku && <> · Code {p.sku}</>}
           </p>
           {p.shortDescription && norm(p.shortDescription) !== norm(p.name) && (
-            <p className="mt-4 line-clamp-4 text-[15.5px] leading-[1.7] text-ink-soft">{p.shortDescription}</p>
+            <div className="mt-4">
+              <ExpandableText text={p.shortDescription} lines={3} className="text-[15.5px] leading-[1.7] text-ink-soft" />
+            </div>
           )}
           <div className="mt-6">
             <BuyBox p={p} />
@@ -102,7 +105,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <aside className="space-y-6">
           <section>
             <h2 className="section-label">Specifications</h2>
-            <dl className="mt-4 overflow-hidden rounded-2xl border border-line bg-white">
+            <dl className="mt-4 overflow-hidden rounded-lg border border-line bg-white">
               {[["Brand", p.brand], ...p.specs.map((s) => [s.label, s.value])].map(([k, v], i) => (
                 <div key={k + i} className={`grid grid-cols-[42%_1fr] gap-4 px-5 py-3.5 text-[14px] ${i % 2 ? "bg-cream/60" : ""}`}>
                   <dt className="text-muted">{k}</dt>
@@ -111,7 +114,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               ))}
             </dl>
           </section>
-          <section className="rounded-2xl border-l-4 border-gold bg-white px-5 py-5">
+          <section className="rounded-lg border-l-4 border-gold bg-white px-5 py-5">
             <h2 className="flex items-center gap-2 text-[15px] font-semibold">
               <Palette size={17} className="text-gold" /> Add your company logo
             </h2>

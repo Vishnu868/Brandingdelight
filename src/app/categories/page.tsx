@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import { getCategories, imagePosition } from "@/lib/catalog";
 
 export const revalidate = 600;
@@ -24,7 +23,7 @@ export default async function CategoriesPage() {
           <Link
             key={c.slug}
             href={`/category/${c.slug}`}
-            className={`group relative overflow-hidden rounded-2xl bg-ink ${isWide(i) ? "col-span-2 aspect-[16/10] lg:col-span-2 lg:aspect-auto lg:row-span-2" : "aspect-[4/5]"}`}
+            className={`group relative overflow-hidden rounded-lg bg-ink ${isWide(i) ? "col-span-2 aspect-[16/10] lg:col-span-2 lg:aspect-auto lg:row-span-2" : "aspect-[4/5]"}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -42,9 +41,6 @@ export default async function CategoriesPage() {
                 {isWide(i) && (
                   <span className="mt-1.5 line-clamp-1 block text-[12.5px] text-white/70">{c.subcategories.slice(0, 3).map((s) => s.name).join(" · ")}</span>
                 )}
-              </span>
-              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:bg-white group-hover:text-ink">
-                <ArrowUpRight size={17} />
               </span>
             </span>
           </Link>

@@ -16,7 +16,7 @@
   --color-danger: #b42318;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-playfair), Georgia, serif;
-  --radius-card: 14px;
+  --radius-card: 8px;
   --shadow-card: 0 1px 2px rgb(27 20 17 / 0.04), 0 6px 20px -8px rgb(27 20 17 / 0.12);
   --shadow-pop: 0 16px 40px -12px rgb(27 20 17 / 0.28);
   --animate-shimmer: shimmer 1.4s linear infinite;
@@ -59,7 +59,7 @@ body {
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold tracking-wide transition active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold tracking-wide transition active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
 }
 
 @utility btn-primary {
@@ -83,7 +83,7 @@ body {
 }
 
 @utility chip {
-  @apply inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1.5 text-xs font-medium text-ink-soft;
+  @apply inline-flex items-center gap-1 rounded-md border border-line bg-white px-3 py-1.5 text-xs font-medium text-ink-soft;
 }
 
 @utility card {
@@ -91,7 +91,7 @@ body {
 }
 
 @utility input {
-  @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] outline-none transition placeholder:text-muted/70 focus:border-maroon/50 focus:ring-4 focus:ring-maroon/10;
+  @apply w-full rounded-md border border-line bg-white px-4 py-3 text-[15px] outline-none transition placeholder:text-muted/70 focus:border-maroon/50 focus:ring-4 focus:ring-maroon/10;
 }
 
 @utility label {
@@ -126,4 +126,100 @@ body {
 
 @utility section-label {
   @apply text-[11.5px] font-semibold uppercase tracking-[0.2em] text-muted;
+}
+
+@layer base {
+/* ───────── Brand scrollbars (thin, warm, rounded thumb) ───────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9ad86 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #d8c4a6;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #b8893b;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ───────── Brand checkboxes & radios ───────── */
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 1.5px solid #cdbfae;
+  background: #fff;
+  display: inline-grid;
+  place-content: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+input[type="checkbox"] {
+  border-radius: 4px;
+}
+input[type="radio"] {
+  border-radius: 50%;
+}
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  border-color: var(--color-maroon);
+}
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgb(123 30 43 / 0.15);
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transition: transform 0.12s ease-out;
+  background: #fff;
+  clip-path: polygon(14% 44%, 0 59%, 39% 98%, 100% 25%, 86% 11%, 38% 70%);
+}
+input[type="checkbox"]:checked {
+  background: var(--color-maroon);
+  border-color: var(--color-maroon);
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="radio"]::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.12s ease-out;
+  background: var(--color-maroon);
+}
+input[type="radio"]:checked {
+  border-color: var(--color-maroon);
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
 }

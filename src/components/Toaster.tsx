@@ -10,7 +10,7 @@ export function Toaster() {
         <div
           key={t.id}
           role="status"
-          className="pointer-events-auto flex items-center gap-2.5 rounded-full bg-ink px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow-pop)] animate-fade-up"
+          className="pointer-events-auto flex items-center gap-2.5 rounded-md bg-ink px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow-pop)] animate-fade-up"
         >
           {t.tone === "error" ? <XCircle size={17} className="text-red-300" /> : <CheckCircle2 size={17} className="text-emerald-300" />}
           {t.text}

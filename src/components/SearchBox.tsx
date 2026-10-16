@@ -58,7 +58,7 @@ export function SearchBox({ autoFocus, onNavigate }: { autoFocus?: boolean; onNa
           e.preventDefault();
           go();
         }}
-        className="flex items-center rounded-full border border-line bg-white pl-4 pr-1.5 transition focus-within:border-maroon/40 focus-within:ring-4 focus-within:ring-maroon/10"
+        className="flex items-center rounded-md border border-line bg-white pl-4 pr-1.5 transition focus-within:border-maroon/40 focus-within:ring-4 focus-within:ring-maroon/10"
       >
         <Search size={18} className="shrink-0 text-muted" />
         <input
@@ -75,12 +75,12 @@ export function SearchBox({ autoFocus, onNavigate }: { autoFocus?: boolean; onNa
           aria-label="Search products"
         />
         {busy && <Loader2 size={16} className="mr-2 animate-spin text-muted" />}
-        <button type="submit" className="hidden rounded-full bg-maroon px-4 py-2 text-xs font-semibold text-white sm:block">
+        <button type="submit" className="hidden rounded-md bg-maroon px-4 py-2 text-xs font-semibold text-white sm:block">
           Search
         </button>
       </form>
       {open && q.trim().length >= 2 && (
-        <div className="absolute inset-x-0 top-[calc(100%+6px)] z-50 overflow-hidden rounded-2xl border border-line bg-white shadow-[var(--shadow-pop)] animate-fade-up">
+        <div className="absolute inset-x-0 top-[calc(100%+6px)] z-50 overflow-hidden rounded-lg border border-line bg-white shadow-[var(--shadow-pop)] animate-fade-up">
           {res.length === 0 && !busy ? (
             <p className="p-4 text-sm text-muted">No matches for “{q}”. Try another word.</p>
           ) : (

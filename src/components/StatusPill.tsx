@@ -11,7 +11,7 @@ const STATUS_STYLE: Record<string, string> = {
 
 export function StatusPill({ s }: { s: string }) {
   return (
-    <span className={`whitespace-nowrap rounded-full px-2.5 py-1 text-[11px] font-semibold capitalize ${STATUS_STYLE[s] ?? "bg-sand"}`}>
+    <span className={`whitespace-nowrap rounded-md px-2.5 py-1 text-[11px] font-semibold capitalize ${STATUS_STYLE[s] ?? "bg-sand"}`}>
       {s === "pending" ? "Awaiting payment" : s}
     </span>
   );

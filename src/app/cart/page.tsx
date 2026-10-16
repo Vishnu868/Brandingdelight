@@ -10,7 +10,7 @@ export default function CartPage() {
   const mounted = useMounted();
   const { items, setQty, remove } = useCart();
   const wishToggle = useWishlist((s) => s.toggle);
-  if (!mounted) return <div className="container-x py-10"><div className="skeleton h-64 w-full rounded-2xl" /></div>;
+  if (!mounted) return <div className="container-x py-10"><div className="skeleton h-64 w-full rounded-lg" /></div>;
 
   const subtotal = cartSubtotal(items);
   const shipping = shippingFor(subtotal);
@@ -38,18 +38,18 @@ export default function CartPage() {
       <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_380px]">
         <div className="space-y-3">
           {left > 0 ? (
-            <div className="rounded-xl bg-gold-soft px-4 py-3 text-sm">
+            <div className="rounded-md bg-gold-soft px-4 py-3 text-sm">
               Add <b>{formatINR(left)}</b> more for <b>FREE shipping</b>
               <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white">
                 <div className="h-full rounded-full bg-gold" style={{ width: `${Math.min(100, (subtotal / FREE_SHIPPING_THRESHOLD) * 100)}%` }} />
               </div>
             </div>
           ) : (
-            <div className="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-medium text-success">🎉 You&apos;ve unlocked free shipping</div>
+            <div className="rounded-md bg-emerald-50 px-4 py-3 text-sm font-medium text-success">🎉 You&apos;ve unlocked free shipping</div>
           )}
           {items.map((i) => (
             <div key={i.key} className="card flex gap-3 p-3 sm:gap-4 sm:p-4">
-              <Link href={`/product/${i.slug}`} className="size-24 shrink-0 overflow-hidden rounded-xl bg-[#f6f1ea] sm:size-28">
+              <Link href={`/product/${i.slug}`} className="size-24 shrink-0 overflow-hidden rounded-md bg-[#f6f1ea] sm:size-28">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={thumb(i.image)} alt="" className="size-full object-contain" />
               </Link>
@@ -60,7 +60,7 @@ export default function CartPage() {
                 </Link>
                 {i.variantLabel && <p className="text-xs text-muted">{i.variantLabel}</p>}
                 <div className="mt-auto flex items-center justify-between gap-2 pt-2">
-                  <div className="flex items-center rounded-full border border-line">
+                  <div className="flex items-center rounded-md border border-line">
                     <button className="p-2" onClick={() => (i.qty > 1 ? setQty(i.key, i.qty - 1) : remove(i.key))} aria-label="Decrease">
                       <Minus size={14} />
                     </button>
@@ -112,7 +112,7 @@ export default function CartPage() {
               Proceed to checkout
             </Link>
             <p className="mt-4 flex items-center gap-2 text-xs text-muted">
-              <ShieldCheck size={15} className="text-success" /> Secure payments by Razorpay — Amex, Visa, Mastercard, RuPay & UPI
+              <ShieldCheck size={15} className="text-success" /> Secure payments by Razorpay — cards, UPI & net banking
             </p>
             <div className="mt-3">
               <PaymentBadges />

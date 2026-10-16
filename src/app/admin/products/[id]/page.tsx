@@ -11,8 +11,8 @@ export default function EditProductPage() {
   const { data, loading, error } = useAdminData<{ products: Product[] }>("/api/admin/products");
   const product = data?.products.find((p) => p.id === decodeURIComponent(id));
 
-  if (loading) return <div className="skeleton h-[70vh] rounded-2xl" />;
-  if (error) return <p className="rounded-xl bg-amber-50 p-4 text-sm text-amber-800">{error}</p>;
+  if (loading) return <div className="skeleton h-[70vh] rounded-lg" />;
+  if (error) return <p className="rounded-md bg-amber-50 p-4 text-sm text-amber-800">{error}</p>;
   if (!product) return <p>Product not found.</p>;
   return (
     <div>

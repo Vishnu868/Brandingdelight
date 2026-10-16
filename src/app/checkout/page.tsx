@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowLeft, Building2, CreditCard, Landmark, Loader2, Lock, ShieldCheck, Smartphone, Wallet } from "lucide-react";
 import { useAuth } from "@/components/AuthProvider";
+import { Select } from "@/components/Select";
 import { useMounted } from "@/components/Header";
 import { formatINR, shippingFor, SITE, thumb } from "@/lib/format";
 import { cartSubtotal, useCart, useLocalOrders, useToast } from "@/lib/store";
@@ -68,7 +69,7 @@ export default function CheckoutPage() {
     if (user) setAddr((a) => ({ ...a, email: a.email || user.email || "", fullName: a.fullName || user.displayName || "", phone: a.phone || (user.phoneNumber ?? "").replace(/^\+91/, "") }));
   }, [user]);
 
-  if (!mounted) return <div className="container-x py-10"><div className="skeleton h-96 w-full rounded-2xl" /></div>;
+  if (!mounted) return <div className="container-x py-10"><div className="skeleton h-96 w-full rounded-lg" /></div>;
   if (!items.length)
     return (
       <div className="container-x py-20 text-center">
@@ -221,11 +222,7 @@ export default function CheckoutPage() {
                 <input className="input" value={addr.city} onChange={set("city")} autoComplete="address-level2" required />
               </Field>
               <Field label="State" className="sm:col-span-2">
-                <select className="input" value={addr.state} onChange={set("state")} required>
-                  {STATES.map((s) => (
-                    <option key={s}>{s}</option>
-                  ))}
-                </select>
+                <Select value={addr.state} onChange={(v) => setAddr((a) => ({ ...a, state: v }))} options={STATES} label="State" searchable />
               </Field>
             </div>
             <label className="mt-4 flex items-center gap-2 text-sm">
@@ -250,7 +247,7 @@ export default function CheckoutPage() {
             </h2>
             <div className="mt-4 grid gap-3">
               {METHODS.map(({ id, label, sub, Icon }) => (
-                <label key={id} className={`flex cursor-pointer items-center gap-3 rounded-xl border p-4 transition ${method === id ? "border-maroon bg-maroon/5 ring-2 ring-maroon/10" : "border-line"}`}>
+                <label key={id} className={`flex cursor-pointer items-center gap-3 rounded-md border p-4 transition ${method === id ? "border-maroon bg-maroon/5 ring-2 ring-maroon/10" : "border-line"}`}>
                   <input type="radio" name="method" checked={method === id} onChange={() => setMethod(id)} className="accent-maroon" />
                   <Icon size={22} className="text-maroon" />
                   <span className="flex-1">

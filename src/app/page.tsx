@@ -76,7 +76,7 @@ export default async function Home() {
         <div className="container-x no-scrollbar flex gap-6 overflow-x-auto py-4 text-[12.5px] font-medium text-ink-soft lg:justify-between">
           {[
             [Truck, "Pan-India delivery"],
-            [CreditCard, "UPI · Cards · Amex · EMI"],
+            [CreditCard, "UPI · Cards · EMI"],
             [BadgeCheck, "100% genuine brands"],
             [Palette, "Logo branding available"],
             [Gift, "Gift wrap & message"],
@@ -98,9 +98,6 @@ export default async function Home() {
             <p className="eyebrow">Shop by category</p>
             <h2 className="h-display mt-1 text-[26px] font-semibold sm:text-[32px]">Find the perfect gift</h2>
           </div>
-          <Link href="/categories" className="text-sm font-semibold text-maroon">
-            All categories →
-          </Link>
         </div>
         <div className="grid grid-cols-4 gap-x-3 gap-y-5 sm:grid-cols-6 lg:grid-cols-8">
           {categories.map((c) => (
@@ -129,7 +126,7 @@ export default async function Home() {
           { img: "/thumbs/fuzo/fuzo-p1.webp", t: "FUZO Gadgets", s: "Utility turned into identity", h: "/brand/fuzo" },
           { img: "/thumbs/tamta-banners/tamb-p1.webp", t: "Tamta Copper", s: "111 handcrafted pieces", h: "/brand/tamta" },
         ].map((b) => (
-          <Link key={b.t} href={b.h} className="group relative flex h-56 items-end overflow-hidden rounded-2xl bg-ink sm:h-72">
+          <Link key={b.t} href={b.h} className="group relative flex h-56 items-end overflow-hidden rounded-lg bg-ink sm:h-72">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={b.img} alt="" loading="lazy" className="absolute inset-0 size-full object-cover opacity-80 transition duration-700 group-hover:scale-105" />
             <span className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10" />
@@ -148,7 +145,7 @@ export default async function Home() {
 
       {/* corporate */}
       <section className="container-x mt-14 sm:mt-20">
-        <div className="relative overflow-hidden rounded-3xl bg-maroon px-6 py-10 text-white sm:px-12 sm:py-14">
+        <div className="relative overflow-hidden rounded-xl bg-maroon px-6 py-10 text-white sm:px-12 sm:py-14">
           <div className="absolute -right-16 -top-16 size-64 rounded-full border border-white/10" />
           <div className="absolute -bottom-24 right-24 size-72 rounded-full border border-white/10" />
           <div className="relative grid items-center gap-8 md:grid-cols-[1.4fr_1fr]">
@@ -175,7 +172,7 @@ export default async function Home() {
                 ["6+", "Print techniques"],
                 ["Pan-India", "Delivery"],
               ].map(([a, b]) => (
-                <div key={b} className="rounded-2xl bg-white/10 p-4 backdrop-blur">
+                <div key={b} className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="h-display text-2xl font-semibold">{a}</p>
                   <p className="text-xs text-white/70">{b}</p>
                 </div>

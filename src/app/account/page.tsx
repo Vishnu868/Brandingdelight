@@ -41,7 +41,7 @@ export default function AccountPage() {
     }
   }, []);
 
-  if (!mounted || (configured && (loading || !user))) return <div className="container-x py-10"><div className="skeleton h-96 rounded-2xl" /></div>;
+  if (!mounted || (configured && (loading || !user))) return <div className="container-x py-10"><div className="skeleton h-96 rounded-lg" /></div>;
 
   const all = [...(orders ?? []), ...local.filter((l) => !(orders ?? []).some((o) => o.id === l.id))];
 
@@ -74,7 +74,7 @@ export default function AccountPage() {
       </div>
 
       {user?.email && !user.emailVerified && (
-        <div className="mt-4 flex flex-wrap items-center gap-3 rounded-xl bg-gold-soft px-4 py-3 text-sm">
+        <div className="mt-4 flex flex-wrap items-center gap-3 rounded-md bg-gold-soft px-4 py-3 text-sm">
           Please verify your email to link past guest orders.
           <button className="font-semibold text-maroon" onClick={() => sendEmailVerification(user).then(() => toast("Verification email sent"))}>
             Send verification link
@@ -103,7 +103,7 @@ export default function AccountPage() {
       {tab === "orders" && (
         <div className="mt-6 space-y-4">
           {orders === null && user ? (
-            <div className="skeleton h-32 rounded-2xl" />
+            <div className="skeleton h-32 rounded-lg" />
           ) : all.length === 0 ? (
             <div className="card p-10 text-center">
               <p className="h-display text-xl font-semibold">No orders yet</p>

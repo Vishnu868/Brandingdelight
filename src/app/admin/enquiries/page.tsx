@@ -1,5 +1,6 @@
 "use client";
 import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Select } from "@/components/Select";
 import { useAdminData, useAdminMutation } from "@/lib/use-admin";
 import { useToast } from "@/lib/store";
 
@@ -13,9 +14,9 @@ export default function AdminEnquiries() {
   return (
     <div>
       <h1 className="h-display text-3xl font-semibold">Bulk & corporate enquiries</h1>
-      {error && <p className="mt-4 rounded-xl bg-amber-50 p-4 text-sm text-amber-800">{error}</p>}
+      {error && <p className="mt-4 rounded-md bg-amber-50 p-4 text-sm text-amber-800">{error}</p>}
       <div className="mt-5 grid gap-3 lg:grid-cols-2">
-        {loading && Array.from({ length: 4 }).map((_, i) => <div key={i} className="skeleton h-40 rounded-xl" />)}
+        {loading && Array.from({ length: 4 }).map((_, i) => <div key={i} className="skeleton h-40 rounded-md" />)}
         {!loading && data?.enquiries.length === 0 && <p className="card p-8 text-center text-muted lg:col-span-2">No enquiries yet.</p>}
         {data?.enquiries.map((e) => (
           <div key={e.id} className="card p-4 text-sm">
@@ -27,11 +28,14 @@ export default function AdminEnquiries() {
                 </p>
                 <p className="text-xs text-muted">{new Date(e.created_at).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}</p>
               </div>
-              <select
+              <Select
                 value={e.status}
-                className="rounded-full border border-line bg-white px-3 py-1 text-xs"
-                onChange={async (ev) => {
-                  const status = ev.target.value;
+                size="sm"
+                align="right"
+                label="Enquiry status"
+                className="w-36"
+                options={["new", "contacted", "won", "lost"].map((v) => ({ value: v, label: v[0].toUpperCase() + v.slice(1) }))}
+                onChange={async (status) => {
                   try {
                     await mutate("/api/admin/enquiries", "PATCH", { id: e.id, status });
                     setData((d) => (d ? { enquiries: d.enquiries.map((x) => (x.id === e.id ? { ...x, status } : x)) } : d));
@@ -39,11 +43,7 @@ export default function AdminEnquiries() {
                     toast((err as Error).message, "error");
                   }
                 }}
-              >
-                {["new", "contacted", "won", "lost"].map((s) => (
-                  <option key={s}>{s}</option>
-                ))}
-              </select>
+              />
             </div>
             {(e.quantity || e.budget) && (
               <p className="mt-2 text-xs">
