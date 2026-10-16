@@ -6,6 +6,7 @@ import { CheckCircle2, Clock, Package } from "lucide-react";
 import { formatINR, thumb, whatsappLink } from "@/lib/format";
 import { useLocalOrders } from "@/lib/store";
 import type { OrderLine } from "@/lib/types";
+import { Confetti } from "@/components/Confetti";
 
 type View = { id: string; status: string; items: OrderLine[]; subtotal: number; shipping: number; total: number; paymentMethod?: string; cardNetwork?: string };
 
@@ -28,11 +29,12 @@ function OrderInner() {
   }, [id, demo]);
 
   const o: View | null = order ?? (local ? { ...local } : null);
-  if (loading) return <div className="skeleton mx-auto h-96 max-w-2xl rounded-2xl" />;
+  if (loading) return <div className="skeleton mx-auto h-96 max-w-2xl rounded-lg" />;
 
   const paid = !o || o.status !== "pending";
   return (
     <div className="mx-auto max-w-2xl">
+      {paid && <CelebrateOnce id={id} />}
       <div className="card p-6 text-center sm:p-10">
         {paid ? <CheckCircle2 size={64} className="mx-auto text-success" /> : <Clock size={64} className="mx-auto text-gold" />}
         <h1 className="h-display mt-4 text-3xl font-semibold">{paid ? "Thank you! Your order is confirmed" : "Payment processing"}</h1>
@@ -94,6 +96,22 @@ function OrderInner() {
       </div>
     </div>
   );
+}
+
+/** Confetti the first time this order's confirmation is seen in this browser session. */
+function CelebrateOnce({ id }: { id: string }) {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const k = `bd-confetti-${id}`;
+    try {
+      if (sessionStorage.getItem(k)) return;
+      sessionStorage.setItem(k, "1");
+    } catch {
+      /* storage blocked: still celebrate */
+    }
+    setShow(true);
+  }, [id]);
+  return show ? <Confetti /> : null;
 }
 
 export default function OrderPage() {

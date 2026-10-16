@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: "BrandingDelight — Premium Brands & Corporate Gifting Store", template: "%s | BrandingDelight" },
   description:
-    "Shop 790+ premium products from Lifelong, SMOOR, Tamta, FUZO, HRX, LOYKA, Unwrap Happiness and more. Festive hampers, copper bottles, appliances, tech and luggage with custom branding for corporate gifting. Pay by UPI, cards, Amex, net banking.",
+    "Shop 790+ premium products from Lifelong, SMOOR, Tamta, FUZO, HRX, LOYKA, Unwrap Happiness and more. Festive hampers, copper bottles, appliances, tech and luggage with custom branding for corporate gifting. Pay by UPI, cards or net banking.",
   openGraph: { siteName: "BrandingDelight", type: "website", locale: "en_IN" },
   icons: { icon: "/icon.png", apple: "/apple-touch-icon.png" },
 };

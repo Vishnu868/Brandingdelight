@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import { BRAND_META, BRAND_ORDER } from "@/lib/brands";
 import { thumb } from "@/lib/format";
 import type { Brand } from "@/lib/types";
@@ -19,7 +18,7 @@ export function toBrandTiles(brands: Brand[], fallbackImage: (name: string) => s
 
 export function BrandCard({ b, className = "" }: { b: BrandTile; className?: string }) {
   return (
-    <Link href={`/brand/${b.slug}`} className={`group relative block overflow-hidden rounded-2xl bg-ink ${className}`}>
+    <Link href={`/brand/${b.slug}`} className={`group relative block overflow-hidden rounded-lg bg-ink ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={b.image}
@@ -30,9 +29,6 @@ export function BrandCard({ b, className = "" }: { b: BrandTile; className?: str
         className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105"
       />
       <span className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
-      <span className="absolute right-3 top-3 grid size-8 place-items-center rounded-full bg-white/15 text-white opacity-0 backdrop-blur transition group-hover:opacity-100">
-        <ArrowUpRight size={16} />
-      </span>
       <span className="absolute inset-x-0 bottom-0 p-4">
         <span className="h-display block text-[19px] font-semibold leading-tight text-white sm:text-[22px]">{b.name}</span>
         <span className="mt-1 block text-[12px] text-white/70">{b.tagline}</span>

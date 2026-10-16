@@ -43,7 +43,7 @@ export default function AdminDashboard() {
       </div>
 
       {error && (
-        <div className="mt-6 flex gap-3 rounded-xl bg-amber-50 p-4 text-sm text-amber-800">
+        <div className="mt-6 flex gap-3 rounded-md bg-amber-50 p-4 text-sm text-amber-800">
           <AlertTriangle size={18} className="shrink-0" /> {error}
         </div>
       )}
@@ -67,7 +67,7 @@ export default function AdminDashboard() {
       </div>
 
       {data && data.pending > 0 && (
-        <Link href="/admin/orders?status=paid" className="mt-4 flex items-center justify-between rounded-xl bg-maroon px-5 py-4 text-white">
+        <Link href="/admin/orders?status=paid" className="mt-4 flex items-center justify-between rounded-md bg-maroon px-5 py-4 text-white">
           <span>
             <b>{data.pending}</b> paid order{data.pending > 1 ? "s" : ""} waiting to be processed
           </span>

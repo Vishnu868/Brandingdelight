@@ -6,7 +6,6 @@ export function PaymentBadges({ dark = false }: { dark?: boolean }) {
       <span className={base}>UPI</span>
       <span className={base}>VISA</span>
       <span className={base}>Mastercard</span>
-      <span className={`${base} !bg-[#2e77bc] !text-white`}>AMEX</span>
       <span className={base}>RuPay</span>
       <span className={base}>Net Banking</span>
       <span className={base}>Wallets</span>

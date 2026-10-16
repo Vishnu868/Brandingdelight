@@ -9,7 +9,7 @@ function NewProduct() {
   const from = useSearchParams().get("from");
   const { data, loading } = useAdminData<{ products: Product[] }>(from ? "/api/admin/products" : null);
   const source = from ? data?.products.find((p) => p.id === from) : undefined;
-  if (from && loading) return <div className="skeleton h-[70vh] rounded-2xl" />;
+  if (from && loading) return <div className="skeleton h-[70vh] rounded-lg" />;
   return (
     <div>
       <h1 className="h-display text-3xl font-semibold">{source ? "Duplicate product" : "Add product"}</h1>

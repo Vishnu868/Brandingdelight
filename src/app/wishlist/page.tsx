@@ -10,7 +10,7 @@ export default function WishlistPage() {
   const { items, remove } = useWishlist();
   const add = useCart((s) => s.add);
   const toast = useToast((s) => s.push);
-  if (!mounted) return <div className="container-x py-10"><div className="skeleton h-64 w-full rounded-2xl" /></div>;
+  if (!mounted) return <div className="container-x py-10"><div className="skeleton h-64 w-full rounded-lg" /></div>;
 
   if (!items.length)
     return (

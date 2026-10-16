@@ -86,9 +86,9 @@ function LoginInner() {
         <p className="mt-1 text-sm text-muted">Sign in to track orders, save addresses and your wishlist.</p>
       </div>
 
-      <div className="mt-6 grid grid-cols-2 rounded-full bg-sand p-1 text-sm font-semibold">
+      <div className="mt-6 grid grid-cols-2 rounded-md bg-sand p-1 text-sm font-semibold">
         {(["phone", "email"] as const).map((t) => (
-          <button key={t} onClick={() => setTab(t)} className={`flex items-center justify-center gap-1.5 rounded-full py-2 ${tab === t ? "bg-white shadow" : "text-muted"}`}>
+          <button key={t} onClick={() => setTab(t)} className={`flex items-center justify-center gap-1.5 rounded py-2 ${tab === t ? "bg-white shadow" : "text-muted"}`}>
             {t === "phone" ? <Smartphone size={15} /> : <Mail size={15} />} {t === "phone" ? "Mobile OTP" : "Email"}
           </button>
         ))}

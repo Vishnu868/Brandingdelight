@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
-import { X, ZoomIn } from "lucide-react";
+import { ZoomIn } from "lucide-react";
+import { Lightbox } from "./Lightbox";
 import { thumb } from "@/lib/format";
 
 export function Gallery({ images, alt }: { images: string[]; alt: string }) {
@@ -21,7 +22,7 @@ export function Gallery({ images, alt }: { images: string[]; alt: string }) {
 
   return (
     <div className="lg:sticky lg:top-36">
-      <div className="relative overflow-hidden rounded-2xl bg-white shadow-[var(--shadow-card)]">
+      <div className="relative overflow-hidden rounded-lg bg-white shadow-[var(--shadow-card)]">
         <div ref={strip} onScroll={onScroll} className="no-scrollbar flex snap-x snap-mandatory overflow-x-auto">
           {list.map((src, k) => (
             <button key={src} className="relative aspect-square w-full shrink-0 snap-center bg-[#f6f1ea]" onClick={() => setZoom(true)} aria-label="Zoom image">
@@ -41,7 +42,7 @@ export function Gallery({ images, alt }: { images: string[]; alt: string }) {
             </button>
           ))}
         </div>
-        <span className="pointer-events-none absolute bottom-3 right-3 flex items-center gap-1 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-medium text-ink-soft">
+        <span className="pointer-events-none absolute bottom-3 right-3 flex items-center gap-1 rounded-md bg-white/90 px-2.5 py-1 text-[11px] font-medium text-ink-soft">
           <ZoomIn size={13} /> Tap to zoom
         </span>
         {list.length > 1 && (
@@ -58,7 +59,7 @@ export function Gallery({ images, alt }: { images: string[]; alt: string }) {
             <button
               key={src}
               onClick={() => goto(k)}
-              className={`size-20 overflow-hidden rounded-xl border-2 bg-white ${k === i ? "border-maroon" : "border-transparent"}`}
+              className={`size-20 overflow-hidden rounded-md border-2 bg-white ${k === i ? "border-maroon" : "border-transparent"}`}
               aria-label={`Show image ${k + 1}`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -67,27 +68,7 @@ export function Gallery({ images, alt }: { images: string[]; alt: string }) {
           ))}
         </div>
       )}
-      {zoom && (
-        <div className="fixed inset-0 z-[90] flex flex-col bg-black/95" onClick={() => setZoom(false)}>
-          <button className="absolute right-4 top-4 z-10 rounded-full bg-white/10 p-2 text-white" aria-label="Close">
-            <X size={24} />
-          </button>
-          <div className="flex-1 overflow-auto" onClick={(e) => e.stopPropagation()}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={list[i]} alt={alt} className="mx-auto min-h-full w-auto max-w-none object-contain sm:max-w-full" style={{ width: "max(100%, 1200px)" }} />
-          </div>
-          {list.length > 1 && (
-            <div className="flex justify-center gap-2 p-3" onClick={(e) => e.stopPropagation()}>
-              {list.map((src, k) => (
-                <button key={src} onClick={() => setI(k)} className={`size-14 overflow-hidden rounded-lg border-2 ${k === i ? "border-white" : "border-transparent opacity-60"}`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={thumb(src)} alt="" className="size-full object-cover" />
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+      {zoom && <Lightbox images={list} index={i} alt={alt} onClose={() => setZoom(false)} onIndex={goto} />}
     </div>
   );
 }

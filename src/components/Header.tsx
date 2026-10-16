@@ -61,7 +61,7 @@ export function Header({ categories }: { categories: Category[] }) {
                 <span key={k} className={`flex gap-12 ${k === 1 ? "md:hidden" : ""}`} aria-hidden={k === 1}>
                   <span>✦ Free shipping on orders above ₹999</span>
                   <span>✦ Custom logo branding on bulk orders</span>
-                  <span>✦ Pay with UPI, Cards, Amex & Net Banking</span>
+                  <span>✦ Pay with UPI, Cards & Net Banking</span>
                 </span>
               ))}
             </div>
@@ -88,7 +88,7 @@ export function Header({ categories }: { categories: Category[] }) {
               <Search size={21} />
             </button>
             {isAdmin && (
-              <Link href="/admin" className="hidden items-center gap-1.5 rounded-full bg-gold-soft px-3 py-2 text-xs font-semibold text-gold sm:flex">
+              <Link href="/admin" className="hidden items-center gap-1.5 rounded-md bg-gold-soft px-3 py-2 text-xs font-semibold text-gold sm:flex">
                 <LayoutDashboard size={15} /> Admin
               </Link>
             )}
@@ -188,7 +188,7 @@ export function Header({ categories }: { categories: Category[] }) {
               </button>
             </div>
             <div className="flex-1 overflow-y-auto">
-              <Link href={user ? "/account" : "/login"} className="m-4 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-[var(--shadow-card)]">
+              <Link href={user ? "/account" : "/login"} className="m-4 flex items-center gap-3 rounded-lg bg-white p-4 shadow-[var(--shadow-card)]">
                 <span className="grid size-10 place-items-center rounded-full bg-maroon text-white">
                   <User size={18} />
                 </span>
@@ -198,7 +198,7 @@ export function Header({ categories }: { categories: Category[] }) {
                 </span>
               </Link>
               {isAdmin && (
-                <Link href="/admin" className="mx-4 mb-2 flex items-center gap-2 rounded-xl bg-gold-soft px-4 py-3 text-sm font-semibold text-gold">
+                <Link href="/admin" className="mx-4 mb-2 flex items-center gap-2 rounded-md bg-gold-soft px-4 py-3 text-sm font-semibold text-gold">
                   <LayoutDashboard size={16} /> Admin dashboard
                 </Link>
               )}

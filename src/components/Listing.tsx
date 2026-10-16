@@ -3,6 +3,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import { ProductCard, gridCls } from "./ProductCard";
+import { Select } from "./Select";
 import { searchCards } from "@/lib/search";
 import { slugify } from "@/lib/format";
 import type { ProductCard as Card } from "@/lib/types";
@@ -129,9 +130,9 @@ export function Listing({ cards, facetBy = "category" }: { cards: Card[]; facetB
         <div className="sticky top-32 max-h-[calc(100dvh-9rem)] overflow-y-auto pr-2">{filters}</div>
       </aside>
       <div>
-        <div className="sticky top-16 z-20 -mx-4 mb-4 flex items-center gap-2 border-b border-line bg-cream/95 px-4 py-2.5 backdrop-blur sm:static sm:mx-0 sm:border-0 sm:bg-transparent sm:px-0 lg:top-auto">
+        <div className="sticky top-16 z-20 -mx-4 mb-4 flex items-center gap-2 border-b border-line bg-cream/95 px-4 py-2.5 backdrop-blur sm:relative sm:z-30 sm:mx-0 sm:border-0 sm:bg-transparent sm:px-0 sm:backdrop-blur-none lg:top-auto">
           <button onClick={() => setDrawer(true)} className="btn-outline !py-2 lg:hidden">
-            <SlidersHorizontal size={16} /> Filters {activeCount > 0 && <span className="rounded-full bg-maroon px-1.5 text-[11px] text-white">{activeCount}</span>}
+            <SlidersHorizontal size={16} /> Filters {activeCount > 0 && <span className="rounded-md bg-maroon px-1.5 text-[11px] text-white">{activeCount}</span>}
           </button>
           <p className="hidden text-sm text-muted sm:block">
             {list.length} product{list.length === 1 ? "" : "s"}
@@ -142,18 +143,15 @@ export function Listing({ cards, facetBy = "category" }: { cards: Card[]; facetB
               </>
             )}
           </p>
-          <select
+          <Select
             value={sort}
-            onChange={(e) => setParam((p) => p.set("sort", e.target.value))}
-            className="ml-auto rounded-full border border-line bg-white px-4 py-2 text-sm outline-none"
-            aria-label="Sort products"
-          >
-            {SORTS.map(([v, l]) => (
-              <option key={v} value={v}>
-                {l}
-              </option>
-            ))}
-          </select>
+            onChange={(v) => setParam((p) => p.set("sort", v))}
+            options={SORTS.map(([value, label]) => ({ value, label }))}
+            label="Sort products"
+            size="sm"
+            align="right"
+            className="ml-auto w-[200px]"
+          />
         </div>
 
         {activeCount > 0 && (
@@ -187,7 +185,7 @@ export function Listing({ cards, facetBy = "category" }: { cards: Card[]; facetB
       {drawer && (
         <div className="fixed inset-0 z-[70] lg:hidden">
           <div className="absolute inset-0 bg-black/40" onClick={() => setDrawer(false)} />
-          <div className="safe-bottom absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-3xl bg-cream animate-fade-up">
+          <div className="safe-bottom absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-xl bg-cream animate-fade-up">
             <div className="flex items-center justify-between border-b border-line px-5 py-4">
               <p className="text-base font-semibold">Filters</p>
               <button onClick={() => setDrawer(false)} aria-label="Close filters">
@@ -220,7 +218,7 @@ function FilterGroup({ title, children }: { title: string; children: React.React
   return (
     <div>
       <p className="label !mb-3">{title}</p>
-      <div className="max-h-72 space-y-0.5 overflow-y-auto">{children}</div>
+      <div className="space-y-0.5">{children}</div>
     </div>
   );
 }

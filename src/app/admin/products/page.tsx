@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Copy, Eye, EyeOff, Pencil, PlusCircle, Search, Star, Trash2 } from "lucide-react";
+import { Select } from "@/components/Select";
 import { formatINR, thumb } from "@/lib/format";
 import { useAdminData, useAdminMutation } from "@/lib/use-admin";
 import { useToast } from "@/lib/store";
@@ -43,30 +44,25 @@ export default function AdminProducts() {
         </Link>
       </div>
 
-      {error && <p className="mt-4 rounded-xl bg-amber-50 p-4 text-sm text-amber-800">{error}</p>}
+      {error && <p className="mt-4 rounded-md bg-amber-50 p-4 text-sm text-amber-800">{error}</p>}
       {!loading && !error && products.length === 0 && (
-        <p className="mt-4 rounded-xl bg-gold-soft p-4 text-sm">
+        <p className="mt-4 rounded-md bg-gold-soft p-4 text-sm">
           No products in Supabase yet. Go to the <Link href="/admin" className="font-semibold text-maroon underline">Dashboard</Link> and click <b>Import catalogue</b> to load all catalogue products.
         </p>
       )}
 
       <div className="mt-5 flex flex-col gap-2 sm:flex-row">
-        <label className="flex flex-1 items-center gap-2 rounded-xl border border-line bg-white px-3">
+        <label className="flex flex-1 items-center gap-2 rounded-md border border-line bg-white px-3">
           <Search size={17} className="text-muted" />
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search name, brand or SKU" className="h-11 w-full bg-transparent outline-none" />
         </label>
-        <select value={cat} onChange={(e) => setCat(e.target.value)} className="input !w-auto sm:min-w-56">
-          <option value="all">All categories</option>
-          {cats.map((c) => (
-            <option key={c}>{c}</option>
-          ))}
-        </select>
+        <Select value={cat} onChange={setCat} options={[{ value: "all", label: "All categories" }, ...cats]} label="Filter by category" className="sm:w-64" />
       </div>
 
       <div className="mt-4 space-y-2">
         {loading &&
           Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="skeleton h-20 rounded-xl" />
+            <div key={i} className="skeleton h-20 rounded-md" />
           ))}
         {list.slice(0, show).map((p) => (
           <div key={p.id} className={`card flex items-center gap-3 p-3 ${p.active === false ? "opacity-55" : ""}`}>

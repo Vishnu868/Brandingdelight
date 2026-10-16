@@ -47,7 +47,7 @@ export function BuyBox({ p }: { p: Product }) {
           <p className="text-2xl font-semibold text-maroon">Price on request</p>
         )}
       </div>
-      {soldOut && <p className="mt-3 inline-block rounded-full bg-red-50 px-3 py-1 text-sm font-semibold text-danger">Out of stock</p>}
+      {soldOut && <p className="mt-3 inline-block rounded-md bg-red-50 px-3 py-1 text-sm font-semibold text-danger">Out of stock</p>}
       {buyable && p.stock <= 5 && <p className="mt-3 text-sm font-semibold text-danger">Only {p.stock} left in stock</p>}
       {!priced && <p className="mt-1 text-sm text-muted">Bulk / corporate product — share your quantity and branding needs for the best price.</p>}
 
@@ -59,7 +59,7 @@ export function BuyBox({ p }: { p: Product }) {
               <button
                 key={v.id}
                 onClick={() => setVariantId(v.id)}
-                className={`rounded-xl border px-4 py-2.5 text-left text-sm transition ${v.id === variantId ? "border-maroon bg-maroon/5 ring-2 ring-maroon/15" : "border-line bg-white hover:border-ink/30"}`}
+                className={`rounded-md border px-4 py-2.5 text-left text-sm transition ${v.id === variantId ? "border-maroon bg-maroon/5 ring-2 ring-maroon/15" : "border-line bg-white hover:border-ink/30"}`}
               >
                 <span className="block font-semibold">{v.label}</span>
                 <span className="text-xs text-muted">{formatINR(v.price)}</span>
@@ -71,7 +71,7 @@ export function BuyBox({ p }: { p: Product }) {
 
       <div className="mt-6 flex items-center gap-3">
         <p className="label !mb-0">Qty</p>
-        <div className="flex items-center rounded-full border border-line bg-white">
+        <div className="flex items-center rounded-md border border-line bg-white">
           <button className="p-2.5" onClick={() => setQty((q) => Math.max(1, q - 1))} aria-label="Decrease quantity">
             <Minus size={16} />
           </button>
@@ -134,7 +134,7 @@ export function BuyBox({ p }: { p: Product }) {
         </a>
       )}
 
-      <div className="mt-6 rounded-2xl border border-line bg-white p-4">
+      <div className="mt-6 rounded-lg border border-line bg-white p-4">
         <form
           className="flex gap-2"
           onSubmit={(e) => {

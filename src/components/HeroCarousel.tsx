@@ -50,7 +50,7 @@ export function HeroCarousel({ slides }: { slides: Slide[] }) {
                   loading={k === 0 ? "eager" : "lazy"}
                   fetchPriority={k === 0 ? "high" : "auto"}
                   decoding="async"
-                  className="mx-auto max-h-[250px] w-auto rounded-2xl object-contain shadow-[var(--shadow-pop)] md:max-h-[420px] lg:max-h-[460px]"
+                  className="mx-auto max-h-[250px] w-auto rounded-lg object-contain shadow-[var(--shadow-pop)] md:max-h-[420px] lg:max-h-[460px]"
                 />
               </div>
             </div>

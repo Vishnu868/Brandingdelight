@@ -27,9 +27,9 @@ function OrdersInner() {
           </button>
         ))}
       </div>
-      {error && <p className="mt-4 rounded-xl bg-amber-50 p-4 text-sm text-amber-800">{error}</p>}
+      {error && <p className="mt-4 rounded-md bg-amber-50 p-4 text-sm text-amber-800">{error}</p>}
       <div className="mt-4 space-y-2">
-        {loading && Array.from({ length: 5 }).map((_, i) => <div key={i} className="skeleton h-20 rounded-xl" />)}
+        {loading && Array.from({ length: 5 }).map((_, i) => <div key={i} className="skeleton h-20 rounded-md" />)}
         {!loading && data?.orders.length === 0 && <p className="card p-8 text-center text-muted">No orders here yet.</p>}
         {data?.orders.map((o) => (
           <div key={o.id} className="card overflow-hidden">
