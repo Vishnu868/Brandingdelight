@@ -4,6 +4,9 @@ import { adminRoute, refreshStorefront } from "@/lib/admin-api";
 import { productToRow } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 
+// ~3,000 rows in 200-row batches: allow more than the default serverless time limit.
+export const maxDuration = 60;
+
 /**
  * One-time import of the 3,000+ catalogue products bundled with the site into Supabase.
  * Existing products with the same id are left untouched unless `overwrite` is true.

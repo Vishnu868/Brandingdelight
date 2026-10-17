@@ -87,6 +87,8 @@ const loadPage = unstable_cache(
   { tags: [PRODUCTS_TAG], revalidate: 600 },
 );
 
+const seedIds = new Set(seedProducts.map((p) => p.id));
+
 export async function getAllProducts(): Promise<Product[]> {
   if (!supabaseAdmin()) return seedProducts;
   const all: Product[] = [];
@@ -96,7 +98,13 @@ export async function getAllProducts(): Promise<Product[]> {
     all.push(...rows);
     if (rows.length < PAGE) break;
   }
-  return all.length ? all : seedProducts;
+  // Until "Import catalogue" has been run, the table only holds products added in the admin panel:
+  // show those alongside the bundled catalogue instead of hiding the whole catalogue.
+  if (!all.some((p) => seedIds.has(p.id))) {
+    const own = new Set(all.map((p) => p.id));
+    return [...seedProducts.filter((p) => !own.has(p.id)), ...all];
+  }
+  return all;
 }
 
 export async function getProduct(slug: string) {

@@ -3,7 +3,9 @@ const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR",
 export const formatINR = (n: number) => inr.format(n);
 
 /** Thumbnail path for a catalogue image (640px WebP); uploaded/remote images are returned unchanged. */
-export const thumb = (src: string) => (src.startsWith("/catalog/") ? src.replace("/catalog/", "/thumbs/") : src);
+/** 640px grid version of a product image: /catalog → /thumbs, and admin uploads (stored as `p/…/x.webp`) → `x_640.webp`. */
+export const thumb = (src: string) =>
+  src.startsWith("/catalog/") ? src.replace("/catalog/", "/thumbs/") : /\/object\/public\/[^/]+\/p\/.+\.webp$/.test(src) ? src.replace(/\.webp$/, "_640.webp") : src;
 
 export const FREE_SHIPPING_THRESHOLD = 999;
 export const SHIPPING_FEE = 79;

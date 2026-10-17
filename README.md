@@ -1,6 +1,6 @@
 # BrandingDelight — Premium Gifting Store
 
-Mobile-first e-commerce store for BrandingDelight (Hyderabad): 3,020 products from 34 brand catalogues — Lifelong,
+Mobile-first e-commerce store for BrandingDelight (Hyderabad): 3,019 products from 34 brand catalogues — Lifelong,
 SMOOR, Tamta, FUZO, HRX, SNITCH, Swiss Military, Kamiliant, LOYKA, Unwrap Happiness, Everyday Organisers,
 Aquaminder, Nutsio and more.
 
