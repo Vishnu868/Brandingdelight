@@ -6,6 +6,7 @@ import { thumb } from "@/lib/format";
 import { useAdminData, useAdminMutation } from "@/lib/use-admin";
 import { useToast } from "@/lib/store";
 import type { Product, Spec, Variant } from "@/lib/types";
+import { startRouteLoading } from "@/components/RouteLoader";
 
 const BLANK: Product = {
   id: "", slug: "", name: "", brand: "", category: "", subcategory: "", price: null, mrp: null, sku: null, shortDescription: "", description: "",
@@ -72,6 +73,7 @@ export function ProductForm({ initial, copyOf }: { initial?: Product; copyOf?: P
       if (initial) await mutate(`/api/admin/products/${encodeURIComponent(initial.id)}`, "PUT", body);
       else await mutate("/api/admin/products", "POST", body);
       toast(initial ? "Product updated — live on the store" : "Product added — live on the store");
+      startRouteLoading();
       router.push("/admin/products");
     } catch (err) {
       toast((err as Error).message, "error");

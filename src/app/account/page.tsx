@@ -12,6 +12,7 @@ import { useMounted } from "@/components/Header";
 import { formatINR, thumb } from "@/lib/format";
 import { useLocalOrders, useToast, useWishlist } from "@/lib/store";
 import type { Address, Order } from "@/lib/types";
+import { startRouteLoading } from "@/components/RouteLoader";
 
 export default function AccountPage() {
   const router = useRouter();
@@ -81,6 +82,7 @@ export default function AccountPage() {
             className="btn-outline"
             onClick={async () => {
               await signOut();
+              startRouteLoading();
               router.push("/");
             }}
           >

@@ -6,6 +6,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileTabBar } from "@/components/MobileTabBar";
 import { Toaster } from "@/components/Toaster";
+import { RouteLoader, RouteWatcher } from "@/components/RouteLoader";
+import { Suspense } from "react";
 import { getCategories } from "@/lib/catalog";
 import { SITE } from "@/lib/format";
 
@@ -39,6 +41,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <Footer categories={categories} />
           <MobileTabBar />
           <Toaster />
+          <RouteLoader />
+          <Suspense fallback={null}>
+            <RouteWatcher />
+          </Suspense>
         </AuthProvider>
       </body>
     </html>
