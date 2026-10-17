@@ -45,6 +45,8 @@ A photo + name cross-check of every new product against every old one (`overlap.
 - EVM: a stray hidden "Alder" text layer on page 14 had produced a phantom product; removed.
 - Popli: all 621 item codes re-read at 5× zoom with a second OCR pass; 539 matched automatically, the other 82 were
   checked by eye. 3 corrected: PAGE-100, G-110Y, DE-11.
+- Remaxx descriptions, Fur Jaden features/colours and pen-drive specs (OCR-read) re-read at high zoom and compared:
+  14 Remaxx descriptions had lost their last line (restored), 2 Fur Jaden features fixed, "Uv" → "UV" in pen-drive specs.
 
 ## Pages without their own product
 
@@ -56,7 +58,7 @@ Desktop Pen Holders pp. 19–27 (= XG-T11, T19, T45, T58, T59, T63, T64, T65, T6
 ## Feature bullets
 
 All new products now have feature bullets; the 240 that could not be parsed automatically were written by hand from
-their catalogue pages (`highlights_manual.json`).
+their catalogue pages (`highlights_manual.json`, keyed by product id; `merge.py` applies it).
 
 ## Pipeline
 

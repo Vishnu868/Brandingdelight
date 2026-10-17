@@ -218,6 +218,14 @@ for p in added:
     final_new.append(p)
 
 products = old + final_new
+# hand-written bullets for products whose pages could not be parsed (keyed by product id)
+_hm = os.path.join(os.path.dirname(OUT), "..", "..", "scripts", "catalog-extraction", "new-catalogues", "highlights_manual.json")
+_hm = _hm if os.path.exists(_hm) else os.path.join(HERE, "highlights_manual.json")
+if os.path.exists(_hm):
+    _h = json.load(open(_hm, encoding="utf-8"))
+    for p in products:
+        if p["id"] in _h:
+            p["highlights"] = _h[p["id"]]
 cats = {}
 for p in products:
     c = cats.setdefault(p["category"], {"name": p["category"], "slug": slugify(p["category"]), "subcategories": {}, "count": 0, "image": p["images"][0]})
