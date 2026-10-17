@@ -1,14 +1,13 @@
 "use client";
 import { useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { AlertTriangle, CheckCircle2, FileUp, ImageOff, Loader2, Sparkles, Trash2 } from "lucide-react";
+import { AlertTriangle, CheckCircle2, FileUp, ImageOff, Loader2, ScanText, Trash2 } from "lucide-react";
 import { Select } from "@/components/Select";
 import { useAdminData, useAdminMutation } from "@/lib/use-admin";
 import { useToast } from "@/lib/store";
 import type { Product } from "@/lib/types";
 
-type Box = { x0: number; y0: number; x1: number; y1: number };
-type Extracted = { name: string; brand: string; code: string; price: number | null; description: string; features: string[]; category: string; photo: Box | null };
+import { closeOcr, extractPage, type Box } from "@/lib/pdf-extract";
 type Draft = {
   key: string;
   page: number;
@@ -25,9 +24,8 @@ type Draft = {
 };
 type PageState = { page: number; status: "waiting" | "reading" | "done" | "empty" | "error"; note?: string };
 
-const RENDER_PX = 1600; // long edge sent to the model
+const RENDER_PX = 2200; // long edge of the rendered page (photos are cropped from it)
 const CROP_PX = 1000; // long edge of saved product photos
-const PARALLEL = 2;
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
 
@@ -115,52 +113,49 @@ export function PdfImport({ categories }: { categories: string[] }) {
     const pdfjs = await loadPdfjs();
     const task = pdfjs.getDocument({ data: await file.arrayBuffer() });
     const doc = await task.promise;
-    let next = 0;
-    const worker = async () => {
-      while (next < list.length && !cancel.current) {
-        const pn = list[next++];
-        mark(pn, { status: "reading" });
-        try {
-          const page = await doc.getPage(pn);
-          const vp1 = page.getViewport({ scale: 1 });
-          const vp = page.getViewport({ scale: RENDER_PX / Math.max(vp1.width, vp1.height) });
-          const canvas = document.createElement("canvas");
-          canvas.width = Math.round(vp.width);
-          canvas.height = Math.round(vp.height);
-          await page.render({ canvasContext: canvas.getContext("2d")!, viewport: vp }).promise;
-          const res = await mutate("/api/admin/extract-page", "POST", { image: canvas.toDataURL("image/jpeg", 0.85), categories, brand });
-          const items = (res.products ?? []) as Extracted[];
-          if (!items.length) {
-            mark(pn, { status: "empty", note: res.page_kind && res.page_kind !== "products" ? res.page_kind : "no products" });
-            continue;
-          }
-          const add: Draft[] = items.map((it, k) => {
-            const br = (it.brand || brand).trim();
-            const dupe = (it.code && known.get(`${norm(br)}|${norm(it.code)}`)) || known.get(`${norm(br)}|${norm(it.name)}`) || null;
-            return {
-              key: `${pn}-${k}`,
-              page: pn,
-              include: !dupe,
-              dupe,
-              image: it.photo ? cropBox(canvas, it.photo) : null,
-              name: it.name.trim(),
-              brand: br,
-              code: it.code.trim(),
-              price: it.price != null && it.price > 0 ? String(Math.round(it.price)) : "",
-              category: defaultCat || (categories.includes(it.category) ? it.category : ""),
-              description: it.description.trim(),
-              features: it.features.map((f) => f.trim()).filter(Boolean).join("\n"),
-            };
-          });
-          setDrafts((d) => [...d, ...add].sort((x, y) => x.page - y.page));
-          mark(pn, { status: "done", note: `${items.length} product${items.length === 1 ? "" : "s"}` });
-        } catch (e) {
-          mark(pn, { status: "error", note: (e as Error).message });
-          if (/API key|Admin access|Supabase/.test((e as Error).message)) cancel.current = true;
+    const seenHeaders = new Map<string, number>();
+    for (const pn of list) {
+      if (cancel.current) break;
+      mark(pn, { status: "reading" });
+      try {
+        const page = await doc.getPage(pn);
+        const vp1 = page.getViewport({ scale: 1 });
+        const vp = page.getViewport({ scale: RENDER_PX / Math.max(vp1.width, vp1.height) });
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(vp.width);
+        canvas.height = Math.round(vp.height);
+        // "print" intent renders without requestAnimationFrame, so a long import keeps going in a background tab
+        await page.render({ canvasContext: canvas.getContext("2d")!, viewport: vp, intent: "print" }).promise;
+        const { products: items, ocr } = await extractPage(pdfjs, page, vp, canvas, { brand, categories, seenHeaders });
+        if (!items.length) {
+          mark(pn, { status: "empty", note: "no products" });
+          continue;
         }
+        const add: Draft[] = items.map((it, k) => {
+          const br = (it.brand || brand).trim();
+          const dupe = (it.code && known.get(`${norm(br)}|${norm(it.code)}`)) || known.get(`${norm(br)}|${norm(it.name)}`) || null;
+          return {
+            key: `${pn}-${k}`,
+            page: pn,
+            include: !dupe,
+            dupe,
+            image: it.photo ? cropBox(canvas, it.photo) : null,
+            name: it.name.trim(),
+            brand: br,
+            code: it.code.trim(),
+            price: it.price != null && it.price > 0 ? String(Math.round(it.price)) : "",
+            category: defaultCat || (categories.includes(it.category) ? it.category : ""),
+            description: it.description.trim(),
+            features: it.features.map((f) => f.trim()).filter(Boolean).join("\n"),
+          };
+        });
+        setDrafts((d) => [...d, ...add]);
+        mark(pn, { status: "done", note: `${items.length} product${items.length === 1 ? "" : "s"}${ocr ? " (OCR)" : ""}` });
+      } catch (e) {
+        mark(pn, { status: "error", note: (e as Error).message });
       }
-    };
-    await Promise.all(Array.from({ length: PARALLEL }, worker));
+    }
+    await closeOcr();
     task.destroy();
     setReading(false);
   };
@@ -218,7 +213,7 @@ export function PdfImport({ categories }: { categories: string[] }) {
     <div className="mx-auto max-w-5xl">
       <h1 className="h-display text-[28px] font-semibold">Import from a PDF catalogue</h1>
       <p className="mt-1 max-w-2xl text-sm text-muted">
-        Upload a supplier catalogue. Each page is read by AI to find product names, codes, prices, details and photos. Nothing goes live until you review it and press
+        Upload a supplier catalogue. Product names, codes, prices, details and photos are read straight from the PDF in your browser (free; scanned pages use free OCR). Nothing goes live until you review it and press
         <b> Add to store</b>. Products without a printed price get the “Get a quote” button.
       </p>
 
@@ -239,7 +234,7 @@ export function PdfImport({ categories }: { categories: string[] }) {
         </label>
         <div className="text-sm">
           <span className="label">Category for all products</span>
-          <Select value={defaultCat} onChange={setDefaultCat} options={[{ value: "", label: "Let AI suggest per product" }, ...categories]} />
+          <Select value={defaultCat} onChange={setDefaultCat} options={[{ value: "", label: "Suggest per product" }, ...categories]} />
         </div>
         <div className="grid grid-cols-2 gap-3 text-sm">
           <label>
@@ -254,14 +249,14 @@ export function PdfImport({ categories }: { categories: string[] }) {
         <div className="flex flex-wrap items-center gap-3 sm:col-span-2">
           {!reading ? (
             <button className="btn-primary" onClick={read} disabled={!file}>
-              <Sparkles size={17} /> Read catalogue
+              <ScanText size={17} /> Read catalogue
             </button>
           ) : (
             <button className="btn-outline" onClick={() => (cancel.current = true)}>
-              Stop after current pages
+              Stop after this page
             </button>
           )}
-          <p className="text-xs text-muted">Takes about 15–30 seconds per page. Keep this tab open while it reads.</p>
+          <p className="text-xs text-muted">Text PDFs read instantly; scanned pages take a few seconds each. Keep this tab open while it reads.</p>
         </div>
       </div>
 

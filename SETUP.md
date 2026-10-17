@@ -52,16 +52,13 @@ so nobody else can add/edit products or see orders — even by calling the API d
    Do this once, before adding your own products. Run it again whenever the bundled catalogue gets new products: it
    only adds missing ones and never overwrites products you have edited.
 
-## 3b. AI catalogue import (optional) — Admin → Import PDF
+## 3b. Catalogue import from PDF — Admin → Import PDF (free)
 
-Lets an admin upload a supplier's PDF catalogue; each page is read by Claude (Anthropic's AI) to pull out product names,
-codes, prices, details and photo crops, which you review and edit before they go live.
-
-1. https://platform.claude.com → sign up → **API keys → Create key**. Add billing credit (pay-as-you-go).
-2. Add it as `ANTHROPIC_API_KEY` in Vercel (and `.env.local` for local use). It stays on the server; browsers never see it.
-3. Cost: roughly ₹3–5 per catalogue page (a 100-page catalogue ≈ ₹300–500). Speed: about 15–30 seconds per page,
-   two pages at a time. Nothing is saved until you press **Add to store**, and products that look like ones already in
-   the store are flagged and left unticked.
+Upload a supplier's PDF catalogue and the admin page pulls out product names, codes, prices, details and photos,
+entirely in your browser: no paid service, no API key. Text-based PDFs are read directly (instant); image-only /
+scanned pages are read with free open-source OCR (Tesseract, a few seconds per page). Everything lands in a review
+list where you correct anything before pressing **Add to store**; products that look like ones already in the store
+are flagged and left unticked.
 
 ## 4. Razorpay — payments including American Express (Amex)
 
