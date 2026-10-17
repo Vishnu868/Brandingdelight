@@ -145,12 +145,16 @@ def sim(a, b):
 
 
 def same(a, b):
+    """Exact duplicate = same company + same code (or same name & price) + the same product photo.
+    Catalogues sometimes reuse one code for two different products, so the photo has to match too."""
     if norm(a["brand"]) != norm(b["brand"]):
         return False
     sa, sb = norm(a.get("sku")), norm(b.get("sku"))
     if sa and sb:
-        return sa == sb and sim(a, b) >= 0.5
-    return norm(a["name"]) == norm(b["name"]) and a.get("price") is not None and a.get("price") == b.get("price")
+        ok = sa == sb and sim(a, b) >= 0.5
+    else:
+        ok = norm(a["name"]) == norm(b["name"]) and a.get("price") is not None and a.get("price") == b.get("price")
+    return ok and same_photo(a, b)
 
 
 idx = {}
@@ -179,6 +183,21 @@ def dhash(path, n=12):
         return None
     px = im.load()
     return sum(1 << (y * n + x) for y in range(n) for x in range(n) if px[x, y] > px[x + 1, y])
+
+
+_H = {}
+
+
+def ph(p):
+    k = p["images"][0] if p["images"] else None
+    if k not in _H:
+        _H[k] = dhash(k) if k else None
+    return _H[k]
+
+
+def same_photo(a, b):
+    ha, hb = ph(a), ph(b)
+    return ha is not None and hb is not None and bin(ha ^ hb).count("1") <= 6
 
 
 OLD_H = [(dhash(p["images"][0]), p) for p in old if p["images"]]

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Listing } from "@/components/Listing";
+import { packCards } from "@/lib/pack";
 import { ListingSkeleton } from "@/components/ListingSkeleton";
 import { getBrands, getCards } from "@/lib/catalog";
 
@@ -29,7 +30,7 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
       <h1 className="h-display mt-3 text-3xl font-semibold sm:text-4xl">{brand.name}</h1>
       <p className="mb-6 mt-1 text-sm text-muted">{brand.count} products</p>
       <Suspense fallback={<ListingSkeleton title={false} />}>
-        <Listing cards={cards} />
+        <Listing data={packCards(cards)} />
       </Suspense>
     </div>
   );

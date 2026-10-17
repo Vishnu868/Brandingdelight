@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Listing } from "@/components/Listing";
+import { packCards } from "@/lib/pack";
 import { ListingSkeleton } from "@/components/ListingSkeleton";
 import { getCards, getCategories, imagePosition } from "@/lib/catalog";
 
@@ -49,7 +50,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
       </div>
       <div className="container-x py-6">
         <Suspense fallback={<ListingSkeleton title={false} />}>
-          <Listing cards={cards} facetBy="subcategory" />
+          <Listing data={packCards(cards)} facetBy="subcategory" />
         </Suspense>
       </div>
     </>
