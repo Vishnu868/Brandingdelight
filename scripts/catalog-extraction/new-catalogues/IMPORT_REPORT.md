@@ -53,11 +53,10 @@ product already listed elsewhere in the same PDF; those were attached to the exi
 Desktop Pen Holders pp. 19–27 (= XG-T11, T19, T45, T58, T59, T63, T64, T65, T68), Portronics pp. 104, 105, 660
 (Harmonics Z11 / Z12 and Konnect 240C alternate photos), Notebooks p. 80 (Transformer cube colour variants).
 
-## Known gaps
+## Feature bullets
 
-241 new products have no bullet list of features (mostly Xech, metal flasks, notebooks): their features are printed as
-icon labels or free-floating text that OCR cannot order reliably. They still have a correct name, subtitle and
-description; bullets can be transcribed by hand later.
+All new products now have feature bullets; the 240 that could not be parsed automatically were written by hand from
+their catalogue pages (`highlights_manual.json`).
 
 ## Pipeline
 
