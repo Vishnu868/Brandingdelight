@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Listing } from "@/components/Listing";
+import { packCards } from "@/lib/pack";
 import { ListingSkeleton } from "@/components/ListingSkeleton";
 import { getCards } from "@/lib/catalog";
 
@@ -18,7 +19,7 @@ export default async function ShopPage() {
         {cards.length} premium products across {new Set(cards.map((c) => c.category)).size} categories
       </p>
       <Suspense fallback={<ListingSkeleton title={false} />}>
-        <Listing cards={cards} />
+        <Listing data={packCards(cards)} />
       </Suspense>
     </div>
   );

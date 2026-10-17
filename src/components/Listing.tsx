@@ -5,6 +5,7 @@ import { SlidersHorizontal, X } from "lucide-react";
 import { ProductCard, gridCls } from "./ProductCard";
 import { Select } from "./Select";
 import { searchCards } from "@/lib/search";
+import { unpackCards, type PackedCards } from "@/lib/pack";
 import { slugify } from "@/lib/format";
 import type { ProductCard as Card } from "@/lib/types";
 
@@ -28,7 +29,8 @@ const PRICE_BANDS = [
 const PAGE = 24;
 
 /** Client-side filtered listing. Cards arrive pre-rendered from the server; filtering happens instantly in the browser. */
-export function Listing({ cards, facetBy = "category" }: { cards: Card[]; facetBy?: "category" | "subcategory" }) {
+export function Listing({ data, facetBy = "category" }: { data: PackedCards; facetBy?: "category" | "subcategory" }) {
+  const cards = useMemo(() => unpackCards(data), [data]);
   const router = useRouter();
   const pathname = usePathname();
   const sp = useSearchParams();

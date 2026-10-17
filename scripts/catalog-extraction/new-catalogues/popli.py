@@ -99,7 +99,11 @@ for pn in sorted(o, key=int):
         r, c = int(k[0]), int(k[1])
         y = [0.325, 0.624, 0.923][r]
         pre = code.split("-")[0]
-        if sec == "NEW COLLECTION" and pre == "FR":
+        PAGE_FIX = {("51", "G-325"): "Nataraja Idol", ("60", "CP-111"): "Printed Copper Bottle & Glass Set",
+                    ("60", "CP-112"): "Copper Goblet Pair in Gift Box", ("49", "TR-2"): "Brass Tree of Life"}
+        if (pn, code) in PAGE_FIX:
+            noun = PAGE_FIX[(pn, code)]
+        elif sec == "NEW COLLECTION" and pre == "FR":
             noun = "Brass Art Frame"
         elif code in SPECIFIC:
             noun = SPECIFIC[code]
