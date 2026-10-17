@@ -1,6 +1,6 @@
 # New catalogue import (Oct 2026)
 
-21 new PDFs from `newcatalogues/` were added on top of the original 792 products → **3,020 products**.
+21 new PDFs from `newcatalogues/` were added on top of the original 792 products → **3,019 products**.
 Two of the 23 files (`Catalogue (JUNE 2026).pdf`, `electronics-and-mobile-accessories.pdf`) are byte-identical
 to catalogues already imported, so they were skipped. All 792 original products are kept unchanged.
 
@@ -20,7 +20,7 @@ to catalogues already imported, so they were skipped. All 792 original products 
 | Borosil Catalog 2026 | 30 |
 | Star Diary Power Bank Note Book 2027 | 26 |
 | Premium Organizer Collection | 25 |
-| EVM Catalogue | 21 |
+| EVM Catalogue | 20 |
 | KIVA Gifts Collection 26 | 21 |
 | Luxury Corporate Gift Combos | 20 |
 | Desktop Pen Holders | 18 |
@@ -38,6 +38,13 @@ emblem and a Nataraja; Popli TR-2, CP-111, CP-112 and Portronics Konnect CL like
   already listed from the old *Electronics & Mobile Accessories* catalogue (same code, identical photo). Old listing kept.
 
 A photo + name cross-check of every new product against every old one (`overlap.py`) found no other overlaps.
+
+## Checks done
+
+- Every page of every PDF accounted for; product counts per page re-checked (WP model counts match exactly; EVM 20, Wangari 13).
+- EVM: a stray hidden "Alder" text layer on page 14 had produced a phantom product; removed.
+- Popli: all 621 item codes re-read at 5× zoom with a second OCR pass; 539 matched automatically, the other 82 were
+  checked by eye. 3 corrected: PAGE-100, G-110Y, DE-11.
 
 ## Pages without their own product
 

@@ -32839,31 +32839,6 @@
    "priceOnRequest": true
   },
   {
-   "id": "evm-alder",
-   "slug": "evm-alder",
-   "name": "EVM Alder",
-   "brand": "EVM",
-   "category": "Mobile & Tech Accessories",
-   "subcategory": "Chargers, Cables & USB Hubs",
-   "price": null,
-   "mrp": null,
-   "sku": null,
-   "shortDescription": "Wireless Charger with Planter",
-   "description": "Wireless Charger with Planter.",
-   "highlights": [],
-   "specs": [],
-   "variants": [],
-   "images": [
-    "/catalog/evm/evm-alder.webp"
-   ],
-   "tags": [
-    "evm"
-   ],
-   "catalog": "EVM Catalogue",
-   "stock": 100,
-   "priceOnRequest": true
-  },
-  {
    "id": "evm-enbuds-anc",
    "slug": "evm-enbuds-anc",
    "name": "EVM EnBuds ANC",
@@ -59841,19 +59816,19 @@
    "priceOnRequest": true
   },
   {
-   "id": "popli-brass-puja-article-page-10o",
-   "slug": "popli-brass-puja-article-page-10o",
-   "name": "Popli Brass Puja Article PAGE-10O",
+   "id": "popli-brass-cone-incense-holders-page-100",
+   "slug": "popli-brass-cone-incense-holders-page-100",
+   "name": "Popli Brass Cone Incense Holders PAGE-100",
    "brand": "Popli Brass",
    "category": "Brass Decor & Pooja",
    "subcategory": "Puja Articles",
    "price": null,
    "mrp": null,
-   "sku": "PAGE-10O",
+   "sku": "PAGE-100",
    "shortDescription": "Brass Puja Articles",
-   "description": "Brass Puja Article (PAGE-10O) from Popli's brass puja articles range - handcrafted decor and gifting piece made in Moradabad, India's brass city.",
+   "description": "Brass Cone Incense Holders (PAGE-100) from Popli's brass puja articles range - handcrafted decor and gifting piece made in Moradabad, India's brass city.",
    "highlights": [
-    "Item code: PAGE-10O",
+    "Item code: PAGE-100",
     "Collection: Brass Puja Articles",
     "Handcrafted in Moradabad, India",
     "Ideal for corporate & festive gifting"
@@ -59861,12 +59836,12 @@
    "specs": [
     {
      "label": "Model / SKU",
-     "value": "PAGE-10O"
+     "value": "PAGE-100"
     }
    ],
    "variants": [],
    "images": [
-    "/catalog/popli/popli-page-10o.webp"
+    "/catalog/popli/popli-page-100.webp"
    ],
    "tags": [
     "popli"
@@ -63691,19 +63666,19 @@
    "priceOnRequest": true
   },
   {
-   "id": "popli-brass-idol-figurine-g-10oy",
-   "slug": "popli-brass-idol-figurine-g-10oy",
-   "name": "Popli Brass Idol & Figurine G-10OY",
+   "id": "popli-brass-idol-figurine-g-110y",
+   "slug": "popli-brass-idol-figurine-g-110y",
+   "name": "Popli Brass Idol & Figurine G-110Y",
    "brand": "Popli Brass",
    "category": "Brass Decor & Pooja",
    "subcategory": "God Idols",
    "price": null,
    "mrp": null,
-   "sku": "G-10OY",
+   "sku": "G-110Y",
    "shortDescription": "Hindu God Idols",
-   "description": "Brass Idol & Figurine (G-10OY) from Popli's hindu god idols range - handcrafted decor and gifting piece made in Moradabad, India's brass city.",
+   "description": "Brass Idol & Figurine (G-110Y) from Popli's hindu god idols range - handcrafted decor and gifting piece made in Moradabad, India's brass city.",
    "highlights": [
-    "Item code: G-10OY",
+    "Item code: G-110Y",
     "Collection: Hindu God Idols",
     "Handcrafted in Moradabad, India",
     "Ideal for corporate & festive gifting"
@@ -63711,12 +63686,12 @@
    "specs": [
     {
      "label": "Model / SKU",
-     "value": "G-10OY"
+     "value": "G-110Y"
     }
    ],
    "variants": [],
    "images": [
-    "/catalog/popli/popli-g-10oy.webp"
+    "/catalog/popli/popli-g-110y.webp"
    ],
    "tags": [
     "popli"
@@ -66071,19 +66046,19 @@
    "priceOnRequest": true
   },
   {
-   "id": "popli-brass-animal-figure-de-10",
-   "slug": "popli-brass-animal-figure-de-10",
-   "name": "Popli Brass Animal Figure DE-10",
+   "id": "popli-brass-animal-figure-de-11",
+   "slug": "popli-brass-animal-figure-de-11",
+   "name": "Popli Brass Animal Figure DE-11",
    "brand": "Popli Brass",
    "category": "Brass Decor & Pooja",
    "subcategory": "Animal Figures",
    "price": null,
    "mrp": null,
-   "sku": "DE-10",
+   "sku": "DE-11",
    "shortDescription": "Brass Animal Figures",
-   "description": "Brass Animal Figure (DE-10) from Popli's brass animal figures range - handcrafted decor and gifting piece made in Moradabad, India's brass city.",
+   "description": "Brass Animal Figure (DE-11) from Popli's brass animal figures range - handcrafted decor and gifting piece made in Moradabad, India's brass city.",
    "highlights": [
-    "Item code: DE-10",
+    "Item code: DE-11",
     "Collection: Brass Animal Figures",
     "Handcrafted in Moradabad, India",
     "Ideal for corporate & festive gifting"
@@ -66091,12 +66066,12 @@
    "specs": [
     {
      "label": "Model / SKU",
-     "value": "DE-10"
+     "value": "DE-11"
     }
    ],
    "variants": [],
    "images": [
-    "/catalog/popli/popli-de-10.webp"
+    "/catalog/popli/popli-de-11.webp"
    ],
    "tags": [
     "popli"
@@ -110865,7 +110840,7 @@
     {
      "name": "Chargers, Cables & USB Hubs",
      "slug": "chargers-cables-usb-hubs",
-     "count": 371
+     "count": 370
     },
     {
      "name": "USB Fans & Gadgets",
@@ -110883,7 +110858,7 @@
      "count": 111
     }
    ],
-   "count": 728,
+   "count": 727,
    "image": "/catalog/lifelong/llpbbwa20.webp"
   },
   {
@@ -111270,7 +111245,7 @@
   {
    "name": "EVM",
    "slug": "evm",
-   "count": 21
+   "count": 20
   },
   {
    "name": "Fur Jaden",
