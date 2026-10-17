@@ -2,9 +2,11 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { sendEmailVerification, updateProfile } from "firebase/auth";
+import { sendEmailVerification } from "firebase/auth";
 import { Heart, LayoutDashboard, LogOut, MapPin, Package, User } from "lucide-react";
-import { useAuth } from "@/components/AuthProvider";
+import { profileComplete, useAuth } from "@/components/AuthProvider";
+import { ContactFields } from "@/components/ContactFields";
+import { Modal } from "@/components/Modal";
 import { StatusPill } from "@/components/StatusPill";
 import { useMounted } from "@/components/Header";
 import { formatINR, thumb } from "@/lib/format";
@@ -14,13 +16,13 @@ import type { Address, Order } from "@/lib/types";
 export default function AccountPage() {
   const router = useRouter();
   const mounted = useMounted();
-  const { user, loading, isAdmin, authFetch, signOut, configured } = useAuth();
+  const { user, loading, isAdmin, authFetch, signOut, configured, profile, profileLoaded, saveProfile } = useAuth();
+  const [askLater, setAskLater] = useState(false);
   const local = useLocalOrders((s) => s.orders);
   const wish = useWishlist((s) => s.items.length);
   const toast = useToast((s) => s.push);
   const [orders, setOrders] = useState<(Order & { trackingUrl?: string })[] | null>(null);
   const [tab, setTab] = useState<"orders" | "profile" | "address">("orders");
-  const [name, setName] = useState("");
   const [addr, setAddr] = useState<Partial<Address>>({});
 
   useEffect(() => {
@@ -28,7 +30,6 @@ export default function AccountPage() {
   }, [loading, user, router, configured]);
   useEffect(() => {
     if (!user) return;
-    setName(user.displayName ?? "");
     authFetch("/api/orders")
       .then((r) => (r.ok ? r.json() : { orders: [] }))
       .then((d) => setOrders(d.orders));
@@ -47,6 +48,21 @@ export default function AccountPage() {
 
   return (
     <div className="container-x py-6 sm:py-10">
+      <Modal
+        open={Boolean(user && profileLoaded && !profileComplete(profile) && !askLater)}
+        onClose={() => setAskLater(true)}
+        title="Complete your profile"
+        subtitle="Add your name and mobile number for order updates and faster quotes."
+      >
+        <ContactFields
+          initial={profile ?? undefined}
+          submitLabel="Save & continue"
+          onSubmit={async (p) => {
+            await saveProfile(p);
+            toast("Profile saved");
+          }}
+        />
+      </Modal>
       <div className="flex flex-wrap items-center gap-4">
         <span className="grid size-14 place-items-center rounded-full bg-maroon text-xl font-semibold text-white">
           {(user?.displayName || user?.email || "G")[0].toUpperCase()}
@@ -143,28 +159,18 @@ export default function AccountPage() {
       )}
 
       {tab === "profile" && user && (
-        <form
-          className="card mt-6 max-w-lg space-y-4 p-5"
-          onSubmit={async (e) => {
-            e.preventDefault();
-            await updateProfile(user, { displayName: name });
-            toast("Profile updated");
-          }}
-        >
-          <label className="block">
-            <span className="label">Full name</span>
-            <input className="input" value={name} onChange={(e) => setName(e.target.value)} />
-          </label>
-          <label className="block">
-            <span className="label">Email</span>
-            <input className="input" value={user.email ?? ""} disabled />
-          </label>
-          <label className="block">
-            <span className="label">Phone</span>
-            <input className="input" value={user.phoneNumber ?? ""} disabled />
-          </label>
-          <button className="btn-primary">Save</button>
-        </form>
+        <div className="card mt-6 max-w-lg p-5">
+          <ContactFields
+            key={`${profile?.name}-${profile?.phone}`}
+            initial={profile ?? undefined}
+            submitLabel="Save details"
+            onSubmit={async (p) => {
+              await saveProfile(p);
+              toast("Profile saved");
+            }}
+          />
+          {user.email && <p className="mt-4 text-sm text-muted">Signed in as {user.email}</p>}
+        </div>
       )}
 
       {tab === "address" && (

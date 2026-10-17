@@ -5,7 +5,7 @@ import { productToRow } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 
 /**
- * One-time import of the 790+ catalogue products bundled with the site into Supabase.
+ * One-time import of the 3,000+ catalogue products bundled with the site into Supabase.
  * Existing products with the same id are left untouched unless `overwrite` is true.
  */
 export const POST = adminRoute(async (req, { db }) => {

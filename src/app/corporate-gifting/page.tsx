@@ -23,7 +23,7 @@ export default function CorporatePage() {
       <section className="container-x mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {[
           [Brush, "Custom branding", "Laser engraving, screen & UV printing, DTF, embroidery, branded sleeves and ribbons."],
-          [Boxes, "790+ products", "Hampers, chocolates, dry fruits, copper, appliances, gadgets, desk and travel gear."],
+          [Boxes, "3,000+ products", "Hampers, gift sets, chocolates, copper, brass decor, appliances, gadgets, desk and travel gear."],
           [Gift, "Curated hampers", "Build-your-own boxes with personalised notes and premium packaging."],
           [FileText, "GST invoicing", "Proper tax invoices, POs and flexible payment terms for companies."],
           [Truck, "Multi-address delivery", "Ship to every employee's home or one office — pan-India."],

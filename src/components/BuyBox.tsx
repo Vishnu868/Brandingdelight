@@ -1,10 +1,11 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Heart, MessageCircle, Minus, Plus, ShieldCheck, ShoppingBag, Truck, Zap } from "lucide-react";
-import { formatINR, FREE_SHIPPING_THRESHOLD, whatsappLink } from "@/lib/format";
+import { ChevronRight, Heart, MessageCircle, Minus, Plus, ShieldCheck, ShoppingBag, Truck, Zap } from "lucide-react";
+import { formatINR, FREE_SHIPPING_THRESHOLD } from "@/lib/format";
 import { useCart, useToast, useWishlist } from "@/lib/store";
 import { useMounted } from "./Header";
+import { QuoteButton } from "./QuoteButton";
 import type { Product } from "@/lib/types";
 
 export function BuyBox({ p }: { p: Product }) {
@@ -112,9 +113,9 @@ export function BuyBox({ p }: { p: Product }) {
             </button>
           </>
         ) : (
-          <a href={whatsappLink(quoteMsg)} target="_blank" rel="noreferrer" className="btn-primary flex-1 !py-3.5">
+          <QuoteButton message={quoteMsg} className="btn-primary flex-1 !py-3.5" title={soldOut ? "Ask about restock" : "Get a quote"}>
             <MessageCircle size={18} /> {soldOut ? "Ask about restock on WhatsApp" : "Get a quote on WhatsApp"}
-          </a>
+          </QuoteButton>
         )}
         <button
           className="btn-outline !px-4"
@@ -129,9 +130,22 @@ export function BuyBox({ p }: { p: Product }) {
       </div>
 
       {buyable && (
-        <a href={whatsappLink(quoteMsg + " I need custom logo branding.")} target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-maroon">
-          <MessageCircle size={15} /> Need your logo on it or 25+ units? Get a corporate quote
-        </a>
+        <QuoteButton
+          message={quoteMsg + " I need custom logo branding."}
+          title="Corporate / bulk quote"
+          className="mt-3 flex w-full items-center justify-between gap-3 rounded-md border border-maroon/25 bg-maroon/[0.04] px-4 py-3 text-left transition hover:border-maroon/50 hover:bg-maroon/[0.07]"
+        >
+          <span className="flex items-center gap-3">
+            <span className="grid size-9 shrink-0 place-items-center rounded-full bg-maroon text-white">
+              <MessageCircle size={17} />
+            </span>
+            <span>
+              <span className="block text-[14px] font-semibold text-maroon">Get a corporate quote</span>
+              <span className="block text-[12.5px] text-muted">Need your logo on it or 25+ units?</span>
+            </span>
+          </span>
+          <ChevronRight size={18} className="shrink-0 text-maroon" />
+        </QuoteButton>
       )}
 
       <div className="mt-6 rounded-lg border border-line bg-white p-4">
@@ -190,9 +204,9 @@ export function BuyBox({ p }: { p: Product }) {
             </button>
           </>
         ) : (
-          <a href={whatsappLink(quoteMsg)} target="_blank" rel="noreferrer" className="btn-primary flex-1">
+          <QuoteButton message={quoteMsg} className="btn-primary flex-1" title={soldOut ? "Ask about restock" : "Get a quote"}>
             <MessageCircle size={18} /> {soldOut ? "Ask about restock" : "Get a quote"}
-          </a>
+          </QuoteButton>
         )}
       </div>
     </div>

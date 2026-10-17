@@ -11,7 +11,7 @@ import { getAllProducts, getProduct, toCard } from "@/lib/catalog";
 import { SITE, slugify, thumb } from "@/lib/format";
 
 export const revalidate = 600;
-// Pages are rendered on first visit and then served from cache (ISR) — keeps builds fast with 790+ products.
+// Pages are rendered on first visit and then served from cache (ISR) — keeps builds fast with 3,000+ products.
 export async function generateStaticParams() {
   return [];
 }

@@ -1,0 +1,103 @@
+page|code|name|subtitle|price
+2||Gusto Fresh Air Circulator|Omni-directional oscillation · remote control|13999
+3||Gusto Lite Air Circulator|90° vertical & 120° horizontal oscillation · 6 wind speeds|10499
+4||Airwave Noiseless Desk Fan|Foldable · 4 speeds|4499
+5||Future Fan Tower Fan (Black)|Tower fan with 3 speeds|4999
+6||Future Fan Pro Oscillating Tower Fan (White)|90° oscillation · adjustable speeds|5999
+7||BreezX Rechargeable Fan|Rechargeable desk fan|3999
+8||Air Storm II Rechargeable Telescopic Fan|Telescopic height · remote control|4499
+9||iSoothe Eye Massager with Wireless Speaker (Chrome)|5 massage modes with music · foldable|11999
+10||iSoothe Eye Massager with Wireless Speaker (White)|5 massage modes with music · foldable|10999
+11||iSoothe Pro Eye & Temple Massager|With bone conduction audio · 5 modes|14999
+12||iSoothe Lite Eye Massager with Speaker|Compression, warmth & vibration|7999
+13||X-Jet Powerful Cordless Air Duster|Turbo brushless motor · USB-C rechargeable|5499
+14||X-Jet Neo High Power Cordless Air Duster|Brushless motor · rechargeable|4299
+15||V-Gun Pro Cordless Vacuum with Blower|Handheld vacuum & blower|4299
+16||SuperVac High Power Cordless Vacuum|Vacuum, inflator, jump starter & torch in one|13999
+17||Inflate XL Rechargeable Tyre Inflator|Digital pressure display · power bank|8499
+18||Inflate Rechargeable Tyre Inflator|Digital pressure display|6499
+19||Blend X Portable Blender|Rechargeable · 500 ml|4999
+20||HydroBoil Pro Portable Electric Kettle (Black)|450W · 700 ml|5999
+21||HydroBoil Pro Portable Electric Kettle (Blue)|450W · 700 ml|5999
+22||HydroBoil Mini Portable Electric Kettle|300W · 300 ml|2499
+23||Scoop Portable Ice-Cream Maker|Make 4 scoops in minutes|4999
+24||Hot Box II Rapid Heating Electric Lunch Box|Steam heating · food-grade steel|4999
+25||MyCafé II Personal Beverage Maker|Coffee, milk & frothing|7999
+26||Steam X 4 in 1 Steamer (Cream)|Garment steamer & press|6499
+27||Steam X 4 in 1 Steamer (Purple)|Garment steamer & press|6499
+28||JetSteam Foldable Garment Steamer|1200W · 150 ml · kills 99.9% bacteria|4999
+29||SteamGun Handheld Garment Steamer|1200W · 170 ml · ISI certified plug|4999
+30||Quest Ultra Multicharger|Wireless charger that lights up and keeps time|2799
+31||Quest Neo Clock with Wireless Charging Pad|Digital clock · fast wireless charging|1699
+32||Quest Max Clock with Pen Stand & Wireless Charger|Clock, pen stand & charger in one|1999
+33||Quest Pro Table Lamp with Wireless Charger|Pen stand · fast wireless charging|2999
+34||Quest Multifunctional Pen Stand with Wireless Charger|Desk organiser with wireless charging|1999
+35||Powerbase Ultra All-in-One Multicharger (Black)|Charge phone, watch & earbuds together|3199
+36||Powerbase Ultra All-in-One Multicharger (White)|Charge phone, watch & earbuds together|3199
+37||Powerbase Max All-in-One Multicharger (Black)|Multi-device wireless charging|2199
+38||Powerbase Max All-in-One Multicharger (White)|Multi-device wireless charging|2199
+39||Powerbase Fast Wireless Charger|15W fast wireless charging pad|899
+40||Powerbase Lite Fast Wireless Charger|Fast wireless charging pad|699
+41||AeroCharge 15W Fast Wireless Charger with Mini Fan|Keeps your phone cool while charging|2499
+42||Pulse II X Wireless Charger with Smart Handset|Handset for calls · wireless charging|3999
+43||X-Charge Mag 10000mAh Magnetic Power Bank|MagSafe compatible|3999
+44||X-Charge Mag Pro 10000mAh 5 in 1 Magnetic Power Bank|Magnetic wireless + built-in cables|4299
+45||Hue II Ambient Digital Clock Speaker|RGB ambient lights · Bluetooth speaker|3999
+46||Desk Boss Multifunctional Wireless Speaker (Black)|Phone holder, pen stand, RGB lights, 10W speaker|3999
+47||Desk Boss Multifunctional Wireless Speaker (White)|Phone holder, pen stand, RGB lights, 10W speaker|3999
+48||Ellipse Clock Speaker (Black)|Fusion of time and sound|3499
+49||Ellipse Clock Speaker (White)|Fusion of time and sound|3499
+50||Prism Pro Bluetooth Clock Speaker|Digital clock with speaker|2499
+51||Prism Ultra Digital Clock with Lamp & Speaker|Clock, lamp and speaker|2999
+52||EON Digital Clock Speaker|Bluetooth clock speaker|2499
+53||EON Max Retro Clock Speaker with Wireless Charger|Retro design|4999
+54||Solaris X Desktop Clock Speaker (Earth)|Planet-design clock speaker|4499
+55||Solaris X Desktop Clock Speaker (Mars)|Planet-design clock speaker|4499
+56||Solaris X Desktop Clock Speaker (Moon)|Planet-design clock speaker|4499
+57||Solaris X Desktop Clock Speaker (Customised)|Your design on the clock face|4499
+58||Typewriter Retro Triple Mode Keyboard|Bluetooth + 2.4G + wired|3999
+59||Keypop Retro Wireless Keyboard and Mouse Combo|Round retro keys|3999
+60||Hive Honeycomb Wireless Keyboard|Multi-device Bluetooth keyboard|3999
+61||Prism Bluetooth Clock with Lamp|Desk clock with lamp|2299
+62||Prism Lite Bluetooth Clock|Compact desk clock|1999
+63||Solaris Digital Wall Clock (Earth)|Digital clock from the future|5999
+64||Solaris Digital Wall Clock (Mars)|Digital clock from the future|5999
+65||Solaris Digital Wall Clock (Moon)|Digital clock from the future|5999
+66||Solaris Digital Wall Clock (Customised)|Your design on the clock face|5999
+67||Solaris Digital Wall Clock (Archer)|Digital clock from the future|5999
+68||Solaris Digital Wall Clock (Kitty)|Digital clock from the future|5999
+69||Beam Rechargeable Torch Lamp|Torch & camping lamp|599
+70||Beam Plus Multifunctional Torch Lamp|Torch, lamp & power bank|1799
+71||Solar Beam Solar Powered Torch Lamp|Solar + USB charging|1899
+72||Magneto II XL Multifunctional Lamp (Black)|Magnetic torch lamp|5999
+73||Magneto II XL Multifunctional Lamp (White)|Magnetic torch lamp|5999
+74||Magneto Lite Multifunctional Lamp (Black)|Magnetic torch lamp|3299
+75||Magneto Lite Multifunctional Lamp (White)|Magnetic torch lamp|3299
+76||Magneto Rechargeable Multipurpose Portable Light (Black)|Magnetic base|3999
+77||Magneto Rechargeable Multipurpose Portable Light (White)|Magnetic base|3999
+78||Magmount Rechargeable Magnetic Light (Black)|Stick anywhere|1199
+79||Magmount Rechargeable Magnetic Light (White)|Stick anywhere|1199
+80||Desky Lite Digital Desk Lamp with Clock|Rechargeable office desk lamp|1799
+81||Desky Lite Multifunctional Desk Lamp|Rechargeable office desk lamp|1399
+82||Desky Lite with Wireless Bell|Desk lamp with call bell|1999
+83||Zen Self Balancing Lamp|Rechargeable|1299
+84||Nebula Lite Mood Light Desk Lamp|Ambient mood light|2599
+85||Lumos Multifunctional Table Lamp|Rechargeable|2499
+86||T2 Multifunctional LED Lamp|Flexible neck · rechargeable|1499
+87||T2C Rechargeable Table Lamp|Rechargeable|1299
+88||Nova Digital Clock with Ambient Light|Desk clock|2199
+89||Nova Ambient Desk Organiser|Ambient light organiser|1599
+90||Brain Lamp Ambient RGB Lamp|RGB mood lamp|2599
+91||Nebula II Ambient Mood Lamp Speaker|Lamp with speaker|3499
+92||Lumos X Lamp with Speaker & RGB Lights|Lamp with speaker|3499
+93||Arc Bluetooth Speaker|More than just a speaker|2999
+94||Retronaut 20W Vintage Soundbar|Bluetooth soundbar|4499
+95||Tellivibe Max II Retro Speaker with Phone Holder|Bluetooth speaker|3499
+96||KTV Karaoke TV Speaker|With wireless mic|3999
+97||RetroJam Rechargeable Karaoke Party Speaker|With wireless mic|3999
+98||Pulse II Pen Stand with Smart Handset|Bluetooth handset for calls|1999
+99||Phonobo Radiation Reduction Smart Handset|Bluetooth handset for calls|1499
+100||DigiFold Calculator & Writing Pad|Calculate easily, note effortlessly|1299
+101||TorchX Rechargeable Metal Torch|Bright LED metal torch|899
+102||X-Board A4 Size LED Backlit Board|With magnetic bullets|2499
+103||X-Board Pro A3 Size LED Backlit Board|LED backlit writing board|3999

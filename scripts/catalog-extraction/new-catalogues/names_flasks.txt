@@ -1,0 +1,114 @@
+page|code|name|subtitle
+2|H 388|BrewShield Glass Mug|With protective shell, handle & tea infuser · 500 ml
+3|H 387|Flexi Sip Compact Glass Mug|With grip & dual-way drinking lid · double sip option with straw
+4|H 385|IvoryLock Sleek Glass Travel Bottle|With secure flip-top lid · 425 ml
+5|H 384|Zen Grip Glass Bottle|With bamboo cap & silicone non-slip sleeve · 500 ml
+6|H 383|EarthWeave Glass Bottle|With bamboo cap & jute sleeve · 500 ml
+7|H 380|PrismView Geometric Glass Bottle|With integrated phone stand · 415 ml
+8|H 376|Bamboo Cloud Frosted Glass Bottle|With natural bamboo cap & carry loop · 500 ml
+9|H 373|ClearSip Pop Double Wall Borosilicate Bottle|With SS infuser net and single click lid release · 375 ml
+10|H 372|ClearSip Duo Double Wall Borosilicate Bottle|With SS infuser net and separate infuser glass basket · 325 ml
+11|H 371|ClearSip Fold Double Wall Borosilicate Bottle|With SS infuser net and folding carry handle · 325 ml
+12|H 369|Ripple View Grooved Texture Glass Bottle|With clear window & metal plate cap · 415 ml
+13|H 367|Terra Speckle Wheat Straw Glass Bottle|With metal accent cap · 425 ml
+14|H 347|SafeSip Tilt Glass Bottle|With outer plastic body and easy carry handle · 425 ml
+15|H 400|Vertex Stainless Steel Double Wall Mug|With unique ridge base · 350 ml
+16|H 391|Mocha Loop Classic Design Glass Bottle|With brown silicone strap · 425 ml
+17|H 389|Mini Brew Mini Glass Mug|With textured grip sleeve & straw-ready lid · 400 ml
+18|H 386|GlassArch Glass Bottle|With structural carry-handle & phone rest · 410 ml
+19|H 382|ChromeTank Gallon Style Glass Bottle|With polished chrome cap & neoprene sleeve · 900 ml
+20|H 381|Sport Tank Gallon Style Glass Bottle|With carry handle & protective sleeve · 700 ml
+21|H 379|Glaze Dual-Tone Glossy Glass Bottle|With carry strap · 500 ml
+22|H 378|Granite Station Wheat Straw Glass Bottle|With phone stand cap & silicone strap · 320 ml
+23|H 396|HeatVault Zod Vacuum Flask|With sipper function & carry handle · 900 ml
+24|H 395|Quest 700 Vacuum Insulated Flask|With carry strap · 700 ml
+25|H 394|Café Cup Double Wall Steel Mug|With flip top lid · 400 ml
+26|H 393|HeatVault Mag 700 Vacuum Flask|With magnet phone stand · 700 ml
+27|H 234 A|Hexa Tall Sipper Mug|Double wall stainless steel · 375 ml
+28|H 127|Colorful Steel Coffee Mug|Stainless steel inside · available in 7 colours
+29|H 282 A|Flora Single Wall Steel Bottle|With flip top cap · 1 L
+30|H 356|Hexa Flip Stainless Steel Mug|With flip top lid · 375 ml
+31|H 361|Ribd Insulated Steel Bottle|With flip top lid · 750 ml
+32|H 352|Clearsip Ecowrap Borosilicate Bottle|With bamboo cap and cork sleeve · 750 ml
+33|H 351|Clearsip Wrap Borosilicate Bottle|With bamboo cap and silicon sleeve · 600 ml
+34|H 350|Clearsip Eco Fuse Double Wall Infuser Bottle|With bamboo lids and SS infuser basket · 450 ml
+35|H 349|SafeSip Eco II Glass Bottle|With wheat straw body and easy carry strap · 350 ml
+36|H 348|Safe Sip Glass Bottle|With outer plastic body and metal plate cap · 350 ml
+37|H 346|SafeSip Chrome Glass Bottle|With outer plastic body · 350 ml
+38|H 344|Duo Sip Glass Sipper Mug|With outer plastic body · dual design lid with straw & flip top
+39|H 362|Ribd Copper Insulated Copper Bottle|With flip top lid · 750 ml
+40|H 304 A|Heat Vault Sip Vacuum Flask|With straw lid · 900 ml
+41|H 330|Maxsip Car and Desktop Mug|With double action lid · 890 ml
+42|H 317|DuraMug Grip Lite Large Mug|With flip top lid · 460 ml
+43|H 316|DuraMug Grip Large Spill Proof Suction Mug|Double wall stainless steel · 460 ml
+44|H 337|Eco Wave Stainless Steel Double Wall Coffee Mug|425 ml
+45|H 336|Eco Wave Mini Stainless Steel Double Wall Coffee Mug|220 ml
+46|H 264|Self Stirring Mug|304 grade stainless steel inside · 380 ml
+47|H 334|Square Eco Insulated Steel Bottle|750 ml
+48|H 335|Quest Vacuum Insulated Flask|With carry strap · 900 ml
+49|H 331|Plum 450 Double Wall Insulated Mug|450 ml
+50|H 307 A|Bolt 750 Colored Stainless Steel Bottle|750 ml
+51|H 306 A|Bolt 750 Stainless Steel Bottle|With carry strap · 750 ml
+52|H 327|Clearsip Brew 500 Borosilicate Glass Bottle|With steel infuser · 500 ml
+53|H 326|Clearsip+ 750 Borosilicate Glass Bottle|With protective sleeve · 750 ml
+54|H 319|Hexa Edge Insulated Steel Bottle|750 ml
+55|H 325|Clearsip 1000 Borosilicate Glass Bottle|1000 ml
+56|H 324|Aqua Mini Single Wall Bottle|With carry strap · 500 ml
+57|H 318|Square II Insulated Steel Bottle|750 ml
+58|H 224|Swift Sip Insulated Steel Bottle|Flip top cap with easy carry slot · 500 ml
+59|H 323|Cola Single Wall Bottle 750 ml Stainless Steel Colored|750 ml
+60|H 322|Cola Single Wall Bottle 750 ml Stainless Steel|750 ml
+61|H 321|Cola Single Wall Bottle 1000 ml Stainless Steel Colored|1000 ml
+62|H 320|Cola Single Wall Bottle 1000 ml Stainless Steel|1000 ml
+63|H 312|Curve Sip Mini Mug|With convex lid · 200 ml
+64|H 315|Cola Premium Vacuum Flask|Hot & cold 12 hours · 750 ml
+65|H 310|Cola 1000 ml Vacuum Flask in Steel Finish|Hot & cold 18–24 hours · 1000 ml
+66|H 309|Cola 500 ml Vacuum Flask in Color Finish|Hot & cold 18–24 hours · 500 ml
+67|H 308|Cola 500 ml Vacuum Flask in Steel Finish|Hot & cold 18–24 hours · 500 ml
+68|H 224 A|Insulated Straight Steel Bottle|With rice husk outer body · 500 ml
+69|H 191 A|Bamboo Vacuum Flask|With tea strainer · 400 ml
+70|H 276|Café Mate Stainless Steel Vacuum Coffee Mug|Premium flip top locking cap · 380 ml
+71|H 274|Café Buddy Stainless Steel Vacuum Coffee Mug|With silicon grip
+72|H 305|Eco Vault 700 Vacuum Flask|With bamboo lid · 700 ml
+73|H 303|Heat Vault Infuse Vacuum Flask|With infuser lid · 900 ml
+74|H 302|Noble Mid Size Stainless Steel Double Wall Coffee Mug|With pointy handle · 250 ml
+75|H 301|Dura Mug Spill Proof Suction Mug|With oval handle
+76|H 300|Ceramix Ceramic Look Mug|With stainless steel inside · 300 ml
+77|H 248 A|Candy Insulated Steel Bottle in Matte Finish|750 ml
+78|H 289|Sunset Eco Bamboo Fiber Eco Friendly Mug|With stainless steel inside · 360 ml
+79|H 299|Bullet Vacuum Flask|Hot & cold 8–10 hours · 500 ml
+80|H 288 A|Eco Brew Mug with Lid|Coffee fiber eco friendly mug with bamboo lid
+81|H 240 A|Long Cola Stainless Steel Bottle|900 ml
+82|H 288|Eco Brew Coffee Fiber Eco Friendly Mug|300 ml
+83|H 280|Sunset+ Magic Suction Mug|Stainless steel inside · 360 ml
+84|H 279|Sunset Stainless Steel Mug|With lid · 360 ml
+85|H 241 A|Long Cola Color Stainless Steel Bottle|With color cap and carry strap · 900 ml
+86|H 282|Flora Steel Bottle Colored|1 L
+87|H 281|Flora Steel Bottle Natural|1 L
+88|H 268|Square Insulated Steel Bottle|Hot & cold 4–6 hours · 750 ml
+89|H 252|Foggy+ Stainless Steel Coffee Mug|With carabiner handle · 350 ml
+90|H 254|Hexa Insulated Tall Sipper Mug|304 grade stainless steel inside · 375 ml
+91|H 256|Premia II Glass Mug|With full silicon sleeve & lid · 350 ml
+92|H 249|Lincoln Lite 2 Tone Stainless Steel Mug|300 ml
+93|H 243|Gripper Insulated Steel Bottle|With flip top lid · 750 ml
+94|H 237|Shiny SS Coffee Mug|With handle & included cap · 225 ml
+95|H 229|Noble Stainless Steel Coffee Mug|460 ml
+96|H 228|Oxford Stainless Steel Coffee Mug|450 ml
+97|H 233|Curvy Steel Bottle Colored|750 ml
+98|H 232|Curvy Steel Bottle Natural|750 ml
+99|H 231|Curvy Steel Bottle Colored 1 L|1 L
+100|H 230|Curvy Steel Bottle Natural 1 L|1 L
+101|H 227|Oscar Stainless Steel Coffee Mug|With handle · 350 ml
+102|H 226|Foggy Stainless Steel Coffee Mug|350 ml
+103|H 223|Tall Sipper Mug|304 grade stainless steel inside · 375 ml
+104|H 205|Prism Steel Bottle Colored|1 L
+105|H 203|Straight Steel Bottle Colored|750 ml
+106|H 202|Straight Steel Bottle Natural|750 ml
+107|H 201|Straight Steel Bottle Colored 1 L|1 L
+108|H 204|Prism Steel Bottle Natural|1 L
+109|H 200|Straight Steel Bottle Natural 1 L|1 L
+110|H 187|Eco Mug Eco Friendly Coffee Mug|With steel inside · made of wheat fiber · 225 ml
+111|H 165|Pearl Double Cap Vacuum Bottle|With carry loop · 750 ml
+112|H 164|Ultima Premium Revolving Kettle|In 304 stainless steel · hot/cold 12 hours · 2 L
+113|H 161|Wilson Stainless Steel Flask|With carry handle · 500 ml
+114|H 110|Easy Pour Flask|Double wall stainless steel vacuum insulation · easy push button

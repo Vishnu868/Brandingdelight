@@ -112,7 +112,7 @@ export default function AdminDashboard() {
         <div className="min-w-0 flex-1">
           <p className="font-semibold">Catalogue import</p>
           <p className="text-sm text-muted">
-            Copy the 790+ products extracted from your PDF catalogues into Supabase so you can edit them here. Safe to run again — existing products are skipped.
+            Copy the 3,000+ products extracted from your PDF catalogues into Supabase so you can edit them here. Safe to run again — existing products are skipped.
           </p>
         </div>
         <button
