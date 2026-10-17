@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import { ProductCard, gridCls } from "./ProductCard";
 import { Select } from "./Select";
+import { CatalogueDownload } from "./CatalogueDownload";
 import { searchCards } from "@/lib/search";
 import { unpackCards, type PackedCards } from "@/lib/pack";
 import { slugify } from "@/lib/format";
@@ -29,7 +30,7 @@ const PRICE_BANDS = [
 const PAGE = 24;
 
 /** Client-side filtered listing. Cards arrive pre-rendered from the server; filtering happens instantly in the browser. */
-export function Listing({ data, facetBy = "category" }: { data: PackedCards; facetBy?: "category" | "subcategory" }) {
+export function Listing({ data, title, facetBy = "category" }: { data: PackedCards; title: string; facetBy?: "category" | "subcategory" }) {
   const cards = useMemo(() => unpackCards(data), [data]);
   const router = useRouter();
   const pathname = usePathname();
@@ -90,6 +91,14 @@ export function Listing({ data, facetBy = "category" }: { data: PackedCards; fac
   }, [list]);
 
   const activeCount = brands.length + facets.length + (price ? 1 : 0) + (onlyPriced ? 1 : 0);
+  const pdfTitle = q ? `${title}: “${q}”` : title;
+  const pdfFilters = [
+    ...facets.map((f) => facetOpts.find(([n]) => slugify(n) === f)?.[0] ?? f),
+    ...brands.map((b) => brandOpts.find(([n]) => slugify(n) === b)?.[0] ?? b),
+    price ? PRICE_BANDS.find(([v]) => v === price)?.[1] : null,
+    onlyPriced ? "Buy online" : null,
+  ].filter(Boolean);
+  const pdfSlugs = useMemo(() => list.map((c) => c.slug), [list]);
 
   const filters = (
     <div className="space-y-7">
@@ -145,6 +154,8 @@ export function Listing({ data, facetBy = "category" }: { data: PackedCards; fac
               </>
             )}
           </p>
+          <div className="ml-auto flex items-center gap-2">
+          <CatalogueDownload title={pdfTitle} subtitle={pdfFilters.length ? `Filtered: ${pdfFilters.join(", ")}` : undefined} slugs={pdfSlugs} />
           <Select
             value={sort}
             onChange={(v) => setParam((p) => p.set("sort", v))}
@@ -152,8 +163,9 @@ export function Listing({ data, facetBy = "category" }: { data: PackedCards; fac
             label="Sort products"
             size="sm"
             align="right"
-            className="ml-auto w-[200px]"
+            className="w-[150px] sm:w-[200px]"
           />
+          </div>
         </div>
 
         {activeCount > 0 && (

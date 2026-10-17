@@ -25,6 +25,14 @@
   --animate-marquee: marquee 38s linear infinite;
 }
 
+@keyframes loader-dot {
+  0%, 80%, 100% { opacity: 0.25; transform: scale(0.75); }
+  40% { opacity: 1; transform: scale(1); }
+}
+/* failsafe: if scripts never run, the loading overlay still gets out of the way */
+@keyframes loader-failsafe {
+  to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
 @keyframes shimmer {
   0% { background-position: -400px 0; }
   100% { background-position: 400px 0; }
@@ -222,4 +230,18 @@ input[type="radio"]:checked {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
+}
+
+.route-loader {
+  animation: loader-failsafe 0.3s ease 9s forwards;
+}
+.loader-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--color-maroon);
+  animation: loader-dot 1s ease-in-out infinite both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .loader-dot { animation-duration: 2.4s; }
 }

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Loader2, Search } from "lucide-react";
 import { formatINR, thumb } from "@/lib/format";
 import type { ProductCard } from "@/lib/types";
+import { startRouteLoading } from "@/components/RouteLoader";
 
 export function SearchBox({ autoFocus, onNavigate }: { autoFocus?: boolean; onNavigate?: () => void }) {
   const router = useRouter();
@@ -48,6 +49,7 @@ export function SearchBox({ autoFocus, onNavigate }: { autoFocus?: boolean; onNa
     if (!q.trim()) return;
     setOpen(false);
     onNavigate?.();
+    startRouteLoading();
     router.push(`/shop?q=${encodeURIComponent(q.trim())}`);
   };
 

@@ -7,6 +7,7 @@ import { useCart, useToast, useWishlist } from "@/lib/store";
 import { useMounted } from "./Header";
 import { QuoteButton } from "./QuoteButton";
 import type { Product } from "@/lib/types";
+import { startRouteLoading } from "./RouteLoader";
 
 export function BuyBox({ p }: { p: Product }) {
   const router = useRouter();
@@ -106,6 +107,7 @@ export function BuyBox({ p }: { p: Product }) {
               className="btn-primary flex-1 !py-3.5"
               onClick={() => {
                 addToCart();
+                startRouteLoading();
                 router.push("/checkout");
               }}
             >
@@ -197,6 +199,7 @@ export function BuyBox({ p }: { p: Product }) {
               className="btn-primary flex-1 !px-3"
               onClick={() => {
                 addToCart();
+                startRouteLoading();
                 router.push("/checkout");
               }}
             >

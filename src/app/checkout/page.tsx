@@ -9,6 +9,7 @@ import { useMounted } from "@/components/Header";
 import { formatINR, shippingFor, SITE, thumb } from "@/lib/format";
 import { cartSubtotal, useCart, useLocalOrders, useToast } from "@/lib/store";
 import type { Address } from "@/lib/types";
+import { startRouteLoading } from "@/components/RouteLoader";
 
 declare global {
   interface Window {
@@ -105,6 +106,7 @@ export default function CheckoutPage() {
           address: addr, status: "paid", paymentMethod: `${method} (demo)`, createdAt: new Date().toISOString(),
         });
         clear();
+        startRouteLoading();
         router.push(`/order/${data.orderId}?demo=1`);
         return;
       }
@@ -146,6 +148,7 @@ export default function CheckoutPage() {
             return;
           }
           clear();
+          startRouteLoading();
           router.push(`/order/${data.orderId}`);
         },
       });

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Boxes, ExternalLink, Inbox, LayoutDashboard, Loader2, LogOut, PlusCircle, ShieldAlert, ShoppingCart } from "lucide-react";
+import { Boxes, ExternalLink, FileUp, Inbox, LayoutDashboard, Loader2, LogOut, PlusCircle, ShieldAlert, ShoppingCart } from "lucide-react";
 import { useAuth } from "@/components/AuthProvider";
 import { LogoMark } from "@/components/Logo";
 
@@ -9,6 +9,7 @@ const NAV = [
   ["/admin", "Dashboard", LayoutDashboard],
   ["/admin/products", "Products", Boxes],
   ["/admin/products/new", "Add product", PlusCircle],
+  ["/admin/import-pdf", "Import PDF", FileUp],
   ["/admin/orders", "Orders", ShoppingCart],
   ["/admin/enquiries", "Enquiries", Inbox],
 ] as const;

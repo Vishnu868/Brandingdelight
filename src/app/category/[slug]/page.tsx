@@ -50,7 +50,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
       </div>
       <div className="container-x py-6">
         <Suspense fallback={<ListingSkeleton title={false} />}>
-          <Listing data={packCards(cards)} facetBy="subcategory" />
+          <Listing title={cat.name} data={packCards(cards)} facetBy="subcategory" />
         </Suspense>
       </div>
     </>

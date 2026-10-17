@@ -19,7 +19,7 @@ export default async function ShopPage() {
         {cards.length} premium products across {new Set(cards.map((c) => c.category)).size} categories
       </p>
       <Suspense fallback={<ListingSkeleton title={false} />}>
-        <Listing data={packCards(cards)} />
+        <Listing title={"All products"} data={packCards(cards)} />
       </Suspense>
     </div>
   );
