@@ -167,7 +167,7 @@ export default async function Home() {
             </div>
             <div className="grid grid-cols-2 gap-3 text-center">
               {[
-                ["790+", "Products"],
+                ["3,000+", "Products"],
                 ["15+", "Premium brands"],
                 ["6+", "Print techniques"],
                 ["Pan-India", "Delivery"],

@@ -1,0 +1,19 @@
+page|code|name|subtitle
+1|XG-D01|Desk Organizer Pen Stand with Clock & Date Blocks|Personalised name plate · mobile holder
+2|XG-D02|Multi-Function Organizer Pen Stand with Clock|Folding watch · mobile slot
+3|XG-D03|Wooden Desk Organizer with Clock & Mobile Holder|Solid wood · customisable name engraving
+4|XG-D04|Wooden Desk Organizer with Clock, Mobile & Visiting Card Holder|Solid wood · customisable name engraving
+5|XG-D05|Wooden Desk Pen Stand with Clock & Date Blocks|Never-ending calendar · visiting card slot
+6|XG-D06|Apple Clock Desk Organizer with Phone & Pen Holder (Black)|Visiting card holder · name plate
+7|XG-D07|Apple Clock Desk Organizer with Phone & Pen Holder (Wood)|Visiting card holder · logo area
+8|XG-D08|Perpetual Wooden Calendar Desk Organizer with Mobile & Pen Holder|Perpetual calendar · name plate
+9|XG-D09|Wooden Desk Organizer with Pen Holder & Mobile Stand|Visiting card holder · perpetual calendar
+10|XG-D10|Wooden Folding Organizer with Clock & Pen Stand|Compact folding design · engraving area
+11|XG-D11|Wooden Desk Organizer with Pen Holder & Mobile Stand (Folding)|Integrated pen holder · personalised engraving
+12|XG-D12|Wooden Desk Organizer with Clock & Dual Compartments|Visiting card holder · name plate
+13|XG-D13|Perpetual Calendar Desk Organizer with Clock & Pen Holder|Name plate · mobile slot
+14|XG-D14|Illuminated LED Desk Organizer with Perpetual Calendar & Pen Holder|LED backlit · name plate
+15|XG-D15|Premium Desk Organizer Pen Holder with Analog Clock & Card Stand|Leather-finish base
+16|XG-D16|Advocate Symbol Pen Stand with Clock & Name Plate|For lawyers & advocates
+17|XG-D17|India Symbol Pen Stand with Clock & Name Plate|National emblem design
+18|XG-D18|Caduceus Symbol Pen Stand with Clock & Name Plate|For doctors & clinics

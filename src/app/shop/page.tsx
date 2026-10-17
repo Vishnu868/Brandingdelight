@@ -6,7 +6,7 @@ import { ListingSkeleton } from "@/components/ListingSkeleton";
 import { getCards } from "@/lib/catalog";
 
 export const revalidate = 600;
-export const metadata: Metadata = { title: "Shop all products", description: "Browse 790+ premium gifts, appliances, hampers, copper, tech and luggage." };
+export const metadata: Metadata = { title: "Shop all products", description: "Browse 3,000+ premium gifts, gift sets, appliances, hampers, copper, brass, tech and luggage." };
 
 export default async function ShopPage() {
   const cards = await getCards();

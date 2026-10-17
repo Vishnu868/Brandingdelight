@@ -63,29 +63,41 @@ export function productToRow(p: Product): Row {
 
 const seedProducts = (seed as { products: Product[] }).products;
 
-async function loadProducts(): Promise<Product[]> {
-  const db = supabaseAdmin();
-  if (!db) return seedProducts;
-  const all: Product[] = [];
-  // page through in 1000-row chunks (PostgREST default limit)
-  for (let from = 0; ; from += 1000) {
+const PAGE = 1000; // PostgREST default limit; also keeps each cache entry under Next's 2 MB data-cache cap
+
+/** One 1000-row page of active products, cached on its own (the full catalogue is too big for a single cache entry). */
+const loadPage = unstable_cache(
+  async (from: number): Promise<Product[] | null> => {
+    const db = supabaseAdmin();
+    if (!db) return null;
     const { data, error } = await db
       .from("products")
       .select("*")
       .eq("active", true)
       .order("created_at", { ascending: true })
-      .range(from, from + 999);
+      .order("id", { ascending: true })
+      .range(from, from + PAGE - 1);
     if (error) {
       console.error("[catalog] Supabase read failed, using bundled catalogue:", error.message);
-      return seedProducts;
+      return null;
     }
-    all.push(...(data ?? []).map(rowToProduct));
-    if (!data || data.length < 1000) break;
+    return (data ?? []).map(rowToProduct);
+  },
+  ["products-page"],
+  { tags: [PRODUCTS_TAG], revalidate: 600 },
+);
+
+export async function getAllProducts(): Promise<Product[]> {
+  if (!supabaseAdmin()) return seedProducts;
+  const all: Product[] = [];
+  for (let from = 0; ; from += PAGE) {
+    const rows = await loadPage(from);
+    if (!rows) return seedProducts;
+    all.push(...rows);
+    if (rows.length < PAGE) break;
   }
   return all.length ? all : seedProducts;
 }
-
-export const getAllProducts = unstable_cache(loadProducts, ["all-products"], { tags: [PRODUCTS_TAG], revalidate: 600 });
 
 export async function getProduct(slug: string) {
   return (await getAllProducts()).find((p) => p.slug === slug) ?? null;
@@ -116,12 +128,14 @@ export async function getCards() {
 /** Display order for top-level categories; anything new added by admins is appended. */
 const CATEGORY_ORDER = [
   "Festive Hampers & Gift Boxes",
+  "Corporate Gift Sets",
   "Gourmet & Chocolates",
   "Dry Fruits & Nuts",
   "Home & Kitchen Appliances",
   "Cookware & Kitchen Tools",
   "Drinkware & Bottles",
   "Copper Collection",
+  "Brass Decor & Pooja",
   "Mobile & Tech Accessories",
   "Audio & Smart Gadgets",
   "Desk & Office",
@@ -149,7 +163,9 @@ export const CATEGORY_IMAGES: Record<string, string> = {
   "Fitness & Sports": "/thumbs/lifelong-banners/llb-p42.webp",
   "Personal Care & Grooming": "/thumbs/lifelong-banners/llb-p40.webp",
   "Home Improvement & Safes": "/thumbs/lifelong-banners/llb-p29.webp",
-  "Stationery & Notebooks": "/thumbs/fuzo/fuzo-p86.webp",
+  "Stationery & Notebooks": "/thumbs/organizers/org-or1013.webp",
+  "Corporate Gift Sets": "/thumbs/gift-combos/gc-gs1008.webp",
+  "Brass Decor & Pooja": "/thumbs/popli/popli-fv-15te.webp",
 };
 
 /** Focal point for landscape artwork when cropped into tiles (Lifelong banners keep the photo on the right). */

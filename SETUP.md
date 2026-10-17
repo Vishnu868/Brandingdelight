@@ -1,6 +1,6 @@
 # BrandingDelight Store — Setup Guide
 
-A mobile-first e-commerce store (Next.js 15 + Tailwind 4) with **792 products** extracted from your 13 PDF catalogues,
+A mobile-first e-commerce store (Next.js 15 + Tailwind 4) with **3,006 products** extracted from your 34 PDF catalogues,
 customer accounts (Firebase), a database + image storage (Supabase), Razorpay payments (**UPI, Visa, Mastercard, RuPay,
 American Express**, net banking, wallets, EMI) and an admin panel restricted to approved emails.
 
@@ -47,7 +47,7 @@ so nobody else can add/edit products or see orders — even by calling the API d
    This creates the tables, locks them down with RLS and creates the public `product-images` storage bucket.
 3. **Project settings → API** → copy **Project URL** → `NEXT_PUBLIC_SUPABASE_URL` and the **service_role** secret →
    `SUPABASE_SERVICE_ROLE_KEY` (server-only; never expose it in the browser).
-4. Restart the server, sign in as an admin, open **/admin → Import catalogue**. All 792 catalogue products are copied
+4. Restart the server, sign in as an admin, open **/admin → Import catalogue**. All 3,006 catalogue products are copied
    into Supabase. From then on the store reads from Supabase and every admin change is live within seconds.
 
 ## 4. Razorpay — payments including American Express (Amex)
