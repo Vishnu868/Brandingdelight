@@ -1,6 +1,6 @@
 # BrandingDelight Store — Setup Guide
 
-A mobile-first e-commerce store (Next.js 15 + Tailwind 4) with **3,019 products** extracted from your 34 PDF catalogues,
+A mobile-first e-commerce store (Next.js 15 + Tailwind 4) with **3,282 products** extracted from your 34 PDF catalogues,
 customer accounts (Firebase), a database + image storage (Supabase), Razorpay payments (**UPI, Visa, Mastercard, RuPay,
 American Express**, net banking, wallets, EMI) and an admin panel restricted to approved emails.
 
@@ -47,7 +47,7 @@ so nobody else can add/edit products or see orders — even by calling the API d
    This creates the tables, locks them down with RLS and creates the public `product-images` storage bucket.
 3. **Project settings → API** → copy **Project URL** → `NEXT_PUBLIC_SUPABASE_URL` and the **service_role** secret →
    `SUPABASE_SERVICE_ROLE_KEY` (server-only; never expose it in the browser).
-4. Restart the server, sign in as an admin, open **/admin → Import catalogue**. All 3,019 catalogue products are copied
+4. Restart the server, sign in as an admin, open **/admin → Import catalogue**. All 3,282 catalogue products are copied
    into Supabase. From then on the store reads from Supabase and every admin change is live within seconds.
    Do this once, before adding your own products. Run it again whenever the bundled catalogue gets new products: it
    only adds missing ones and never overwrites products you have edited.
@@ -103,7 +103,7 @@ Netlify also works (`npm run build`, Next.js runtime is auto-installed).
 | Login & account | `src/app/login`, `src/app/account` |
 | Admin (dashboard, products, add/edit with image upload, orders, enquiries) | `src/app/admin/*` |
 | APIs | `src/app/api/*` |
-| Catalogue data (792 products) | `src/data/catalog.json` |
+| Catalogue data (3,282 products) | `src/data/catalog.json` |
 | Product images — full resolution / 640px thumbnails | `public/catalog/*`, `public/thumbs/*` |
 
 **Speed:** every page is statically generated or cached (ISR, 10 min) and refreshed instantly when an admin saves;

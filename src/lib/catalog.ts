@@ -137,6 +137,7 @@ export async function getCards() {
 const CATEGORY_ORDER = [
   "Festive Hampers & Gift Boxes",
   "Corporate Gift Sets",
+  "Trophies",
   "Gourmet & Chocolates",
   "Dry Fruits & Nuts",
   "Home & Kitchen Appliances",
@@ -172,6 +173,7 @@ export const CATEGORY_IMAGES: Record<string, string> = {
   "Personal Care & Grooming": "/thumbs/lifelong-banners/llb-p40.webp",
   "Home Improvement & Safes": "/thumbs/lifelong-banners/llb-p29.webp",
   "Stationery & Notebooks": "/thumbs/organizers/org-or1013.webp",
+  Trophies: "/thumbs/trophystudio/ts-136cxwug4gb9hkb0.webp",
   "Corporate Gift Sets": "/thumbs/gift-combos/gc-gs1008.webp",
   "Brass Decor & Pooja": "/thumbs/popli/popli-fv-15te.webp",
 };

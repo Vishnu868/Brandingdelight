@@ -21,6 +21,7 @@ export const BRAND_META: Record<string, { tagline: string; image: string; pos?: 
   EVM: { tagline: "Power banks & accessories", image: "/thumbs/evm/evm-22-5w.webp" },
   Wangari: { tagline: "Sustainable innovations", image: "/thumbs/wangari/wg-alder.webp" },
   JPP: { tagline: "Premium card holders", image: "/thumbs/cardholders/jpp-p4.webp" },
+  "Trophy Studio": { tagline: "Crystal, acrylic & wooden awards", image: "/thumbs/trophystudio/ts-12qp-dhd3y2syxsi.webp" },
   "BD Tech Essentials": { tagline: "Brandable desk & mobile tech", image: "/thumbs/electronics/elec-p2.webp", pos: "20% 50%" },
   Aquaminder: { tagline: "Smart hydration bottles", image: "/thumbs/bottles/bottle-p2.webp" },
   Nutsio: { tagline: "Wholesome dry fruits", image: "/thumbs/dryfruits/dry-p12.webp" },
