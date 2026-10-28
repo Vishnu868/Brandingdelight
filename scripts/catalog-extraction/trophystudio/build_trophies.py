@@ -20,6 +20,7 @@ CATALOG = "Trophy Studio Catalogue 2026"
 FOLDER = "trophystudio"
 HIDDEN = {"Personalised Gifts", "OFFICE STATIONERY", "Home Appliances"}
 TAG_ONLY = {"New Arrival": "new-arrival", "On Discount": "on-discount"}
+ALWAYS_AVAILABLE = 500
 
 # material -> (subcategory, product noun)
 MATERIAL = {
@@ -120,7 +121,8 @@ for base, items in designs.items():
         noun = "Number Trophy"
     name = f"{noun} {base}"
 
-    variants, images, stock, seen_labels = [], [], 0, set()
+    # Trophy Studio's own qty is ignored: every design is always orderable and sourced from them per order
+    variants, images, stock, seen_labels = [], [], ALWAYS_AVAILABLE, set()
     sizes = []
     for code, e in items:
         r = e["row"]
@@ -135,8 +137,6 @@ for base, items in designs.items():
             variants.append({"id": slug(code), "label": label, "price": pr})
         if size and size not in sizes:
             sizes.append(size)
-        q = str(r.get("qty") or "").strip()
-        stock += int(q) if q.isdigit() else 25
         for u in (r.get("images") or []):
             iid = img_id(u)
             if iid and iid not in images:
